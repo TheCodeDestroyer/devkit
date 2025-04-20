@@ -1,0 +1,77 @@
+{
+  "name": "@tcd-devkit/prettier-config",
+  "version": "0.1.0",
+  "description": "Shareable Prettier configuration for consistent code formatting across @tcd-devkit projects. Includes plugins for sorting imports, formatting package.json, and TOML files.",
+  "keywords": [
+    "tcd-devkit",
+    "config",
+    "prettier",
+    "prettierconfig",
+    "prettier-config",
+    "format",
+    "formatter",
+    "code-style",
+    "base"
+  ],
+  "homepage": "https://github.com/thecodedestroyer/devkit",
+  "bugs": {
+    "url": "https://github.com/thecodedestroyer/devkit/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thecodedestroyer/devkit.git",
+    "directory": "packages/prettier/prettier-config"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Nace Logar",
+    "email": "the.code.destroyer@gmail.com",
+    "url": "https://thecodedestroyer.com"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/base.formatter.d.ts",
+      "require": "./dist/base.formatter.cjs",
+      "import": "./dist/base.formatter.js"
+    }
+  },
+  "main": "./dist/base.formatter.cjs",
+  "module": "./dist/base.formatter.js",
+  "types": "./dist/base.formatter.d.ts",
+  "typesVersions": {
+    "*": {
+      ".": [
+        "./dist/base.formatter.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "dist",
+    "!dist/**/*.d.ts.map"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "lint:types": "tcd-scripts lint --only=tsc"
+  },
+  "dependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "4.4.1",
+    "prettier-plugin-packagejson": "2.5.14",
+    "prettier-plugin-toml": "2.0.5"
+  },
+  "devDependencies": {
+    "@tcd-devkit/scripts": "workspace:*",
+    "@tcd-devkit/tsconfig": "workspace:*",
+    "@tcd-devkit/tsup-config": "workspace:*",
+    "@total-typescript/ts-reset": "catalog:",
+    "@types/node": "catalog:",
+    "tsup": "catalog:",
+    "typescript": "catalog:"
+  },
+  "peerDependencies": {
+    "prettier": "^3.0.0"
+  },
+  "engines": {
+    "node": "^18.18.0 || >=20.6.0"
+  }
+}

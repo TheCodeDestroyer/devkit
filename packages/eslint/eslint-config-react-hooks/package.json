@@ -1,0 +1,88 @@
+{
+  "name": "@tcd-devkit/eslint-config-react-hooks",
+  "version": "0.0.1",
+  "description": "ESLint Flat Configuration for React Hooks. This package provides rules for `eslint-plugin-react-hooks`, ensuring adherence to the Rules of Hooks in React applications.",
+  "keywords": [
+    "tcd-devkit",
+    "config",
+    "eslint",
+    "eslintconfig",
+    "eslint-config",
+    "lint",
+    "react",
+    "react-hooks",
+    "hooks",
+    "flat-config"
+  ],
+  "homepage": "https://github.com/thecodedestroyer/devkit",
+  "bugs": {
+    "url": "https://github.com/thecodedestroyer/devkit/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thecodedestroyer/devkit.git",
+    "directory": "packages/eslint/eslint-config-react-hooks"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Nace Logar",
+    "email": "the.code.destroyer@gmail.com",
+    "url": "https://thecodedestroyer.com"
+  },
+  "type": "module",
+  "imports": {
+    "#*": {
+      "types": "./src/*.ts",
+      "default": "./dist/*.js"
+    }
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/hooks.linter.d.ts",
+      "import": "./dist/hooks.linter.js"
+    },
+    "./rule-overrides": {
+      "types": "./dist/hooks.rules.d.ts",
+      "import": "./dist/hooks.rules.js"
+    }
+  },
+  "main": "./dist/hooks.linter.js",
+  "types": "./dist/hooks.linter.d.ts",
+  "typesVersions": {
+    "*": {
+      ".": [
+        "./dist/hooks.linter.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "dist",
+    "!dist/**/*.d.ts.map"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "lint:types": "tcd-scripts lint --only=tsc",
+    "test": "vitest run",
+    "test:watch": "vitest --watch"
+  },
+  "dependencies": {
+    "eslint-plugin-react-hooks": "5.2.0"
+  },
+  "devDependencies": {
+    "@tcd-devkit/internal-utils": "workspace:*",
+    "@tcd-devkit/scripts": "workspace:*",
+    "@tcd-devkit/tsconfig": "workspace:*",
+    "@tcd-devkit/tsup-config": "workspace:*",
+    "@types/node": "catalog:",
+    "eslint": "catalog:",
+    "tsup": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  },
+  "peerDependencies": {
+    "eslint": "^9.0.0"
+  },
+  "engines": {
+    "node": ">=20.11.0 || >=21.2.0"
+  }
+}

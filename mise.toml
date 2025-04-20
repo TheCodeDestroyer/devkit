@@ -1,0 +1,15 @@
+min_version = '2025.4.5'
+
+[settings]
+experimental = true
+
+[hooks]
+enter = 'mise install'
+postinstall = 'corepack enable'
+
+[env]
+_.file = ['{{ config_root }}/.env', '{{cwd}}/.env']
+MONO_ROOT_DIR = "{{config_root}}"
+
+[tools]
+node = "22.16.0"

@@ -1,0 +1,79 @@
+{
+  "name": "@tcd-devkit/prettier-config-react",
+  "version": "0.0.2",
+  "description": "Shareable Prettier configuration for React projects within the @tcd-devkit ecosystem. Extends the base @tcd-devkit/prettier-config and adds Tailwind CSS plugin support.",
+  "keywords": [
+    "tcd-devkit",
+    "config",
+    "prettier",
+    "prettierconfig",
+    "prettier-config",
+    "format",
+    "formatter",
+    "code-style",
+    "react",
+    "jsx",
+    "tsx",
+    "tailwindcss"
+  ],
+  "homepage": "https://github.com/thecodedestroyer/devkit",
+  "bugs": {
+    "url": "https://github.com/thecodedestroyer/devkit/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thecodedestroyer/devkit.git",
+    "directory": "packages/prettier/prettier-config-react"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Nace Logar",
+    "email": "the.code.destroyer@gmail.com",
+    "url": "https://thecodedestroyer.com"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/react.formatter.d.ts",
+      "require": "./dist/react.formatter.cjs",
+      "import": "./dist/react.formatter.js"
+    }
+  },
+  "main": "./dist/react.formatter.cjs",
+  "module": "./dist/react.formatter.js",
+  "types": "./dist/react.formatter.d.ts",
+  "typesVersions": {
+    "*": {
+      ".": [
+        "./dist/react.formatter.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "dist",
+    "!dist/**/*.d.ts.map"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "lint:types": "tcd-scripts lint --only=tsc"
+  },
+  "dependencies": {
+    "@tcd-devkit/prettier-config": "workspace:*",
+    "prettier-plugin-tailwindcss": "0.6.11"
+  },
+  "devDependencies": {
+    "@tcd-devkit/scripts": "workspace:*",
+    "@tcd-devkit/tsconfig": "workspace:*",
+    "@tcd-devkit/tsup-config": "workspace:*",
+    "@total-typescript/ts-reset": "catalog:",
+    "@types/node": "catalog:",
+    "tsup": "catalog:",
+    "typescript": "catalog:"
+  },
+  "peerDependencies": {
+    "prettier": "^3.0.0"
+  },
+  "engines": {
+    "node": "^18.18.0 || >=20.6.0"
+  }
+}

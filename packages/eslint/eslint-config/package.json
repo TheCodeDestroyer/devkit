@@ -1,0 +1,87 @@
+{
+  "name": "@tcd-devkit/eslint-config",
+  "version": "0.1.0",
+  "description": "ESLint Flat Configuration for core JavaScript rules from @eslint/js, part of the @tcd-devkit.",
+  "keywords": [
+    "tcd-devkit",
+    "config",
+    "eslint",
+    "eslintconfig",
+    "flat config",
+    "eslint-config",
+    "lint",
+    "base",
+    "javascript"
+  ],
+  "homepage": "https://github.com/thecodedestroyer/devkit",
+  "bugs": {
+    "url": "https://github.com/thecodedestroyer/devkit/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thecodedestroyer/devkit.git",
+    "directory": "packages/eslint/eslint-config"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Nace Logar",
+    "email": "the.code.destroyer@gmail.com",
+    "url": "https://thecodedestroyer.com"
+  },
+  "type": "module",
+  "imports": {
+    "#*": {
+      "types": "./src/*.ts",
+      "default": "./dist/*.js"
+    }
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/base.linter.d.ts",
+      "import": "./dist/base.linter.js"
+    },
+    "./rule-overrides": {
+      "types": "./dist/base.rules.d.ts",
+      "import": "./dist/base.rules.js"
+    }
+  },
+  "main": "./dist/base.linter.js",
+  "types": "./dist/base.linter.d.ts",
+  "typesVersions": {
+    "*": {
+      ".": [
+        "./dist/base.linter.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "dist",
+    "!dist/**/*.d.ts.map"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "lint:types": "tcd-scripts lint --only=tsc",
+    "test": "vitest run",
+    "test:watch": "vitest --watch"
+  },
+  "dependencies": {
+    "@eslint/js": "catalog:"
+  },
+  "devDependencies": {
+    "@tcd-devkit/internal-utils": "workspace:*",
+    "@tcd-devkit/scripts": "workspace:*",
+    "@tcd-devkit/tsconfig": "workspace:*",
+    "@tcd-devkit/tsup-config": "workspace:*",
+    "@types/node": "catalog:",
+    "eslint": "catalog:",
+    "tsup": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  },
+  "peerDependencies": {
+    "eslint": "^9.0.0"
+  },
+  "engines": {
+    "node": "^18.18.0 || >=20.6.0"
+  }
+}

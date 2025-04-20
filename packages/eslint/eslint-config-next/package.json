@@ -1,0 +1,86 @@
+{
+  "name": "@tcd-devkit/eslint-config-next",
+  "version": "0.1.0",
+  "description": "ESLint Flat Configuration for Next.js projects. This package provides ESLint rules specific to Next.js, integrating `@next/eslint-plugin-next` for optimal Next.js development.",
+  "keywords": [
+    "tcd-devkit",
+    "config",
+    "eslint",
+    "eslintconfig",
+    "eslint-config",
+    "lint",
+    "next",
+    "nextjs",
+    "react",
+    "flat-config"
+  ],
+  "homepage": "https://github.com/thecodedestroyer/devkit",
+  "bugs": {
+    "url": "https://github.com/thecodedestroyer/devkit/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thecodedestroyer/devkit.git",
+    "directory": "packages/eslint/eslint-config-next"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Nace Logar",
+    "email": "the.code.destroyer@gmail.com",
+    "url": "https://thecodedestroyer.com"
+  },
+  "type": "module",
+  "imports": {
+    "#*": {
+      "types": "./src/*.ts",
+      "default": "./dist/*.js"
+    }
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/next.linter.d.ts",
+      "import": "./dist/next.linter.js"
+    },
+    "./rule-overrides": {
+      "types": "./dist/next.rules.d.ts",
+      "import": "./dist/next.rules.js"
+    }
+  },
+  "main": "./dist/next.linter.js",
+  "types": "./dist/next.linter.d.ts",
+  "typesVersions": {
+    "*": {
+      ".": [
+        "./dist/next.linter.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "dist",
+    "!dist/**/*.d.ts.map"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "lint:types": "tcd-scripts lint --only=tsc",
+    "test:watch": "vitest --watch"
+  },
+  "dependencies": {
+    "@next/eslint-plugin-next": "15.4.0-canary.51"
+  },
+  "devDependencies": {
+    "@tcd-devkit/internal-utils": "workspace:*",
+    "@tcd-devkit/scripts": "workspace:*",
+    "@tcd-devkit/tsconfig": "workspace:*",
+    "@tcd-devkit/tsup-config": "workspace:*",
+    "@types/node": "catalog:",
+    "eslint": "catalog:",
+    "tsup": "catalog:",
+    "typescript": "catalog:"
+  },
+  "peerDependencies": {
+    "eslint": "^9.0.0"
+  },
+  "engines": {
+    "node": ">=20.11.0 || >=21.2.0"
+  }
+}

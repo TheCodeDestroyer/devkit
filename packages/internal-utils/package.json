@@ -1,0 +1,66 @@
+{
+  "name": "@tcd-devkit/internal-utils",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Internal testing utilities for ESLint rule verification within the @tcd-devkit monorepo.",
+  "keywords": [
+    "tcd-devkit",
+    "internal",
+    "utils",
+    "testing",
+    "eslint",
+    "lint",
+    "test-helpers"
+  ],
+  "homepage": "https://github.com/thecodedestroyer/devkit",
+  "bugs": {
+    "url": "https://github.com/thecodedestroyer/devkit/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thecodedestroyer/devkit.git",
+    "directory": "packages/internal-utils"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Nace Logar",
+    "email": "the.code.destroyer@gmail.com",
+    "url": "https://thecodedestroyer.com"
+  },
+  "type": "module",
+  "exports": {
+    "./*": {
+      "types": "./dist/*.utils.d.ts",
+      "import": "./dist/*.utils.js"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      "./*": [
+        "./dist/*.utils.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "dist",
+    "!dist/**/*.d.ts.map"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "lint:types": "tcd-scripts lint --only=tsc"
+  },
+  "devDependencies": {
+    "@tcd-devkit/scripts": "workspace:*",
+    "@tcd-devkit/tsconfig": "workspace:*",
+    "@tcd-devkit/tsup-config": "workspace:*",
+    "@types/node": "catalog:",
+    "tsup": "catalog:",
+    "typescript": "catalog:"
+  },
+  "peerDependencies": {
+    "eslint": "^9.0.0"
+  },
+  "engines": {
+    "node": "^18.18.0 || >=20.6.0"
+  }
+}

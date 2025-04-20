@@ -1,0 +1,83 @@
+{
+  "name": "@tcd-devkit/eslint-preset-next",
+  "version": "0.1.0",
+  "description": "Comprehensive ESLint Flat Configuration Preset for Next.js projects. This preset bundles various @tcd-devkit ESLint configurations for a complete Next.js, React, TypeScript, and a11y linting setup.",
+  "keywords": [
+    "tcd-devkit",
+    "preset",
+    "eslint",
+    "eslintconfig",
+    "eslint-preset",
+    "lint",
+    "next",
+    "nextjs",
+    "react",
+    "typescript",
+    "a11y",
+    "flat-config"
+  ],
+  "homepage": "https://github.com/thecodedestroyer/devkit",
+  "bugs": {
+    "url": "https://github.com/thecodedestroyer/devkit/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thecodedestroyer/devkit.git",
+    "directory": "packages/eslint-presets/eslint-preset-next"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Nace Logar",
+    "email": "the.code.destroyer@gmail.com",
+    "url": "https://thecodedestroyer.com"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/next-preset.linter.d.ts",
+      "require": "./dist/next-preset.linter.cjs",
+      "import": "./dist/next-preset.linter.js"
+    }
+  },
+  "main": "./dist/next-preset.linter.cjs",
+  "module": "./dist/next-preset.linter.js",
+  "types": "./dist/next-preset.linter.d.ts",
+  "typesVersions": {
+    "*": {
+      ".": [
+        "./dist/next-preset.linter.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "dist",
+    "!dist/**/*.d.ts.map"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "lint:types": "tcd-scripts lint --only=tsc"
+  },
+  "dependencies": {
+    "@tcd-devkit/eslint-config": "workspace:*",
+    "@tcd-devkit/eslint-config-a11y": "workspace:*",
+    "@tcd-devkit/eslint-config-import-ts": "workspace:*",
+    "@tcd-devkit/eslint-config-next": "workspace:*",
+    "@tcd-devkit/eslint-config-react": "workspace:*",
+    "@tcd-devkit/eslint-config-react-hooks": "workspace:*",
+    "@tcd-devkit/eslint-config-ts": "workspace:*",
+    "eslint-config-prettier": "catalog:"
+  },
+  "devDependencies": {
+    "@tcd-devkit/scripts": "workspace:*",
+    "@tcd-devkit/tsconfig": "workspace:*",
+    "@tcd-devkit/tsup-config": "workspace:*",
+    "@types/node": "catalog:",
+    "tsup": "catalog:"
+  },
+  "peerDependencies": {
+    "eslint": "^9.0.0"
+  },
+  "engines": {
+    "node": ">=20.11.0 || >=21.2.0"
+  }
+}

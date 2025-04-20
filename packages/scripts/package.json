@@ -1,0 +1,74 @@
+{
+  "name": "@tcd-devkit/scripts",
+  "version": "0.1.0",
+  "description": "CLI tool for @tcd-devkit providing linting (ESLint, Prettier, TypeScript) and formatting (ESLint --fix, Prettier --write) capabilities for web development projects.",
+  "keywords": [
+    "tcd-devkit",
+    "scripts",
+    "cli",
+    "lint",
+    "linter",
+    "format",
+    "formatter",
+    "checker",
+    "eslint",
+    "prettier",
+    "typescript",
+    "javascript"
+  ],
+  "homepage": "https://github.com/thecodedestroyer/devkit",
+  "bugs": {
+    "url": "https://github.com/thecodedestroyer/devkit/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thecodedestroyer/devkit.git",
+    "directory": "packages/scripts"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Nace Logar",
+    "email": "the.code.destroyer@gmail.com",
+    "url": "https://thecodedestroyer.com"
+  },
+  "type": "module",
+  "imports": {
+    "#*": {
+      "types": "./src/*.js",
+      "node": "./dist/*.cjs",
+      "import": "./src/*.js"
+    }
+  },
+  "bin": {
+    "tcd-scripts": "./dist/cli.cjs"
+  },
+  "files": [
+    "dist",
+    "!dist/**/*.d.ts.map"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "lint:types": "./dist/cli.cjs lint --only=tsc",
+    "prepare": "pnpm build"
+  },
+  "dependencies": {
+    "@commander-js/extra-typings": "14.0.0",
+    "chalk": "5.4.1",
+    "execa": "9.5.3",
+    "rimraf": "6.0.1"
+  },
+  "devDependencies": {
+    "@tcd-devkit/tsconfig": "workspace:*",
+    "@types/node": "catalog:",
+    "tsup": "catalog:",
+    "typescript": "catalog:"
+  },
+  "peerDependencies": {
+    "eslint": "^9.0.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=20.11.0 || >=21.2.0"
+  }
+}

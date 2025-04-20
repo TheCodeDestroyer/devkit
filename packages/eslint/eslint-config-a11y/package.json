@@ -1,0 +1,88 @@
+{
+  "name": "@tcd-devkit/eslint-config-a11y",
+  "version": "0.1.0",
+  "description": "ESLint Flat Configuration for JSX A11y. This package provides accessibility (a11y) rules for JSX using `eslint-plugin-jsx-a11y`, helping to create more accessible web applications.",
+  "keywords": [
+    "tcd-devkit",
+    "config",
+    "eslint",
+    "eslintconfig",
+    "eslint-config",
+    "lint",
+    "a11y",
+    "accessibility",
+    "jsx",
+    "react",
+    "flat-config"
+  ],
+  "homepage": "https://github.com/thecodedestroyer/devkit",
+  "bugs": {
+    "url": "https://github.com/thecodedestroyer/devkit/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thecodedestroyer/devkit.git",
+    "directory": "packages/eslint/eslint-config-a11y"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Nace Logar",
+    "email": "the.code.destroyer@gmail.com",
+    "url": "https://thecodedestroyer.com"
+  },
+  "type": "module",
+  "imports": {
+    "#*": {
+      "types": "./src/*.ts",
+      "default": "./dist/*.js"
+    }
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/a11y.linter.d.ts",
+      "import": "./dist/a11y.linter.js"
+    },
+    "./rule-overrides": {
+      "types": "./dist/a11y.rules.d.ts",
+      "import": "./dist/a11y.rules.js"
+    }
+  },
+  "main": "./dist/a11y.linter.js",
+  "types": "./dist/a11y.linter.d.ts",
+  "typesVersions": {
+    "*": {
+      ".": [
+        "./dist/a11y.linter.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "dist",
+    "!dist/**/*.d.ts.map"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "lint:types": "tcd-scripts lint --only=tsc",
+    "test:watch": "vitest --watch"
+  },
+  "dependencies": {
+    "eslint-plugin-jsx-a11y": "6.10.2",
+    "globals": "catalog:"
+  },
+  "devDependencies": {
+    "@tcd-devkit/internal-utils": "workspace:*",
+    "@tcd-devkit/scripts": "workspace:*",
+    "@tcd-devkit/tsconfig": "workspace:*",
+    "@tcd-devkit/tsup-config": "workspace:*",
+    "@types/node": "catalog:",
+    "eslint": "catalog:",
+    "tsup": "catalog:",
+    "typescript": "catalog:"
+  },
+  "peerDependencies": {
+    "eslint": "^9.0.0"
+  },
+  "engines": {
+    "node": ">=20.11.0 || >=21.2.0"
+  }
+}

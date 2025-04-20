@@ -1,0 +1,88 @@
+{
+  "name": "@tcd-devkit/eslint-config-import",
+  "version": "0.1.0",
+  "description": "ESLint Flat Configuration for JavaScript import rules. This package provides rules for `eslint-plugin-import-x` for JavaScript projects, ensuring consistent and best-practice module imports.",
+  "keywords": [
+    "tcd-devkit",
+    "config",
+    "eslint",
+    "eslintconfig",
+    "eslint-config",
+    "lint",
+    "import",
+    "javascript",
+    "js",
+    "flat-config"
+  ],
+  "homepage": "https://github.com/thecodedestroyer/devkit",
+  "bugs": {
+    "url": "https://github.com/thecodedestroyer/devkit/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thecodedestroyer/devkit.git",
+    "directory": "packages/eslint/eslint-config-import"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Nace Logar",
+    "email": "the.code.destroyer@gmail.com",
+    "url": "https://thecodedestroyer.com"
+  },
+  "type": "module",
+  "imports": {
+    "#*": {
+      "types": "./src/*.ts",
+      "default": "./dist/*.js"
+    }
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/import.linter.d.ts",
+      "import": "./dist/import.linter.js"
+    },
+    "./rule-overrides": {
+      "types": "./dist/import.rules.d.ts",
+      "import": "./dist/import.rules.js"
+    }
+  },
+  "main": "./dist/import.linter.js",
+  "types": "./dist/import.linter.d.ts",
+  "typesVersions": {
+    "*": {
+      ".": [
+        "./dist/import.linter.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "dist",
+    "!dist/**/*.d.ts.map"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "lint:types": "tcd-scripts lint --only=tsc",
+    "test": "vitest run",
+    "test:watch": "vitest --watch"
+  },
+  "dependencies": {
+    "eslint-plugin-import-x": "catalog:"
+  },
+  "devDependencies": {
+    "@tcd-devkit/internal-utils": "workspace:*",
+    "@tcd-devkit/scripts": "workspace:*",
+    "@tcd-devkit/tsconfig": "workspace:*",
+    "@tcd-devkit/tsup-config": "workspace:*",
+    "@types/node": "catalog:",
+    "eslint": "catalog:",
+    "tsup": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  },
+  "peerDependencies": {
+    "eslint": "^9.0.0"
+  },
+  "engines": {
+    "node": ">=20.11.0 || >=21.2.0"
+  }
+}

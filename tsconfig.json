@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "@tcd-devkit/tsconfig/lib",
+  "compilerOptions": {
+    "rootDir": "."
+  },
+  "include": ["**/*.mjs", "**/*.cjs", "**/*.ts"],
+  "exclude": ["node_modules", "dist", "packages"]
+}

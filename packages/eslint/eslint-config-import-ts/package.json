@@ -1,0 +1,92 @@
+{
+  "name": "@tcd-devkit/eslint-config-import-ts",
+  "version": "0.1.0",
+  "description": "ESLint Flat Configuration for TypeScript import rules. This package provides rules for `eslint-plugin-import-x` tailored for TypeScript projects, ensuring consistent and best-practice module imports.",
+  "keywords": [
+    "tcd-devkit",
+    "config",
+    "eslint",
+    "eslintconfig",
+    "eslint-config",
+    "lint",
+    "import",
+    "typescript",
+    "ts",
+    "flat-config"
+  ],
+  "homepage": "https://github.com/thecodedestroyer/devkit",
+  "bugs": {
+    "url": "https://github.com/thecodedestroyer/devkit/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thecodedestroyer/devkit.git",
+    "directory": "packages/eslint/eslint-config-import-ts"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Nace Logar",
+    "email": "the.code.destroyer@gmail.com",
+    "url": "https://thecodedestroyer.com"
+  },
+  "type": "module",
+  "imports": {
+    "#*": {
+      "types": "./src/*.ts",
+      "default": "./dist/*.js"
+    }
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/import-ts.linter.d.ts",
+      "import": "./dist/import-ts.linter.js"
+    },
+    "./rule-overrides": {
+      "types": "./dist/import-ts.rules.d.ts",
+      "import": "./dist/import-ts.rules.js"
+    }
+  },
+  "main": "./dist/import-ts.linter.js",
+  "types": "./dist/import-ts.linter.d.ts",
+  "typesVersions": {
+    "*": {
+      ".": [
+        "./dist/import-ts.linter.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "dist",
+    "!dist/**/*.d.ts.map"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "lint:types": "tcd-scripts lint --only=tsc",
+    "test": "vitest run",
+    "test:watch": "vitest --watch"
+  },
+  "dependencies": {
+    "@tcd-devkit/eslint-config-import": "workspace:*",
+    "@typescript-eslint/parser": "8.32.1",
+    "eslint-import-resolver-typescript": "4.4.0",
+    "eslint-plugin-import-x": "catalog:"
+  },
+  "devDependencies": {
+    "@tcd-devkit/eslint-config-ts": "workspace:*",
+    "@tcd-devkit/internal-utils": "workspace:*",
+    "@tcd-devkit/scripts": "workspace:*",
+    "@tcd-devkit/tsconfig": "workspace:*",
+    "@tcd-devkit/tsup-config": "workspace:*",
+    "@types/node": "catalog:",
+    "eslint": "catalog:",
+    "tsup": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  },
+  "peerDependencies": {
+    "eslint": "^9.0.0"
+  },
+  "engines": {
+    "node": ">=20.11.0 || >=21.2.0"
+  }
+}

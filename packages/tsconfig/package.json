@@ -1,0 +1,35 @@
+{
+  "name": "@tcd-devkit/tsconfig",
+  "version": "0.0.1",
+  "private": false,
+  "description": "Shareable base TypeScript configurations (tsconfig.json) for various project types within the @tcd-devkit ecosystem.",
+  "keywords": [
+    "tcd-devkit",
+    "config",
+    "typescript",
+    "tsconfig",
+    "ts",
+    "settings"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thecodedestroyer/devkit.git",
+    "directory": "packages/tsconfig"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Nace Logar",
+    "email": "the.code.destroyer@gmail.com",
+    "url": "https://thecodedestroyer.com"
+  },
+  "type": "commonjs",
+  "exports": {
+    "./*": "./tsconfig.*.json"
+  },
+  "files": [
+    "tsconfig.*.json"
+  ],
+  "devDependencies": {
+    "prettier": "catalog:default"
+  }
+}
