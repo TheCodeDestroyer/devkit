@@ -5,6 +5,7 @@ import {
   ignorePathOption,
   lintOnlyOption,
   lintSkipOption,
+  noCacheOption,
   projectOption,
   refreshCacheOption,
 } from '#constants/option.constants';
@@ -26,6 +27,7 @@ export const registerLintCommand = (program: Command) => {
     .addOption(lintOnlyOption)
     .addOption(lintSkipOption)
     .addOption(cacheOption)
+    .addOption(noCacheOption)
     .addOption(refreshCacheOption)
     .addOption(ignorePathOption)
     .addOption(projectOption)

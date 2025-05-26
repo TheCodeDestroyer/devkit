@@ -5,6 +5,7 @@ import {
   formatOnlyOption,
   formatSkipOption,
   ignorePathOption,
+  noCacheOption,
   refreshCacheOption,
 } from '#constants/option.constants';
 import { FORMAT_TOOLS } from '#types/option.types';
@@ -22,6 +23,7 @@ export const registerFormatCommand = (program: Command) => {
     .addOption(formatOnlyOption)
     .addOption(formatSkipOption)
     .addOption(cacheOption)
+    .addOption(noCacheOption)
     .addOption(refreshCacheOption)
     .addOption(ignorePathOption)
 

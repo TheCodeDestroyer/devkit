@@ -89,6 +89,8 @@ export const handleCache = async (
     if (options.cacheLocation) {
       toolArgs.push(cacheLocationFlag, cacheLocationResolved);
     }
+  } else if (!options.cache) {
+    logger.info('Cache disabled');
   }
 };
 

@@ -36,8 +36,14 @@ export const lintSkipOption = getSkipOption(false);
 
 export const cacheOption = new Option(
   '--cache',
-  'Enable Prettier/ESLint cache',
+  'Enable Prettier/ESLint cache (use --no-cache to disable)',
 ).default(true);
+
+export const noCacheOption = new Option(
+  '--no-cache',
+  'Disable Prettier/ESLint cache',
+);
+
 export const refreshCacheOption = new Option(
   '--refresh-cache',
   'Refresh Prettier/ESLint cache before running',
