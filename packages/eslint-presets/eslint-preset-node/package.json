@@ -1,6 +1,6 @@
 {
   "name": "@tcd-devkit/eslint-preset-node",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Comprehensive ESLint Flat Configuration Preset for Node.js projects. This preset bundles various @tcd-devkit ESLint configurations for a robust Node.js and TypeScript linting setup.",
   "keywords": [
     "tcd-devkit",
