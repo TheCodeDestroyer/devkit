@@ -1,6 +1,5 @@
 name: CI
 on:
-  workflow_dispatch:
   push:
     branches:
       - main
@@ -16,6 +15,7 @@ jobs:
       TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
       TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
       TURBO_SCM_BASE: ${{ github.event_name == 'pull_request' && github.event.pull_request.base.sha || github.event.before }}
+      BRANCH_NAME: ${{ github.event_name == 'pull_request' && github.head_ref || github.ref_name }}
 
     steps:
       - name: Checkout
