@@ -4,6 +4,6 @@
   "compilerOptions": {
     "rootDir": "."
   },
-  "include": ["**/*.mjs", "**/*.cjs", "**/*.ts"],
+  "include": ["**/*.js", "**/*.mjs", "**/*.cjs", "**/*.ts"],
   "exclude": ["node_modules", "dist", "packages"]
 }
