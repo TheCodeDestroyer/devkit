@@ -30,6 +30,6 @@
     "tsconfig.*.json"
   ],
   "devDependencies": {
-    "prettier": "catalog:default"
+    "prettier": "3.5.3"
   }
 }

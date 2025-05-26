@@ -59,9 +59,9 @@
   },
   "devDependencies": {
     "@tcd-devkit/tsconfig": "workspace:*",
-    "@types/node": "catalog:",
-    "tsup": "catalog:",
-    "typescript": "catalog:"
+    "@types/node": "22.15.21",
+    "tsup": "8.5.0",
+    "typescript": "5.8.3"
   },
   "peerDependencies": {
     "eslint": "^9.0.0",

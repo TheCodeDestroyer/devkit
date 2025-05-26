@@ -72,11 +72,11 @@
     "@tcd-devkit/scripts": "workspace:*",
     "@tcd-devkit/tsconfig": "workspace:*",
     "@tcd-devkit/tsup-config": "workspace:*",
-    "@types/node": "catalog:",
-    "eslint": "catalog:",
-    "tsup": "catalog:",
-    "typescript": "catalog:",
-    "vitest": "catalog:"
+    "@types/node": "22.15.21",
+    "eslint": "9.27.0",
+    "tsup": "8.5.0",
+    "typescript": "5.8.3",
+    "vitest": "3.1.4"
   },
   "peerDependencies": {
     "eslint": "^9.0.0"
