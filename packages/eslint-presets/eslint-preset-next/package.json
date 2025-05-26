@@ -65,14 +65,14 @@
     "@tcd-devkit/eslint-config-react": "workspace:*",
     "@tcd-devkit/eslint-config-react-hooks": "workspace:*",
     "@tcd-devkit/eslint-config-ts": "workspace:*",
-    "eslint-config-prettier": "catalog:"
+    "eslint-config-prettier": "10.1.5"
   },
   "devDependencies": {
     "@tcd-devkit/scripts": "workspace:*",
     "@tcd-devkit/tsconfig": "workspace:*",
     "@tcd-devkit/tsup-config": "workspace:*",
-    "@types/node": "catalog:",
-    "tsup": "catalog:"
+    "@types/node": "22.15.21",
+    "tsup": "8.5.0"
   },
   "peerDependencies": {
     "eslint": "^9.0.0"
