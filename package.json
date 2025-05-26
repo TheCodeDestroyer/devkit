@@ -13,6 +13,7 @@
   "scripts": {
     "format": "echo 'Starting formatting...'",
     "lint": "echo 'Starting linting...'",
+    "prepare": "husky",
     "release": "pnpm turbo build && pnpm changeset publish",
     "root-format:eslint": "tcd-scripts format --only=eslint",
     "root-format:prettier": "tcd-scripts format --only=prettier",
@@ -22,11 +23,14 @@
   "devDependencies": {
     "@changesets/changelog-github": "0.5.1",
     "@changesets/cli": "2.29.4",
+    "@commitlint/cli": "19.8.1",
+    "@tcd-devkit/commitlint-config": "workspace:*",
     "@tcd-devkit/eslint-preset-node": "workspace:*",
     "@tcd-devkit/prettier-config": "workspace:*",
     "@tcd-devkit/scripts": "workspace:*",
     "@tcd-devkit/tsconfig": "workspace:*",
     "eslint": "catalog:",
+    "husky": "9.1.7",
     "prettier": "catalog:",
     "turbo": "2.5.3",
     "typescript": "catalog:"

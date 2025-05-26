@@ -1,0 +1,61 @@
+{
+  "name": "@tcd-devkit/commitlint-config",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Shareable commitlint configuration for enforcing conventional commit messages.",
+  "keywords": [
+    "tcd-devkit",
+    "config",
+    "commitlint",
+    "commitlintconfig",
+    "conventional-commits"
+  ],
+  "homepage": "https://github.com/thecodedestroyer/devkit",
+  "bugs": {
+    "url": "https://github.com/thecodedestroyer/devkit/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thecodedestroyer/devkit.git",
+    "directory": "packages/commitlint-config"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Nace Logar",
+    "email": "the.code.destroyer@gmail.com",
+    "url": "https://thecodedestroyer.com"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "!dist/**/*.d.ts.map"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint:types": "tcd-scripts lint --only=tsc"
+  },
+  "dependencies": {
+    "@commitlint/config-conventional": "19.8.1"
+  },
+  "devDependencies": {
+    "@commitlint/types": "19.8.1",
+    "@tcd-devkit/scripts": "workspace:*",
+    "@tcd-devkit/tsconfig": "workspace:*",
+    "@tcd-devkit/tsup-config": "workspace:*",
+    "@types/node": "catalog:",
+    "tsup": "catalog:",
+    "typescript": "catalog:"
+  },
+  "engines": {
+    "node": ">=v18"
+  }
+}
