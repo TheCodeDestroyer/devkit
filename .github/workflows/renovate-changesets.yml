@@ -11,7 +11,7 @@ jobs:
     if: contains(github.event.pull_request.labels.*.name, 'dependencies')
     steps:
       - name: Update PR
-        uses: mscharley/dependency-changesets-action@v1.0.5
+        uses: mscharley/dependency-changesets-action@v1.1.5
         with:
           use-conventional-commits: true
           author-name: Renovate Changesets
