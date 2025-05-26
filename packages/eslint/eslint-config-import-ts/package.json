@@ -1,6 +1,6 @@
 {
   "name": "@tcd-devkit/eslint-config-import-ts",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "ESLint Flat Configuration for TypeScript import rules. This package provides rules for `eslint-plugin-import-x` tailored for TypeScript projects, ensuring consistent and best-practice module imports.",
   "keywords": [
     "tcd-devkit",
