@@ -55,7 +55,7 @@
     "@commander-js/extra-typings": "14.0.0",
     "chalk": "5.4.1",
     "commander": "14.0.0",
-    "execa": "9.5.3",
+    "execa": "9.6.0",
     "rimraf": "6.0.1"
   },
   "devDependencies": {
