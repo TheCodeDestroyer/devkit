@@ -3,6 +3,12 @@ import { nodePreset } from '@tcd-devkit/eslint-preset-node';
 const config = [
   ...nodePreset,
   {
+    files: ['**/*.{js,jsx,ts,tsx,mjs,cjs}'],
+    rules: {
+      'import-x/no-rename-default': ['off'],
+    },
+  },
+  {
     files: ['**/tsup.config.ts', '**/tsup/**/*.ts'],
     rules: {
       '@typescript-eslint/require-await': ['off'],
@@ -20,7 +26,6 @@ const config = [
       'no-restricted-syntax': ['off'],
       '@typescript-eslint/no-unsafe-return': ['off'],
       '@typescript-eslint/no-unsafe-call': ['off'],
-      'import-x/no-rename-default': ['off'],
       'import-x/no-deprecated': ['off'],
       'import-x/no-cycle': ['off'],
     },

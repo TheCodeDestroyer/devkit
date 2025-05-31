@@ -17,6 +17,11 @@ export const reactConfig: Linter.Config[] = defineConfig({
       ...globals.browser,
     },
   },
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
   files: ['**/*.{js,jsx,ts,tsx,mjs,cjs}'],
   rules: reactRules,
 });
