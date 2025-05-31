@@ -43,19 +43,30 @@ Alternatively, you can create a Prettier configuration file (e.g., `.prettierrc.
 
 **`.prettierrc.js` (or `prettier.config.js`)**
 
-This package exports both CommonJS (CJS) and ES Module (ESM) formats. You can import it accordingly:
+This package exports both CommonJS (CJS) and ES Module (ESM) formats. Choose the appropriate example based on your project's module system:
+
+> **Note**: You can also use `prettier.config.cjs` to force CommonJS format even in projects with `"type": "module"` in package.json.
+
+For CommonJS (`.js` files without `"type": "module"` in package.json):
 
 ```javascript
-// For CommonJS (e.g., if your prettier.config.js is a .js file treated as CJS)
-// const prettierConfigReact = require('@tcd-devkit/prettier-config-react');
+const prettierConfigReact = require('@tcd-devkit/prettier-config-react');
 
-// For ES Modules (e.g., if your prettier.config.js is a .mjs file or package.json has "type": "module")
-// import prettierConfigReact from '@tcd-devkit/prettier-config-react';
+module.exports = {
+  ...prettierConfigReact,
+  // Your custom overrides can be added here
+  // For example, if you have custom Tailwind settings:
+  // tailwindConfig: './tailwind.config.js',
+};
+```
 
-// Then spread the imported config:
+For ES Modules (`.mjs` files or `.js` files with `"type": "module"` in package.json):
+
+```javascript
+import prettierConfigReact from '@tcd-devkit/prettier-config-react';
+
 export default {
-  // ...prettierConfigReact, // Choose one of the import methods above
-  ...require('@tcd-devkit/prettier-config-react'), // Defaulting to require for wider compatibility in basic .js files
+  ...prettierConfigReact,
   // Your custom overrides can be added here
   // For example, if you have custom Tailwind settings:
   // tailwindConfig: './tailwind.config.js',
