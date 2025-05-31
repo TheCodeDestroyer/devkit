@@ -1,6 +1,6 @@
 {
   "name": "@tcd-devkit/eslint-config-ts",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "ESLint Flat Configuration for TypeScript. This package provides base TypeScript linting rules using `typescript-eslint`, enforcing consistent code style and best practices for TypeScript projects.",
   "keywords": [
     "tcd-devkit",

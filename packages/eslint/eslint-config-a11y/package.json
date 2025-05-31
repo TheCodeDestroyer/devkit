@@ -1,6 +1,6 @@
 {
   "name": "@tcd-devkit/eslint-config-a11y",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "ESLint Flat Configuration for JSX A11y. This package provides accessibility (a11y) rules for JSX using `eslint-plugin-jsx-a11y`, helping to create more accessible web applications.",
   "keywords": [
     "tcd-devkit",

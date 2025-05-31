@@ -1,6 +1,6 @@
 {
   "name": "@tcd-devkit/scripts",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "CLI tool for @tcd-devkit providing linting (ESLint, Prettier, TypeScript) and formatting (ESLint --fix, Prettier --write) capabilities for web development projects.",
   "keywords": [
     "tcd-devkit",
