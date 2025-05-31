@@ -1,5 +1,5 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["github>thecodedestroyer/renovate-config"],
+  "extends": ["github>thecodedestroyer/renovate-config//fast.json"],
   "gitIgnoredAuthors": ["github+renovate@scharley.me"]
 }
