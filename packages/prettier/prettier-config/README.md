@@ -47,21 +47,32 @@ Alternatively, you can create a Prettier configuration file (e.g., `.prettierrc.
 
 **`.prettierrc.js` (or `prettier.config.js`)**
 
-This package exports both CommonJS (CJS) and ES Module (ESM) formats. You can import it accordingly:
+This package exports both CommonJS (CJS) and ES Module (ESM) formats. Choose the appropriate example based on your project's module system:
+
+> **Note**: You can also use `prettier.config.cjs` to force CommonJS format even in projects with `"type": "module"` in package.json.
+
+For CommonJS (`.js` files without `"type": "module"` in package.json):
 
 ```javascript
-// For CommonJS (e.g., if your prettier.config.js is a .js file treated as CJS)
-// const prettierConfig = require('@tcd-devkit/prettier-config');
+const prettierConfig = require('@tcd-devkit/prettier-config');
 
-// For ES Modules (e.g., if your prettier.config.js is a .mjs file or package.json has "type": "module")
-// import prettierConfig from '@tcd-devkit/prettier-config';
-
-// Then spread the imported config:
-export default {
-  // ...prettierConfig, // Choose one of the import methods above
-  ...require('@tcd-devkit/prettier-config'), // Defaulting to require for wider compatibility in basic .js files
+module.exports = {
+  ...prettierConfig,
   // Your custom overrides can be added here
-  // مثلا:
+  // For example:
+  // printWidth: 100,
+};
+```
+
+For ES Modules (`.mjs` files or `.js` files with `"type": "module"` in package.json):
+
+```javascript
+import prettierConfig from '@tcd-devkit/prettier-config';
+
+export default {
+  ...prettierConfig,
+  // Your custom overrides can be added here
+  // For example:
   // printWidth: 100,
 };
 ```
