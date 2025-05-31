@@ -10,7 +10,6 @@
     "resolvePackageJsonExports": true,
     "moduleDetection": "force",
     "verbatimModuleSyntax": true,
-    "rootDir": "${configDir}",
     "strict": true,
     "noUncheckedIndexedAccess": true,
     "erasableSyntaxOnly": true,
