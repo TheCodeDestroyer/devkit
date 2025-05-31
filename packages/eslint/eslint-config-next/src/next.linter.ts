@@ -1,6 +1,8 @@
-import { flatConfig as nextPluginConfigs } from '@next/eslint-plugin-next';
+import nextPlugin from '@next/eslint-plugin-next';
 import type { Linter } from 'eslint';
 import { defineConfig } from 'eslint/config';
+
+const { flatConfig: nextPluginConfigs } = nextPlugin;
 
 const nextCoreWebVitals = nextPluginConfigs.coreWebVitals as Linter.Config;
 
