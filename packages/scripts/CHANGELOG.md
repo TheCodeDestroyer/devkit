@@ -1,5 +1,13 @@
 # @tcd-devkit/scripts
 
+## 0.1.2
+
+### Patch Changes
+
+- [#24](https://github.com/TheCodeDestroyer/devkit/pull/24) [`bb6f55c`](https://github.com/TheCodeDestroyer/devkit/commit/bb6f55c85f89c498e228fada1024f2fe7013e10f) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency execa to v9.6.0
+
+- [#25](https://github.com/TheCodeDestroyer/devkit/pull/25) [`c3d7ba9`](https://github.com/TheCodeDestroyer/devkit/commit/c3d7ba9c3097a1780167dbb84e5217dbe4b2bae3) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.15.23
+
 ## 0.1.1
 
 ### Patch Changes
