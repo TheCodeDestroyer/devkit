@@ -11,7 +11,7 @@ import { reactHooksConfig } from '@tcd-devkit/eslint-config-react-hooks';
 import { tsConfig } from '@tcd-devkit/eslint-config-ts';
 
 const ignoresConfig = globalIgnores(
-  ['**/dist/**', '**/node_modules/**', '**/build/**'],
+  ['**/dist/**', '**/node_modules/**', '**/build/**', '**/.next/**'],
   '@tcd-devkit/eslint-config/ignores',
 );
 
