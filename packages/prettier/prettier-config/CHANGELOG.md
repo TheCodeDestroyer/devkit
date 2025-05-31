@@ -1,5 +1,13 @@
 # @tcd-devkit/prettier-config
 
+## 0.2.1
+
+### Patch Changes
+
+- [#31](https://github.com/TheCodeDestroyer/devkit/pull/31) [`732d158`](https://github.com/TheCodeDestroyer/devkit/commit/732d158f007bcbf1c7770bc4c8111dd6dc756080) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.15.24
+
+- [#34](https://github.com/TheCodeDestroyer/devkit/pull/34) [`3457b5a`](https://github.com/TheCodeDestroyer/devkit/commit/3457b5ab1816e2cb04ed90935ff2d5572cb86f83) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency @ianvs/prettier-plugin-sort-imports to v4.4.2
+
 ## 0.2.0
 
 ### Minor Changes
