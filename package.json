@@ -24,6 +24,7 @@
     "@changesets/changelog-github": "0.5.1",
     "@changesets/cli": "2.29.4",
     "@commitlint/cli": "19.8.1",
+    "@commitlint/types": "19.8.1",
     "@tcd-devkit/commitlint-config": "workspace:*",
     "@tcd-devkit/eslint-preset-node": "workspace:*",
     "@tcd-devkit/prettier-config": "workspace:*",
