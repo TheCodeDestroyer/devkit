@@ -1,5 +1,11 @@
 # @tcd-devkit/eslint-config-import
 
+## 0.1.4
+
+### Patch Changes
+
+- [#36](https://github.com/TheCodeDestroyer/devkit/pull/36) [`d8428ec`](https://github.com/TheCodeDestroyer/devkit/commit/d8428ec42efc160fb7b043f3cb8fd5ff9a7163bd) Thanks [@TheCodeDestroyer](https://github.com/TheCodeDestroyer)! - Add missing TypeScript file extensions
+
 ## 0.1.3
 
 ### Patch Changes
