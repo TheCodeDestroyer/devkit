@@ -1,5 +1,13 @@
 # @tcd-devkit/eslint-config-ts
 
+## 0.1.2
+
+### Patch Changes
+
+- [#31](https://github.com/TheCodeDestroyer/devkit/pull/31) [`732d158`](https://github.com/TheCodeDestroyer/devkit/commit/732d158f007bcbf1c7770bc4c8111dd6dc756080) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.15.24
+
+- [#32](https://github.com/TheCodeDestroyer/devkit/pull/32) [`26edbe5`](https://github.com/TheCodeDestroyer/devkit/commit/26edbe5ae9dc3af1a79e8174ed009386232f8923) Thanks [@TheCodeDestroyer](https://github.com/TheCodeDestroyer)! - Disable @typescript-eslint/unbound-method rule
+
 ## 0.1.1
 
 ### Patch Changes

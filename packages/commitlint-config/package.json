@@ -1,6 +1,6 @@
 {
   "name": "@tcd-devkit/commitlint-config",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "private": false,
   "description": "Shareable commitlint configuration for enforcing conventional commit messages.",
   "keywords": [
