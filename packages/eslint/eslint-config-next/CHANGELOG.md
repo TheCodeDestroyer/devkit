@@ -1,5 +1,15 @@
 # @tcd-devkit/eslint-config-next
 
+## 0.1.3
+
+### Patch Changes
+
+- [#31](https://github.com/TheCodeDestroyer/devkit/pull/31) [`732d158`](https://github.com/TheCodeDestroyer/devkit/commit/732d158f007bcbf1c7770bc4c8111dd6dc756080) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.15.24
+
+- [#35](https://github.com/TheCodeDestroyer/devkit/pull/35) [`41f4aa5`](https://github.com/TheCodeDestroyer/devkit/commit/41f4aa5740a6818346d1d617bb43c7c1b8eb0c4b) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency @next/eslint-plugin-next to v15.4.0-canary.56
+
+- [#32](https://github.com/TheCodeDestroyer/devkit/pull/32) [`04f2325`](https://github.com/TheCodeDestroyer/devkit/commit/04f232585435d4e1292d3ebe095c838f5554e3e7) Thanks [@TheCodeDestroyer](https://github.com/TheCodeDestroyer)! - Fix ESLint NextJS config
+
 ## 0.1.2
 
 ### Patch Changes

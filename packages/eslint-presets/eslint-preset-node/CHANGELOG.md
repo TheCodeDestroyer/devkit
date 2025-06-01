@@ -1,5 +1,16 @@
 # @tcd-devkit/eslint-preset-node
 
+## 0.1.3
+
+### Patch Changes
+
+- [#31](https://github.com/TheCodeDestroyer/devkit/pull/31) [`732d158`](https://github.com/TheCodeDestroyer/devkit/commit/732d158f007bcbf1c7770bc4c8111dd6dc756080) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.15.24
+
+- Updated dependencies [[`732d158`](https://github.com/TheCodeDestroyer/devkit/commit/732d158f007bcbf1c7770bc4c8111dd6dc756080), [`508f3c4`](https://github.com/TheCodeDestroyer/devkit/commit/508f3c41e4f9ce3b389b3a6f8751701225113c73), [`26edbe5`](https://github.com/TheCodeDestroyer/devkit/commit/26edbe5ae9dc3af1a79e8174ed009386232f8923)]:
+  - @tcd-devkit/eslint-config-import-ts@0.1.3
+  - @tcd-devkit/eslint-config-ts@0.1.2
+  - @tcd-devkit/eslint-config@0.1.2
+
 ## 0.1.2
 
 ### Patch Changes
