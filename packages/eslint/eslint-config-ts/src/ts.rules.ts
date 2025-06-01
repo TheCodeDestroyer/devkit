@@ -11,6 +11,14 @@ export const tsRules = {
   '@typescript-eslint/naming-convention': ['off'],
   '@typescript-eslint/unbound-method': ['off'],
   '@typescript-eslint/no-loop-func': ['error'],
+  '@typescript-eslint/no-misused-promises': [
+    'error',
+    {
+      checksVoidReturn: {
+        attributes: false,
+      },
+    },
+  ],
   '@typescript-eslint/no-use-before-define': ['error'],
   '@typescript-eslint/return-await': ['error'],
   '@typescript-eslint/switch-exhaustiveness-check': [
