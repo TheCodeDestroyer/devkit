@@ -157,6 +157,9 @@ export const runEslint = async (
   const eslintArgs = [];
 
   if (isFix) eslintArgs.push('--fix');
+  if (options.maxWarnings !== undefined) {
+    eslintArgs.push('--max-warnings', options.maxWarnings.toString());
+  }
 
   await handleCache(options, eslintArgs, './.eslintcache');
 
