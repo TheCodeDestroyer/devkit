@@ -1,5 +1,11 @@
 # @tcd-devkit/eslint-config-ts
 
+## 0.1.4
+
+### Patch Changes
+
+- [#40](https://github.com/TheCodeDestroyer/devkit/pull/40) [`d8506dd`](https://github.com/TheCodeDestroyer/devkit/commit/d8506dddcbf367d8d37fa8e04af882e683c025b3) Thanks [@TheCodeDestroyer](https://github.com/TheCodeDestroyer)! - Disable attribute checking for void promises
+
 ## 0.1.3
 
 ### Patch Changes
