@@ -9,6 +9,7 @@ export const tsRules = {
   '@typescript-eslint/consistent-type-imports': ['error'],
   '@typescript-eslint/default-param-last': ['error'],
   '@typescript-eslint/naming-convention': ['off'],
+  '@typescript-eslint/unbound-method': ['off'],
   '@typescript-eslint/no-loop-func': ['error'],
   '@typescript-eslint/no-use-before-define': ['error'],
   '@typescript-eslint/return-await': ['error'],
@@ -20,5 +21,7 @@ export const tsRules = {
     },
   ],
 } satisfies Linter.RulesRecord;
+
+console.log('source tsRules:', tsRules);
 
 export type CustomRule = keyof typeof tsRules;
