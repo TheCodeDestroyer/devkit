@@ -9,7 +9,7 @@ const importRecommended = importPluginConfigs.recommended as Linter.Config;
 export const importConfig = defineConfig({
   name: '@tcd-devkit/eslint-config-import',
   extends: [importRecommended],
-  files: ['**/*.{js,jsx,mjs,cjs}'],
+  files: ['**/*.{js,jsx,ts,tsx,mjs,cjs}'],
   rules: importRules,
 });
 

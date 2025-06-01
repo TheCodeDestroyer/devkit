@@ -54,6 +54,11 @@ export const ignorePathOption = new Option(
   'Path to ignore file for Prettier',
 );
 
+export const maxWarningsOption = new Option(
+  '--max-warnings <number>',
+  'Maximum number of warnings allowed before failing',
+).default('0');
+
 export const projectOption = new Option(
   '--project <path>',
   'Path to TS config for TSC',

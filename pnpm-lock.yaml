@@ -17,6 +17,9 @@ importers:
       '@commitlint/cli':
         specifier: 19.8.1
         version: 19.8.1(@types/node@22.15.24)(typescript@5.8.3)
+      '@commitlint/types':
+        specifier: 19.8.1
+        version: 19.8.1
       '@tcd-devkit/commitlint-config':
         specifier: workspace:*
         version: link:packages/commitlint-config
@@ -139,6 +142,9 @@ importers:
       eslint-config-prettier:
         specifier: 10.1.5
         version: 10.1.5(eslint@9.27.0(jiti@2.4.2))
+      globals:
+        specifier: 16.2.0
+        version: 16.2.0
     devDependencies:
       '@tcd-devkit/scripts':
         specifier: workspace:*

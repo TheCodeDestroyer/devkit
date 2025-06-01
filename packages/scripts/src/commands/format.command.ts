@@ -26,7 +26,6 @@ export const registerFormatCommand = (program: Command) => {
     .addOption(noCacheOption)
     .addOption(refreshCacheOption)
     .addOption(ignorePathOption)
-
     .action(async (files: string[], options: FormatCommandOptions) => {
       const toolsToRun = getToolsToRun(FORMAT_TOOLS, options);
       let overallSuccess = true;

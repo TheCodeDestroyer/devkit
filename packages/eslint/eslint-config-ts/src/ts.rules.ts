@@ -22,6 +22,4 @@ export const tsRules = {
   ],
 } satisfies Linter.RulesRecord;
 
-console.log('source tsRules:', tsRules);
-
 export type CustomRule = keyof typeof tsRules;

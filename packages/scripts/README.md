@@ -64,11 +64,12 @@ Runs ESLint, Prettier (check mode), and TypeScript type checking.
 - `--refresh-cache`: Force refresh of the cache.
 - `--ignore-path <path>`: Path to a custom ignore file (e.g., `.myignore`).
 - `--project <path>`: Path to your `tsconfig.json` or equivalent TypeScript project file. (e.g., `tcd-scripts lint --project ./tsconfig.build.json`)
+- `--max-warnings <number>`: Maximum number of warnings allowed before failing. (Default: 0)
 
 **Example:**
 
 ```bash
-tcd-scripts lint ./src ./tests --only eslint --project ./tsconfig.lint.json
+tcd-scripts lint ./src ./tests --only eslint --project ./tsconfig.lint.json --max-warnings 10
 ```
 
 #### `tcd-scripts format [files...]` (alias: `tcd-scripts f`)

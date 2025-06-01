@@ -5,6 +5,7 @@ import {
   ignorePathOption,
   lintOnlyOption,
   lintSkipOption,
+  maxWarningsOption,
   noCacheOption,
   projectOption,
   refreshCacheOption,
@@ -31,6 +32,7 @@ export const registerLintCommand = (program: Command) => {
     .addOption(refreshCacheOption)
     .addOption(ignorePathOption)
     .addOption(projectOption)
+    .addOption(maxWarningsOption)
     .action(async (files, options: LintCommandOptions) => {
       const toolsToRun = getToolsToRun(LINT_TOOLS, options);
       let overallSuccess = true;

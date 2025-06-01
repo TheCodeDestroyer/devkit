@@ -9,6 +9,7 @@ interface BaseCommandOptions {
   refreshCache?: boolean;
   cacheLocation?: string;
   ignorePath?: string;
+  maxWarnings?: string;
 }
 
 export interface ToolSelectionOptions<TTool extends string> {
