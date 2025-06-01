@@ -9,10 +9,6 @@ describe(`${ruleId} rule`, () => {
   it('should have a disabled rule', () => {
     const ruleValue = tsRules[ruleId];
 
-    console.log('tsRules:', tsRules);
-    console.log('ruleId:', ruleId);
-    console.log('ruleValue:', ruleValue);
-
     expect(ruleValue).toEqual(['off']);
   });
 });
