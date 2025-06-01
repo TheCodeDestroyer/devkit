@@ -1,5 +1,13 @@
 # @tcd-devkit/eslint-preset-next
 
+## 0.1.6
+
+### Patch Changes
+
+- Updated dependencies [[`d8506dd`](https://github.com/TheCodeDestroyer/devkit/commit/d8506dddcbf367d8d37fa8e04af882e683c025b3)]:
+  - @tcd-devkit/eslint-config-ts@0.1.4
+  - @tcd-devkit/eslint-config-import-ts@0.1.4
+
 ## 0.1.5
 
 ### Patch Changes
