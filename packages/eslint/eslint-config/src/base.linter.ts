@@ -24,7 +24,7 @@ export const baseConfig: Linter.Config[] = defineConfig([
   {
     name: '@tcd-devkit/eslint-config',
     extends: [eslintPlugin.configs.recommended],
-    files: ['**/*.{js,jsx,mjs,cjs}'],
+    files: ['**/*.{js,jsx,ts,tsx,mjs,cjs}'],
     rules: baseRules,
   },
 ]);
