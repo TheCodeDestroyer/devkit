@@ -1,5 +1,11 @@
 # @tcd-devkit/eslint-config
 
+## 0.1.4
+
+### Patch Changes
+
+- [#38](https://github.com/TheCodeDestroyer/devkit/pull/38) [`cc845ff`](https://github.com/TheCodeDestroyer/devkit/commit/cc845ffaaabfa87e154383977798464901b4d57c) Thanks [@TheCodeDestroyer](https://github.com/TheCodeDestroyer)! - Add exceptions for id-length rule
+
 ## 0.1.3
 
 ### Patch Changes
