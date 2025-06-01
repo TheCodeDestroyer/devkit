@@ -1,5 +1,11 @@
 # @tcd-devkit/eslint-config-ts
 
+## 0.1.3
+
+### Patch Changes
+
+- [#36](https://github.com/TheCodeDestroyer/devkit/pull/36) [`f7296cd`](https://github.com/TheCodeDestroyer/devkit/commit/f7296cda34804bacb0f41f5c55313e8bd33d2eef) Thanks [@TheCodeDestroyer](https://github.com/TheCodeDestroyer)! - Fix ESLint errors
+
 ## 0.1.2
 
 ### Patch Changes

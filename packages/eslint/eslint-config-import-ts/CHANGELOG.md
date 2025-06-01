@@ -1,5 +1,12 @@
 # @tcd-devkit/eslint-config-import-ts
 
+## 0.1.4
+
+### Patch Changes
+
+- Updated dependencies [[`d8428ec`](https://github.com/TheCodeDestroyer/devkit/commit/d8428ec42efc160fb7b043f3cb8fd5ff9a7163bd)]:
+  - @tcd-devkit/eslint-config-import@0.1.4
+
 ## 0.1.3
 
 ### Patch Changes

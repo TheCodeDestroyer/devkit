@@ -1,5 +1,11 @@
 # @tcd-devkit/scripts
 
+## 0.1.4
+
+### Patch Changes
+
+- [#36](https://github.com/TheCodeDestroyer/devkit/pull/36) [`4c3c3f4`](https://github.com/TheCodeDestroyer/devkit/commit/4c3c3f4dc9256138ade29b8c5e86347cf214dbff) Thanks [@TheCodeDestroyer](https://github.com/TheCodeDestroyer)! - Add max-warnings arg for ESLint
+
 ## 0.1.3
 
 ### Patch Changes

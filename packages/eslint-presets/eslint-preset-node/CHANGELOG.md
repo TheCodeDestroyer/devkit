@@ -1,5 +1,16 @@
 # @tcd-devkit/eslint-preset-node
 
+## 0.1.4
+
+### Patch Changes
+
+- [#36](https://github.com/TheCodeDestroyer/devkit/pull/36) [`085a011`](https://github.com/TheCodeDestroyer/devkit/commit/085a011997fa19c8c3ae2d9ac43a311a39525fe7) Thanks [@TheCodeDestroyer](https://github.com/TheCodeDestroyer)! - Properly configure Node ENV
+
+- Updated dependencies [[`f7296cd`](https://github.com/TheCodeDestroyer/devkit/commit/f7296cda34804bacb0f41f5c55313e8bd33d2eef), [`d8428ec`](https://github.com/TheCodeDestroyer/devkit/commit/d8428ec42efc160fb7b043f3cb8fd5ff9a7163bd)]:
+  - @tcd-devkit/eslint-config-ts@0.1.3
+  - @tcd-devkit/eslint-config@0.1.3
+  - @tcd-devkit/eslint-config-import-ts@0.1.4
+
 ## 0.1.3
 
 ### Patch Changes
