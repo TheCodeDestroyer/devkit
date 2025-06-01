@@ -44,7 +44,10 @@ export const baseRules = {
     },
   ] satisfies ESLintRules['no-restricted-syntax'],
   'grouped-accessor-pairs': ['error', 'getBeforeSet'],
-  'id-length': ['error'],
+  'id-length': [
+    'error',
+    { exceptions: ['i', 'e', '_'] },
+  ] satisfies ESLintRules['id-length'],
   'max-classes-per-file': ['error'],
   'max-depth': ['error'],
   'max-nested-callbacks': [
