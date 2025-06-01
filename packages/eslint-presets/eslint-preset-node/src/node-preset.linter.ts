@@ -1,6 +1,7 @@
 import type { Linter } from 'eslint';
 import prettierConfig from 'eslint-config-prettier/flat';
 import { defineConfig, globalIgnores } from 'eslint/config';
+import globals from 'globals';
 
 import { baseConfig } from '@tcd-devkit/eslint-config';
 import { importTsConfig } from '@tcd-devkit/eslint-config-import-ts';
@@ -14,6 +15,11 @@ const ignoresConfig = globalIgnores(
 export const nodePreset: Linter.Config[] = defineConfig([
   {
     name: '@tcd-devkit/eslint-preset-node',
+    languageOptions: {
+      globals: {
+        ...globals.node,
+      },
+    },
     extends: [baseConfig, tsConfig, importTsConfig],
   },
   prettierConfig,
