@@ -59,7 +59,7 @@
   },
   "dependencies": {
     "@tcd-devkit/prettier-config": "workspace:*",
-    "prettier-plugin-tailwindcss": "0.6.11"
+    "prettier-plugin-tailwindcss": "0.6.12"
   },
   "devDependencies": {
     "@tcd-devkit/scripts": "workspace:*",
