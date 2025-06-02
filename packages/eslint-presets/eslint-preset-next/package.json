@@ -71,7 +71,7 @@
     "@tcd-devkit/scripts": "workspace:*",
     "@tcd-devkit/tsconfig": "workspace:*",
     "@tcd-devkit/tsup-config": "workspace:*",
-    "@types/node": "22.15.26",
+    "@types/node": "22.15.29",
     "tsup": "8.5.0"
   },
   "peerDependencies": {
