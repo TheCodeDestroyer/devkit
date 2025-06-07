@@ -1,5 +1,15 @@
 # @tcd-devkit/prettier-config
 
+## 0.2.2
+
+### Patch Changes
+
+- [#42](https://github.com/TheCodeDestroyer/devkit/pull/42) [`8132505`](https://github.com/TheCodeDestroyer/devkit/commit/8132505b81dccb163c689a98495ac18f47e35e02) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.15.26
+
+- [#45](https://github.com/TheCodeDestroyer/devkit/pull/45) [`fad87a4`](https://github.com/TheCodeDestroyer/devkit/commit/fad87a46ccae63b816ea3a4223c825972a5d6a08) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.15.29
+
+- [#52](https://github.com/TheCodeDestroyer/devkit/pull/52) [`f67884a`](https://github.com/TheCodeDestroyer/devkit/commit/f67884a4c73859d36ae1e43cfb272f5cd9e134ca) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency prettier-plugin-packagejson to v2.5.15
+
 ## 0.2.1
 
 ### Patch Changes

@@ -1,6 +1,6 @@
 {
   "name": "@tcd-devkit/tsup-config",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "private": false,
   "description": "Shareable tsup configuration for building TypeScript libraries. Provides sensible defaults, focusing on reliable declaration map generation and ESM/CJS compatibility.",
   "keywords": [

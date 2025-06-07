@@ -1,5 +1,15 @@
 # @tcd-devkit/eslint-config-a11y
 
+## 0.1.3
+
+### Patch Changes
+
+- [#42](https://github.com/TheCodeDestroyer/devkit/pull/42) [`8132505`](https://github.com/TheCodeDestroyer/devkit/commit/8132505b81dccb163c689a98495ac18f47e35e02) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.15.26
+
+- [#45](https://github.com/TheCodeDestroyer/devkit/pull/45) [`fad87a4`](https://github.com/TheCodeDestroyer/devkit/commit/fad87a46ccae63b816ea3a4223c825972a5d6a08) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.15.29
+
+- [#49](https://github.com/TheCodeDestroyer/devkit/pull/49) [`e4e34be`](https://github.com/TheCodeDestroyer/devkit/commit/e4e34be5f4d2122ed9580d4a6909bd1796fbf263) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update eslint monorepo to v9.28.0
+
 ## 0.1.2
 
 ### Patch Changes

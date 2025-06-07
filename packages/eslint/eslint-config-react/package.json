@@ -1,6 +1,6 @@
 {
   "name": "@tcd-devkit/eslint-config-react",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "ESLint Flat Configuration for React projects. This package provides core React linting rules using `eslint-plugin-react`, enforcing best practices and consistency for React applications.",
   "keywords": [
     "tcd-devkit",

@@ -1,5 +1,22 @@
 # @tcd-devkit/eslint-preset-next
 
+## 0.1.7
+
+### Patch Changes
+
+- [#42](https://github.com/TheCodeDestroyer/devkit/pull/42) [`8132505`](https://github.com/TheCodeDestroyer/devkit/commit/8132505b81dccb163c689a98495ac18f47e35e02) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.15.26
+
+- [#45](https://github.com/TheCodeDestroyer/devkit/pull/45) [`fad87a4`](https://github.com/TheCodeDestroyer/devkit/commit/fad87a46ccae63b816ea3a4223c825972a5d6a08) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.15.29
+
+- Updated dependencies [[`8132505`](https://github.com/TheCodeDestroyer/devkit/commit/8132505b81dccb163c689a98495ac18f47e35e02), [`72c9124`](https://github.com/TheCodeDestroyer/devkit/commit/72c91242bf74757f5b888d8c54b2b661a45cc4c8), [`fad87a4`](https://github.com/TheCodeDestroyer/devkit/commit/fad87a46ccae63b816ea3a4223c825972a5d6a08), [`5e311ef`](https://github.com/TheCodeDestroyer/devkit/commit/5e311efaa8eca153f2785b152ca1e84d9a628965), [`e4e34be`](https://github.com/TheCodeDestroyer/devkit/commit/e4e34be5f4d2122ed9580d4a6909bd1796fbf263), [`7c21368`](https://github.com/TheCodeDestroyer/devkit/commit/7c21368c1a0ddd1a63c9653921624e7d2a78b4b1), [`00864d4`](https://github.com/TheCodeDestroyer/devkit/commit/00864d4fc8a11052ba3bf0b98a937fab3c1474ab), [`bbaecdd`](https://github.com/TheCodeDestroyer/devkit/commit/bbaecddce5da5096c9e9d9b521d8ccd753d0ad4f), [`7b28cc2`](https://github.com/TheCodeDestroyer/devkit/commit/7b28cc2a36de048fc7739e6e636a37955a942da2), [`002ddf6`](https://github.com/TheCodeDestroyer/devkit/commit/002ddf6bca43b417ec39299f735d224b0a9bb735), [`a150437`](https://github.com/TheCodeDestroyer/devkit/commit/a1504377fce580b89457692c837c3614cc04259b), [`f2080e9`](https://github.com/TheCodeDestroyer/devkit/commit/f2080e902bfab6eaabc5833a948f4f5024eb923e), [`d12e96e`](https://github.com/TheCodeDestroyer/devkit/commit/d12e96ecd8de5a29d94f1fbf4e310a4abb0a454f)]:
+  - @tcd-devkit/eslint-config-a11y@0.1.3
+  - @tcd-devkit/eslint-config-import-ts@0.1.5
+  - @tcd-devkit/eslint-config-next@0.1.4
+  - @tcd-devkit/eslint-config-react-hooks@0.0.4
+  - @tcd-devkit/eslint-config-react@0.1.3
+  - @tcd-devkit/eslint-config-ts@0.1.5
+  - @tcd-devkit/eslint-config@0.1.5
+
 ## 0.1.6
 
 ### Patch Changes

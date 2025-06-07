@@ -1,5 +1,26 @@
 # @tcd-devkit/eslint-config-import-ts
 
+## 0.1.5
+
+### Patch Changes
+
+- [#42](https://github.com/TheCodeDestroyer/devkit/pull/42) [`8132505`](https://github.com/TheCodeDestroyer/devkit/commit/8132505b81dccb163c689a98495ac18f47e35e02) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.15.26
+
+- [#45](https://github.com/TheCodeDestroyer/devkit/pull/45) [`fad87a4`](https://github.com/TheCodeDestroyer/devkit/commit/fad87a46ccae63b816ea3a4223c825972a5d6a08) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.15.29
+
+- [#47](https://github.com/TheCodeDestroyer/devkit/pull/47) [`5e311ef`](https://github.com/TheCodeDestroyer/devkit/commit/5e311efaa8eca153f2785b152ca1e84d9a628965) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency eslint-plugin-import-x to v4.15.0
+
+- [#49](https://github.com/TheCodeDestroyer/devkit/pull/49) [`e4e34be`](https://github.com/TheCodeDestroyer/devkit/commit/e4e34be5f4d2122ed9580d4a6909bd1796fbf263) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update eslint monorepo to v9.28.0
+
+- [#51](https://github.com/TheCodeDestroyer/devkit/pull/51) [`00864d4`](https://github.com/TheCodeDestroyer/devkit/commit/00864d4fc8a11052ba3bf0b98a937fab3c1474ab) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency eslint-import-resolver-typescript to v4.4.2
+
+- [#56](https://github.com/TheCodeDestroyer/devkit/pull/56) [`002ddf6`](https://github.com/TheCodeDestroyer/devkit/commit/002ddf6bca43b417ec39299f735d224b0a9bb735) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency vitest to v3.2.1
+
+- [#58](https://github.com/TheCodeDestroyer/devkit/pull/58) [`f2080e9`](https://github.com/TheCodeDestroyer/devkit/commit/f2080e902bfab6eaabc5833a948f4f5024eb923e) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update typescript-eslint monorepo to v8.33.1
+
+- Updated dependencies [[`8132505`](https://github.com/TheCodeDestroyer/devkit/commit/8132505b81dccb163c689a98495ac18f47e35e02), [`fad87a4`](https://github.com/TheCodeDestroyer/devkit/commit/fad87a46ccae63b816ea3a4223c825972a5d6a08), [`5e311ef`](https://github.com/TheCodeDestroyer/devkit/commit/5e311efaa8eca153f2785b152ca1e84d9a628965), [`e4e34be`](https://github.com/TheCodeDestroyer/devkit/commit/e4e34be5f4d2122ed9580d4a6909bd1796fbf263), [`002ddf6`](https://github.com/TheCodeDestroyer/devkit/commit/002ddf6bca43b417ec39299f735d224b0a9bb735)]:
+  - @tcd-devkit/eslint-config-import@0.1.5
+
 ## 0.1.4
 
 ### Patch Changes
