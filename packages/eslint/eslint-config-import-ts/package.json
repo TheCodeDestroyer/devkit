@@ -68,7 +68,7 @@
   "dependencies": {
     "@tcd-devkit/eslint-config-import": "workspace:*",
     "@typescript-eslint/parser": "8.33.1",
-    "eslint-import-resolver-typescript": "4.4.2",
+    "eslint-import-resolver-typescript": "4.4.3",
     "eslint-plugin-import-x": "4.15.1"
   },
   "devDependencies": {
