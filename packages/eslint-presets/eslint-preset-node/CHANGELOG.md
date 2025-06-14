@@ -1,5 +1,22 @@
 # @tcd-devkit/eslint-preset-node
 
+## 0.1.7
+
+### Patch Changes
+
+- [#42](https://github.com/TheCodeDestroyer/devkit/pull/42) [`8132505`](https://github.com/TheCodeDestroyer/devkit/commit/8132505b81dccb163c689a98495ac18f47e35e02) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.15.26
+
+- [#45](https://github.com/TheCodeDestroyer/devkit/pull/45) [`fad87a4`](https://github.com/TheCodeDestroyer/devkit/commit/fad87a46ccae63b816ea3a4223c825972a5d6a08) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.15.29
+
+- [#63](https://github.com/TheCodeDestroyer/devkit/pull/63) [`bc28954`](https://github.com/TheCodeDestroyer/devkit/commit/bc2895460827e304b48419284cf23b255efbfd45) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.15.30
+
+- [#75](https://github.com/TheCodeDestroyer/devkit/pull/75) [`10be14a`](https://github.com/TheCodeDestroyer/devkit/commit/10be14a7edf75db5ce9f4ed508ac3e6c749ae941) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.15.31
+
+- Updated dependencies [[`8132505`](https://github.com/TheCodeDestroyer/devkit/commit/8132505b81dccb163c689a98495ac18f47e35e02), [`fad87a4`](https://github.com/TheCodeDestroyer/devkit/commit/fad87a46ccae63b816ea3a4223c825972a5d6a08), [`5e311ef`](https://github.com/TheCodeDestroyer/devkit/commit/5e311efaa8eca153f2785b152ca1e84d9a628965), [`e4e34be`](https://github.com/TheCodeDestroyer/devkit/commit/e4e34be5f4d2122ed9580d4a6909bd1796fbf263), [`00864d4`](https://github.com/TheCodeDestroyer/devkit/commit/00864d4fc8a11052ba3bf0b98a937fab3c1474ab), [`002ddf6`](https://github.com/TheCodeDestroyer/devkit/commit/002ddf6bca43b417ec39299f735d224b0a9bb735), [`f2080e9`](https://github.com/TheCodeDestroyer/devkit/commit/f2080e902bfab6eaabc5833a948f4f5024eb923e), [`ccacc67`](https://github.com/TheCodeDestroyer/devkit/commit/ccacc67d8baf22480593144a9dc3a131ae6284d6), [`ce16328`](https://github.com/TheCodeDestroyer/devkit/commit/ce1632820b4c2703d934786b8f73c52fd1151be9), [`bc28954`](https://github.com/TheCodeDestroyer/devkit/commit/bc2895460827e304b48419284cf23b255efbfd45), [`be0d9e4`](https://github.com/TheCodeDestroyer/devkit/commit/be0d9e43b7d6634c88200fae51ac5ecf79190a00), [`fbed4d8`](https://github.com/TheCodeDestroyer/devkit/commit/fbed4d87ab0a7601ef820d8d52078cccce9fdfd1), [`b0af50f`](https://github.com/TheCodeDestroyer/devkit/commit/b0af50f237e8d82ade30188d752dac19ff648ff6), [`10be14a`](https://github.com/TheCodeDestroyer/devkit/commit/10be14a7edf75db5ce9f4ed508ac3e6c749ae941)]:
+  - @tcd-devkit/eslint-config-import-ts@0.1.5
+  - @tcd-devkit/eslint-config-ts@0.1.5
+  - @tcd-devkit/eslint-config@0.1.5
+
 ## 0.1.6
 
 ### Patch Changes
