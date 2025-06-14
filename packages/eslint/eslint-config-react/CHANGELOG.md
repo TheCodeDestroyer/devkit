@@ -1,5 +1,25 @@
 # @tcd-devkit/eslint-config-react
 
+## 0.1.3
+
+### Patch Changes
+
+- [#42](https://github.com/TheCodeDestroyer/devkit/pull/42) [`8132505`](https://github.com/TheCodeDestroyer/devkit/commit/8132505b81dccb163c689a98495ac18f47e35e02) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.15.26
+
+- [#45](https://github.com/TheCodeDestroyer/devkit/pull/45) [`fad87a4`](https://github.com/TheCodeDestroyer/devkit/commit/fad87a46ccae63b816ea3a4223c825972a5d6a08) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.15.29
+
+- [#49](https://github.com/TheCodeDestroyer/devkit/pull/49) [`e4e34be`](https://github.com/TheCodeDestroyer/devkit/commit/e4e34be5f4d2122ed9580d4a6909bd1796fbf263) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update eslint monorepo to v9.28.0
+
+- [#56](https://github.com/TheCodeDestroyer/devkit/pull/56) [`002ddf6`](https://github.com/TheCodeDestroyer/devkit/commit/002ddf6bca43b417ec39299f735d224b0a9bb735) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency vitest to v3.2.1
+
+- [#61](https://github.com/TheCodeDestroyer/devkit/pull/61) [`ccacc67`](https://github.com/TheCodeDestroyer/devkit/commit/ccacc67d8baf22480593144a9dc3a131ae6284d6) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency vitest to v3.2.2
+
+- [#63](https://github.com/TheCodeDestroyer/devkit/pull/63) [`bc28954`](https://github.com/TheCodeDestroyer/devkit/commit/bc2895460827e304b48419284cf23b255efbfd45) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.15.30
+
+- [#72](https://github.com/TheCodeDestroyer/devkit/pull/72) [`fbed4d8`](https://github.com/TheCodeDestroyer/devkit/commit/fbed4d87ab0a7601ef820d8d52078cccce9fdfd1) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency vitest to v3.2.3
+
+- [#75](https://github.com/TheCodeDestroyer/devkit/pull/75) [`10be14a`](https://github.com/TheCodeDestroyer/devkit/commit/10be14a7edf75db5ce9f4ed508ac3e6c749ae941) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.15.31
+
 ## 0.1.2
 
 ### Patch Changes
