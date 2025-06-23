@@ -316,8 +316,8 @@ importers:
   packages/eslint/eslint-config-next:
     dependencies:
       '@next/eslint-plugin-next':
-        specifier: 15.4.0-canary.86
-        version: 15.4.0-canary.86
+        specifier: 15.4.0-canary.87
+        version: 15.4.0-canary.87
     devDependencies:
       '@tcd-devkit/internal-utils':
         specifier: workspace:*
@@ -1058,8 +1058,8 @@ packages:
   '@napi-rs/wasm-runtime@0.2.11':
     resolution: {integrity: sha512-9DPkXtvHydrcOsopiYpUgPHpmj0HWZKMUnL2dZqpvC42lsratuBG06V5ipyno0fUek5VlFsNQ+AcFATSrJXgMA==}
 
-  '@next/eslint-plugin-next@15.4.0-canary.86':
-    resolution: {integrity: sha512-cOlp6ajA1ptiBxiProcXaNAR88O5ck3IwGJr+A5SnNKU4iTUg4nP0K5lS4Mkage+LAMIQ8dImkLR53PpebXICA==}
+  '@next/eslint-plugin-next@15.4.0-canary.87':
+    resolution: {integrity: sha512-Fk/zM3I3+ukLyz5Pekm/QasD6gwBhmFM3VDSkhIfSxS1xHoVovl7A5k3H0WN5eF22myVLSrHAMGWAMD14heO0w==}
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -3947,7 +3947,7 @@ snapshots:
       '@tybys/wasm-util': 0.9.0
     optional: true
 
-  '@next/eslint-plugin-next@15.4.0-canary.86':
+  '@next/eslint-plugin-next@15.4.0-canary.87':
     dependencies:
       fast-glob: 3.3.1
 
