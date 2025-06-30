@@ -1,6 +1,6 @@
 {
   "name": "@tcd-devkit/tsconfig",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "description": "Shareable base TypeScript configurations (tsconfig.json) for various project types within the @tcd-devkit ecosystem.",
   "keywords": [

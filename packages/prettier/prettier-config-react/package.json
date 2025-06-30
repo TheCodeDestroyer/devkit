@@ -1,6 +1,6 @@
 {
   "name": "@tcd-devkit/prettier-config-react",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Shareable Prettier configuration for React projects within the @tcd-devkit ecosystem. Extends the base @tcd-devkit/prettier-config and adds Tailwind CSS plugin support.",
   "keywords": [
     "tcd-devkit",
