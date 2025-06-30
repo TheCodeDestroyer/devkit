@@ -6,6 +6,7 @@ export const tsRules = {
   'no-loop-func': ['off'],
   'no-use-before-define': ['off'],
   'no-duplicate-imports': ['off'],
+  '@typescript-eslint/no-unused-vars': ['error', { varsIgnorePattern: '^_' }],
   '@typescript-eslint/consistent-type-imports': ['error'],
   '@typescript-eslint/default-param-last': ['error'],
   '@typescript-eslint/naming-convention': ['off'],
