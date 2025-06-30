@@ -10,8 +10,8 @@ const ruleId: CustomRule = 'id-length';
 describe(`${ruleId} rule`, () => {
   it('should FAIL when identifier is too short', async () => {
     const code = `
-      const x = 1;
-      const y = 2;
+      const a = 1;
+      const b = 2;
     `;
     const messages = await getLintMessagesForRule(baseConfig, code, ruleId);
 
@@ -22,6 +22,21 @@ describe(`${ruleId} rule`, () => {
     const code = `
       const value = 1;
       const count = 2;
+    `;
+    const messages = await getLintMessagesForRule(baseConfig, code, ruleId);
+
+    expect(messages).toHaveLength(0);
+  });
+
+  it('should PASS when identifiers are on exceptions list', async () => {
+    const code = `
+      const i = 1;
+      const e = 2;
+      const _ = 3;
+      const x = 4;
+      const y = 5;
+      const z = 6;
+      const q = 7;
     `;
     const messages = await getLintMessagesForRule(baseConfig, code, ruleId);
 
