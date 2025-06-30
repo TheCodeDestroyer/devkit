@@ -46,7 +46,7 @@ export const baseRules = {
   'grouped-accessor-pairs': ['error', 'getBeforeSet'],
   'id-length': [
     'error',
-    { exceptions: ['i', 'e', '_'] },
+    { exceptions: ['i', 'e', '_', 'x', 'y', 'z', 'q'] },
   ] satisfies ESLintRules['id-length'],
   'max-classes-per-file': ['error'],
   'max-depth': ['error'],
