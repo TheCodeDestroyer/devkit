@@ -1,5 +1,25 @@
 # @tcd-devkit/prettier-config
 
+## 0.2.2
+
+### Patch Changes
+
+- [#110](https://github.com/TheCodeDestroyer/devkit/pull/110) [`d18bf1b`](https://github.com/TheCodeDestroyer/devkit/commit/d18bf1b5c1fb36923ca847e8831de30e07763b24) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.15.33
+
+- [#119](https://github.com/TheCodeDestroyer/devkit/pull/119) [`98782f5`](https://github.com/TheCodeDestroyer/devkit/commit/98782f587a22804728ad38b3d7966bc3619efe58) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency prettier-plugin-packagejson to v2.5.16
+
+- [#42](https://github.com/TheCodeDestroyer/devkit/pull/42) [`8132505`](https://github.com/TheCodeDestroyer/devkit/commit/8132505b81dccb163c689a98495ac18f47e35e02) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.15.26
+
+- [#45](https://github.com/TheCodeDestroyer/devkit/pull/45) [`fad87a4`](https://github.com/TheCodeDestroyer/devkit/commit/fad87a46ccae63b816ea3a4223c825972a5d6a08) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.15.29
+
+- [#52](https://github.com/TheCodeDestroyer/devkit/pull/52) [`f67884a`](https://github.com/TheCodeDestroyer/devkit/commit/f67884a4c73859d36ae1e43cfb272f5cd9e134ca) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency prettier-plugin-packagejson to v2.5.15
+
+- [#63](https://github.com/TheCodeDestroyer/devkit/pull/63) [`bc28954`](https://github.com/TheCodeDestroyer/devkit/commit/bc2895460827e304b48419284cf23b255efbfd45) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.15.30
+
+- [#75](https://github.com/TheCodeDestroyer/devkit/pull/75) [`10be14a`](https://github.com/TheCodeDestroyer/devkit/commit/10be14a7edf75db5ce9f4ed508ac3e6c749ae941) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.15.31
+
+- [#88](https://github.com/TheCodeDestroyer/devkit/pull/88) [`4e1b262`](https://github.com/TheCodeDestroyer/devkit/commit/4e1b2623e664c2f044773aa99a4776d24f67a230) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.15.32
+
 ## 0.2.1
 
 ### Patch Changes
