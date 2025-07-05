@@ -1,5 +1,13 @@
 # @tcd-devkit/scripts
 
+## 0.1.6
+
+### Patch Changes
+
+- [#132](https://github.com/TheCodeDestroyer/devkit/pull/132) [`9af68f4`](https://github.com/TheCodeDestroyer/devkit/commit/9af68f4de855b61101d10f9684d4151af54200ad) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.15.34
+
+- [#139](https://github.com/TheCodeDestroyer/devkit/pull/139) [`e5b5ad7`](https://github.com/TheCodeDestroyer/devkit/commit/e5b5ad707555cf688376e0a27beea52b2ad69517) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.16.0
+
 ## 0.1.5
 
 ### Patch Changes
