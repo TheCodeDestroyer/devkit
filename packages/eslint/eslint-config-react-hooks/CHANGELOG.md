@@ -1,5 +1,21 @@
 # @tcd-devkit/eslint-config-react-hooks
 
+## 0.0.5
+
+### Patch Changes
+
+- [#130](https://github.com/TheCodeDestroyer/devkit/pull/130) [`266fa2e`](https://github.com/TheCodeDestroyer/devkit/commit/266fa2e4f0011b1386b6fa8d019bd7510a9f8cbb) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update eslint monorepo to v9.30.0
+
+- [#132](https://github.com/TheCodeDestroyer/devkit/pull/132) [`9af68f4`](https://github.com/TheCodeDestroyer/devkit/commit/9af68f4de855b61101d10f9684d4151af54200ad) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.15.34
+
+- [#138](https://github.com/TheCodeDestroyer/devkit/pull/138) [`c1274cc`](https://github.com/TheCodeDestroyer/devkit/commit/c1274ccb2a2152d9c760f6ac2a2d64291df4829a) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update eslint monorepo to v9.30.1
+
+- [#139](https://github.com/TheCodeDestroyer/devkit/pull/139) [`e5b5ad7`](https://github.com/TheCodeDestroyer/devkit/commit/e5b5ad707555cf688376e0a27beea52b2ad69517) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.16.0
+
+- [#149](https://github.com/TheCodeDestroyer/devkit/pull/149) [`db59fb7`](https://github.com/TheCodeDestroyer/devkit/commit/db59fb79dfc9df6c4fb47515f36030c91c7a9a79) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.16.1
+
+- [#151](https://github.com/TheCodeDestroyer/devkit/pull/151) [`aa52232`](https://github.com/TheCodeDestroyer/devkit/commit/aa5223295416d954638a64bd587442f80b33b04e) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.16.2
+
 ## 0.0.4
 
 ### Patch Changes
