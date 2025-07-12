@@ -60,7 +60,7 @@
   },
   "devDependencies": {
     "@tcd-devkit/tsconfig": "workspace:*",
-    "@types/node": "22.16.1",
+    "@types/node": "22.16.2",
     "tsup": "8.5.0",
     "typescript": "5.8.3"
   },
