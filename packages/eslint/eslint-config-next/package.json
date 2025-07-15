@@ -65,7 +65,7 @@
     "test:watch": "vitest --watch"
   },
   "dependencies": {
-    "@next/eslint-plugin-next": "15.4.0-canary.126"
+    "@next/eslint-plugin-next": "15.4.0-canary.127"
   },
   "devDependencies": {
     "@tcd-devkit/internal-utils": "workspace:*",
