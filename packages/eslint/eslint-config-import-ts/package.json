@@ -77,7 +77,7 @@
     "@tcd-devkit/scripts": "workspace:*",
     "@tcd-devkit/tsconfig": "workspace:*",
     "@tcd-devkit/tsup-config": "workspace:*",
-    "@types/node": "22.16.3",
+    "@types/node": "22.16.4",
     "eslint": "9.31.0",
     "tsup": "8.5.0",
     "typescript": "5.8.3",
