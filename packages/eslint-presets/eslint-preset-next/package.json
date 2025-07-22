@@ -65,7 +65,7 @@
     "@tcd-devkit/eslint-config-react": "workspace:*",
     "@tcd-devkit/eslint-config-react-hooks": "workspace:*",
     "@tcd-devkit/eslint-config-ts": "workspace:*",
-    "eslint-config-prettier": "10.1.5"
+    "eslint-config-prettier": "10.1.8"
   },
   "devDependencies": {
     "@tcd-devkit/scripts": "workspace:*",

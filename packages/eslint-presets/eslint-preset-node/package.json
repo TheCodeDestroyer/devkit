@@ -59,7 +59,7 @@
     "@tcd-devkit/eslint-config": "workspace:*",
     "@tcd-devkit/eslint-config-import-ts": "workspace:*",
     "@tcd-devkit/eslint-config-ts": "workspace:*",
-    "eslint-config-prettier": "10.1.5",
+    "eslint-config-prettier": "10.1.8",
     "globals": "16.3.0"
   },
   "devDependencies": {
