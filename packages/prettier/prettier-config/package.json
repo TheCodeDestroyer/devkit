@@ -1,6 +1,6 @@
 {
   "name": "@tcd-devkit/prettier-config",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Shareable Prettier configuration for consistent code formatting across @tcd-devkit projects. Includes plugins for sorting imports, formatting package.json, and TOML files.",
   "keywords": [
     "tcd-devkit",

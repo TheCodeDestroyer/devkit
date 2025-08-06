@@ -1,5 +1,79 @@
 # @tcd-devkit/eslint-config-next
 
+## 0.1.5
+
+### Patch Changes
+
+- [#127](https://github.com/TheCodeDestroyer/devkit/pull/127) [`809b913`](https://github.com/TheCodeDestroyer/devkit/commit/809b913ae5e0815882f34a722199589adbf81fba) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency @next/eslint-plugin-next to v15.4.0-canary.101
+
+- [#130](https://github.com/TheCodeDestroyer/devkit/pull/130) [`266fa2e`](https://github.com/TheCodeDestroyer/devkit/commit/266fa2e4f0011b1386b6fa8d019bd7510a9f8cbb) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update eslint monorepo to v9.30.0
+
+- [#131](https://github.com/TheCodeDestroyer/devkit/pull/131) [`e2ce313`](https://github.com/TheCodeDestroyer/devkit/commit/e2ce313d9e9acc81e0e09971b28022b8d56ae85a) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency @next/eslint-plugin-next to v15.4.0-canary.102
+
+- [#132](https://github.com/TheCodeDestroyer/devkit/pull/132) [`9af68f4`](https://github.com/TheCodeDestroyer/devkit/commit/9af68f4de855b61101d10f9684d4151af54200ad) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.15.34
+
+- [#133](https://github.com/TheCodeDestroyer/devkit/pull/133) [`da563ab`](https://github.com/TheCodeDestroyer/devkit/commit/da563abcea4cad808ebcc66ee0b955a4b52a660d) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency @next/eslint-plugin-next to v15.4.0-canary.103
+
+- [#135](https://github.com/TheCodeDestroyer/devkit/pull/135) [`b11d6f3`](https://github.com/TheCodeDestroyer/devkit/commit/b11d6f34a80fd3cadb10b3249aca6d5a0d3050d5) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency @next/eslint-plugin-next to v15.4.0-canary.104
+
+- [#137](https://github.com/TheCodeDestroyer/devkit/pull/137) [`17da989`](https://github.com/TheCodeDestroyer/devkit/commit/17da98977e8fdc4ecabe611dfcd461ff2aad49e4) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency @next/eslint-plugin-next to v15.4.0-canary.108
+
+- [#138](https://github.com/TheCodeDestroyer/devkit/pull/138) [`c1274cc`](https://github.com/TheCodeDestroyer/devkit/commit/c1274ccb2a2152d9c760f6ac2a2d64291df4829a) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update eslint monorepo to v9.30.1
+
+- [#139](https://github.com/TheCodeDestroyer/devkit/pull/139) [`e5b5ad7`](https://github.com/TheCodeDestroyer/devkit/commit/e5b5ad707555cf688376e0a27beea52b2ad69517) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.16.0
+
+- [#140](https://github.com/TheCodeDestroyer/devkit/pull/140) [`edbde99`](https://github.com/TheCodeDestroyer/devkit/commit/edbde99c53fae9e058c6b4358d57195928d2dedf) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency @next/eslint-plugin-next to v15.4.0-canary.109
+
+- [#141](https://github.com/TheCodeDestroyer/devkit/pull/141) [`7b84ad5`](https://github.com/TheCodeDestroyer/devkit/commit/7b84ad55e3bd0b0c4879d1dfdc93750626fa701e) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency @next/eslint-plugin-next to v15.4.0-canary.110
+
+- [#142](https://github.com/TheCodeDestroyer/devkit/pull/142) [`974035a`](https://github.com/TheCodeDestroyer/devkit/commit/974035a467fe278c09f3b5433b38938ea1bce97c) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency @next/eslint-plugin-next to v15.4.0-canary.113
+
+- [#145](https://github.com/TheCodeDestroyer/devkit/pull/145) [`274c0cf`](https://github.com/TheCodeDestroyer/devkit/commit/274c0cfcb0c9b1fadd3dce82ef20bbc0f93d27d0) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency @next/eslint-plugin-next to v15.4.0-canary.114
+
+- [#146](https://github.com/TheCodeDestroyer/devkit/pull/146) [`61d1ef0`](https://github.com/TheCodeDestroyer/devkit/commit/61d1ef0592613dabd05e03dbb33715e59147c6a1) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency @next/eslint-plugin-next to v15.4.0-canary.115
+
+- [#147](https://github.com/TheCodeDestroyer/devkit/pull/147) [`8782299`](https://github.com/TheCodeDestroyer/devkit/commit/8782299860b180d4e4537cf3f8f2fb146f90d7ae) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency @next/eslint-plugin-next to v15.4.0-canary.116
+
+- [#149](https://github.com/TheCodeDestroyer/devkit/pull/149) [`db59fb7`](https://github.com/TheCodeDestroyer/devkit/commit/db59fb79dfc9df6c4fb47515f36030c91c7a9a79) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.16.1
+
+- [#150](https://github.com/TheCodeDestroyer/devkit/pull/150) [`676bfdc`](https://github.com/TheCodeDestroyer/devkit/commit/676bfdc7fac8e55b5f220809a3fdf620cf729fe4) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency @next/eslint-plugin-next to v15.4.0-canary.119
+
+- [#151](https://github.com/TheCodeDestroyer/devkit/pull/151) [`aa52232`](https://github.com/TheCodeDestroyer/devkit/commit/aa5223295416d954638a64bd587442f80b33b04e) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.16.2
+
+- [#153](https://github.com/TheCodeDestroyer/devkit/pull/153) [`0d29159`](https://github.com/TheCodeDestroyer/devkit/commit/0d2915905c98c1df64023cc50dfbea9b558dba6e) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency @next/eslint-plugin-next to v15.4.0-canary.123
+
+- [#157](https://github.com/TheCodeDestroyer/devkit/pull/157) [`c35db32`](https://github.com/TheCodeDestroyer/devkit/commit/c35db32aa4f3f690f32894468b68fe82b3e03dc3) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.16.3
+
+- [#158](https://github.com/TheCodeDestroyer/devkit/pull/158) [`a719ded`](https://github.com/TheCodeDestroyer/devkit/commit/a719ded54b3b7d584e020e33799df4c225e424dd) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency @next/eslint-plugin-next to v15.4.0-canary.126
+
+- [#160](https://github.com/TheCodeDestroyer/devkit/pull/160) [`fd197a2`](https://github.com/TheCodeDestroyer/devkit/commit/fd197a2cd69ed2f438236a1a4a8aa0b6cbb7d98f) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update eslint monorepo to v9.31.0
+
+- [#161](https://github.com/TheCodeDestroyer/devkit/pull/161) [`4815347`](https://github.com/TheCodeDestroyer/devkit/commit/48153475536552a8699dee330b8ef7dfadb63c95) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency @next/eslint-plugin-next to v15.4.0-canary.127
+
+- [#163](https://github.com/TheCodeDestroyer/devkit/pull/163) [`5977991`](https://github.com/TheCodeDestroyer/devkit/commit/59779910b3988325846baf57850a998ff3403049) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency @next/eslint-plugin-next to v15.4.0-canary.128
+
+- [#164](https://github.com/TheCodeDestroyer/devkit/pull/164) [`9d43457`](https://github.com/TheCodeDestroyer/devkit/commit/9d4345769427b4dfa803d0ba9e1d7e74d046cb8d) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency @next/eslint-plugin-next to v15.4.0-canary.129
+
+- [#166](https://github.com/TheCodeDestroyer/devkit/pull/166) [`a1c6bba`](https://github.com/TheCodeDestroyer/devkit/commit/a1c6bbab3bbba1c38389aa1a88f504f33b41352f) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency @next/eslint-plugin-next to v15.4.1
+
+- [#167](https://github.com/TheCodeDestroyer/devkit/pull/167) [`ae829a1`](https://github.com/TheCodeDestroyer/devkit/commit/ae829a19461615436e9aca120a3a5256d995474d) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.16.4
+
+- [#170](https://github.com/TheCodeDestroyer/devkit/pull/170) [`80b09cc`](https://github.com/TheCodeDestroyer/devkit/commit/80b09ccff4f64861d6c025000fa94895506fb314) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency @next/eslint-plugin-next to v15.4.2
+
+- [#172](https://github.com/TheCodeDestroyer/devkit/pull/172) [`f953319`](https://github.com/TheCodeDestroyer/devkit/commit/f9533194c0fb7254b9afcca3cb37608f107710d0) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.16.5
+
+- [#175](https://github.com/TheCodeDestroyer/devkit/pull/175) [`b6ec856`](https://github.com/TheCodeDestroyer/devkit/commit/b6ec8561e055a45ae6245884c1f840ba9e32a3f8) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency @next/eslint-plugin-next to v15.4.3
+
+- [#176](https://github.com/TheCodeDestroyer/devkit/pull/176) [`7f56f34`](https://github.com/TheCodeDestroyer/devkit/commit/7f56f34b5426a6ea465143b936cb7d1b5958ee7a) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency @next/eslint-plugin-next to v15.4.4
+
+- [#178](https://github.com/TheCodeDestroyer/devkit/pull/178) [`4f9b25c`](https://github.com/TheCodeDestroyer/devkit/commit/4f9b25cbae2eff4fc061029b9a03ee075991adf0) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update eslint monorepo to v9.32.0
+
+- [#179](https://github.com/TheCodeDestroyer/devkit/pull/179) [`3ea4a1d`](https://github.com/TheCodeDestroyer/devkit/commit/3ea4a1d4d717296aa33034901172c4d47a2f87b1) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency node to v22.18.0
+
+- [#180](https://github.com/TheCodeDestroyer/devkit/pull/180) [`b59cf72`](https://github.com/TheCodeDestroyer/devkit/commit/b59cf72b36d4e83bf49f4e0a09cdebaace2ba224) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency @next/eslint-plugin-next to v15.4.5
+
+- [#182](https://github.com/TheCodeDestroyer/devkit/pull/182) [`6e87950`](https://github.com/TheCodeDestroyer/devkit/commit/6e8795015a09291130de01a0e2e289234570c5e4) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency typescript to v5.9.2
+
 ## 0.1.4
 
 ### Patch Changes

@@ -1,6 +1,6 @@
 {
   "name": "@tcd-devkit/eslint-preset-next",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Comprehensive ESLint Flat Configuration Preset for Next.js projects. This preset bundles various @tcd-devkit ESLint configurations for a complete Next.js, React, TypeScript, and a11y linting setup.",
   "keywords": [
     "tcd-devkit",
