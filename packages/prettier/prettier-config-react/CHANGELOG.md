@@ -1,5 +1,32 @@
 # @tcd-devkit/prettier-config-react
 
+## 0.1.3
+
+### Patch Changes
+
+- [#132](https://github.com/TheCodeDestroyer/devkit/pull/132) [`9af68f4`](https://github.com/TheCodeDestroyer/devkit/commit/9af68f4de855b61101d10f9684d4151af54200ad) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.15.34
+
+- [#139](https://github.com/TheCodeDestroyer/devkit/pull/139) [`e5b5ad7`](https://github.com/TheCodeDestroyer/devkit/commit/e5b5ad707555cf688376e0a27beea52b2ad69517) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.16.0
+
+- [#149](https://github.com/TheCodeDestroyer/devkit/pull/149) [`db59fb7`](https://github.com/TheCodeDestroyer/devkit/commit/db59fb79dfc9df6c4fb47515f36030c91c7a9a79) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.16.1
+
+- [#151](https://github.com/TheCodeDestroyer/devkit/pull/151) [`aa52232`](https://github.com/TheCodeDestroyer/devkit/commit/aa5223295416d954638a64bd587442f80b33b04e) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.16.2
+
+- [#154](https://github.com/TheCodeDestroyer/devkit/pull/154) [`d9f8851`](https://github.com/TheCodeDestroyer/devkit/commit/d9f885153a922a7ad4914d4fa07a35fdd456a466) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency prettier-plugin-tailwindcss to v0.6.14
+
+- [#157](https://github.com/TheCodeDestroyer/devkit/pull/157) [`c35db32`](https://github.com/TheCodeDestroyer/devkit/commit/c35db32aa4f3f690f32894468b68fe82b3e03dc3) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.16.3
+
+- [#167](https://github.com/TheCodeDestroyer/devkit/pull/167) [`ae829a1`](https://github.com/TheCodeDestroyer/devkit/commit/ae829a19461615436e9aca120a3a5256d995474d) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.16.4
+
+- [#172](https://github.com/TheCodeDestroyer/devkit/pull/172) [`f953319`](https://github.com/TheCodeDestroyer/devkit/commit/f9533194c0fb7254b9afcca3cb37608f107710d0) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.16.5
+
+- [#179](https://github.com/TheCodeDestroyer/devkit/pull/179) [`3ea4a1d`](https://github.com/TheCodeDestroyer/devkit/commit/3ea4a1d4d717296aa33034901172c4d47a2f87b1) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency node to v22.18.0
+
+- [#182](https://github.com/TheCodeDestroyer/devkit/pull/182) [`6e87950`](https://github.com/TheCodeDestroyer/devkit/commit/6e8795015a09291130de01a0e2e289234570c5e4) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency typescript to v5.9.2
+
+- Updated dependencies [[`f10563e`](https://github.com/TheCodeDestroyer/devkit/commit/f10563ef62419ff8802492a6908670c68e45ab93), [`9af68f4`](https://github.com/TheCodeDestroyer/devkit/commit/9af68f4de855b61101d10f9684d4151af54200ad), [`e5b5ad7`](https://github.com/TheCodeDestroyer/devkit/commit/e5b5ad707555cf688376e0a27beea52b2ad69517), [`a7b22a9`](https://github.com/TheCodeDestroyer/devkit/commit/a7b22a95cfff4390814bc7c5801b79cd7495ab8d), [`db59fb7`](https://github.com/TheCodeDestroyer/devkit/commit/db59fb79dfc9df6c4fb47515f36030c91c7a9a79), [`aa52232`](https://github.com/TheCodeDestroyer/devkit/commit/aa5223295416d954638a64bd587442f80b33b04e), [`bcf9a07`](https://github.com/TheCodeDestroyer/devkit/commit/bcf9a0785460df325ccf7cc0350a2576235ec216), [`c35db32`](https://github.com/TheCodeDestroyer/devkit/commit/c35db32aa4f3f690f32894468b68fe82b3e03dc3), [`ae829a1`](https://github.com/TheCodeDestroyer/devkit/commit/ae829a19461615436e9aca120a3a5256d995474d), [`f953319`](https://github.com/TheCodeDestroyer/devkit/commit/f9533194c0fb7254b9afcca3cb37608f107710d0), [`20ef765`](https://github.com/TheCodeDestroyer/devkit/commit/20ef765e7ac2dcbabd9a4b55086bb2656d46c425), [`3ea4a1d`](https://github.com/TheCodeDestroyer/devkit/commit/3ea4a1d4d717296aa33034901172c4d47a2f87b1), [`6e87950`](https://github.com/TheCodeDestroyer/devkit/commit/6e8795015a09291130de01a0e2e289234570c5e4)]:
+  - @tcd-devkit/prettier-config@0.2.3
+
 ## 0.1.2
 
 ### Patch Changes
