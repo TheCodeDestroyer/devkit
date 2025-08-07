@@ -1,5 +1,11 @@
 # @tcd-devkit/scripts
 
+## 0.1.7
+
+### Patch Changes
+
+- [#185](https://github.com/TheCodeDestroyer/devkit/pull/185) [`317a665`](https://github.com/TheCodeDestroyer/devkit/commit/317a6656116f73b48a2bdcab598990f16157ddb0) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency chalk to v5.5.0
+
 ## 0.1.6
 
 ### Patch Changes
