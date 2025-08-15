@@ -1,5 +1,13 @@
 # @tcd-devkit/eslint-config-ts
 
+## 0.2.2
+
+### Patch Changes
+
+- [#190](https://github.com/TheCodeDestroyer/devkit/pull/190) [`71714ec`](https://github.com/TheCodeDestroyer/devkit/commit/71714ec8d2dc096c94f6d21728613f71d918ec82) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.17.1
+
+- [#192](https://github.com/TheCodeDestroyer/devkit/pull/192) [`ef3069e`](https://github.com/TheCodeDestroyer/devkit/commit/ef3069e02700e7abb4f8a9497788d84b8617c0d3) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update typescript-eslint monorepo to v8.39.1
+
 ## 0.2.1
 
 ### Patch Changes
