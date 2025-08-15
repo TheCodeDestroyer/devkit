@@ -1,5 +1,13 @@
 # @tcd-devkit/eslint-config
 
+## 0.2.2
+
+### Patch Changes
+
+- [#188](https://github.com/TheCodeDestroyer/devkit/pull/188) [`575d029`](https://github.com/TheCodeDestroyer/devkit/commit/575d029e5b55a5fd925ff0f2ebdc333d8504cd4b) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency @eslint/compat to v1.3.2
+
+- [#190](https://github.com/TheCodeDestroyer/devkit/pull/190) [`71714ec`](https://github.com/TheCodeDestroyer/devkit/commit/71714ec8d2dc096c94f6d21728613f71d918ec82) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.17.1
+
 ## 0.2.1
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @tcd-devkit/commitlint-config
 
+## 0.2.5
+
+### Patch Changes
+
+- [#190](https://github.com/TheCodeDestroyer/devkit/pull/190) [`71714ec`](https://github.com/TheCodeDestroyer/devkit/commit/71714ec8d2dc096c94f6d21728613f71d918ec82) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.17.1
+
 ## 0.2.4
 
 ### Patch Changes
