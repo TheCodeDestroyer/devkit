@@ -24,7 +24,7 @@ jobs:
           fetch-depth: 100
 
       - name: Setup Environment
-        uses: jdx/mise-action@v2
+        uses: jdx/mise-action@v3
 
       - name: Get PNPM store
         id: pnpm-cache
