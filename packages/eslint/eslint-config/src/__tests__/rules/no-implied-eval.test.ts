@@ -10,6 +10,7 @@ const ruleId: CustomRule = 'no-implied-eval';
 describe(`${ruleId} rule`, () => {
   it('should FAIL when using implied eval', async () => {
     const code = `
+      /* global setTimeout, setInterval */
       setTimeout("alert('Hi!')", 100);
       setInterval("console.log('test')", 100);
     `;
@@ -20,6 +21,7 @@ describe(`${ruleId} rule`, () => {
 
   it('should PASS when using functions', async () => {
     const code = `
+      /* global setTimeout, setInterval */
       setTimeout(() => alert('Hi!'), 100);
       setInterval(function() { console.log('test'); }, 100);
     `;
