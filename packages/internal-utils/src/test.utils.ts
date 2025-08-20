@@ -19,7 +19,7 @@ export interface GetLintMessagesOptions
 export const getLintMessagesForRule = async <T>(
   config: Linter.Config[],
   code: string,
-  ruleId: T,
+  ruleId: T | null,
   { eslintOptions, lintTextOptions }: GetLintMessagesOptions = {
     eslintOptions: {},
   },
@@ -34,6 +34,10 @@ export const getLintMessagesForRule = async <T>(
 
   if (!results || !results[0]) {
     return [];
+  }
+
+  if (!ruleId) {
+    return results[0].messages;
   }
 
   const flatMessages = results.flatMap((result) => result.messages);
