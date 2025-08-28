@@ -1,5 +1,15 @@
 # @tcd-devkit/tsup-config
 
+## 0.0.6
+
+### Patch Changes
+
+- [#190](https://github.com/TheCodeDestroyer/devkit/pull/190) [`71714ec`](https://github.com/TheCodeDestroyer/devkit/commit/71714ec8d2dc096c94f6d21728613f71d918ec82) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.17.1
+
+- [#193](https://github.com/TheCodeDestroyer/devkit/pull/193) [`1c50683`](https://github.com/TheCodeDestroyer/devkit/commit/1c5068327807e8ee2a663e05e33557514188d1f1) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.17.2
+
+- [#204](https://github.com/TheCodeDestroyer/devkit/pull/204) [`7592474`](https://github.com/TheCodeDestroyer/devkit/commit/7592474282bbad9e45bf41ce9343c86aeff72827) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.18.0
+
 ## 0.0.5
 
 ### Patch Changes

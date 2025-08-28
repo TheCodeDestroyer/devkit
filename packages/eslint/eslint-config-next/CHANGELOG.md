@@ -1,5 +1,25 @@
 # @tcd-devkit/eslint-config-next
 
+## 0.1.6
+
+### Patch Changes
+
+- [#187](https://github.com/TheCodeDestroyer/devkit/pull/187) [`11568ba`](https://github.com/TheCodeDestroyer/devkit/commit/11568ba524129b1a6620815099036c6ce8762603) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency @next/eslint-plugin-next to v15.4.6
+
+- [#190](https://github.com/TheCodeDestroyer/devkit/pull/190) [`71714ec`](https://github.com/TheCodeDestroyer/devkit/commit/71714ec8d2dc096c94f6d21728613f71d918ec82) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.17.1
+
+- [#191](https://github.com/TheCodeDestroyer/devkit/pull/191) [`b01541f`](https://github.com/TheCodeDestroyer/devkit/commit/b01541f816ed82f6bdea6a8137f8e7d81fc8d1ee) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update eslint monorepo to v9.33.0
+
+- [#193](https://github.com/TheCodeDestroyer/devkit/pull/193) [`1c50683`](https://github.com/TheCodeDestroyer/devkit/commit/1c5068327807e8ee2a663e05e33557514188d1f1) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.17.2
+
+- [#198](https://github.com/TheCodeDestroyer/devkit/pull/198) [`17966d4`](https://github.com/TheCodeDestroyer/devkit/commit/17966d4392c037f5dd2ae45295a9a07516993ca9) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency @next/eslint-plugin-next to v15.4.7
+
+- [#201](https://github.com/TheCodeDestroyer/devkit/pull/201) [`210b5ec`](https://github.com/TheCodeDestroyer/devkit/commit/210b5ec705b1d75381b9dd868e99989a7c0b150e) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency @next/eslint-plugin-next to v15.5.0
+
+- [#203](https://github.com/TheCodeDestroyer/devkit/pull/203) [`3beb6a8`](https://github.com/TheCodeDestroyer/devkit/commit/3beb6a8c65706ff41ed9748d339f4a7886b238b2) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update eslint monorepo to v9.34.0
+
+- [#204](https://github.com/TheCodeDestroyer/devkit/pull/204) [`7592474`](https://github.com/TheCodeDestroyer/devkit/commit/7592474282bbad9e45bf41ce9343c86aeff72827) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.18.0
+
 ## 0.1.5
 
 ### Patch Changes
