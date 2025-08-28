@@ -1,0 +1,80 @@
+{
+  "name": "@tcd-devkit/eslint-preset-react",
+  "version": "0.1.0",
+  "description": "Comprehensive ESLint Flat Configuration Preset for React projects. This preset bundles various @tcd-devkit ESLint configurations for a complete React, TypeScript, and a11y linting setup.",
+  "keywords": [
+    "tcd-devkit",
+    "preset",
+    "eslint",
+    "eslintconfig",
+    "eslint-preset",
+    "lint",
+    "react",
+    "typescript",
+    "a11y",
+    "flat-config"
+  ],
+  "homepage": "https://github.com/thecodedestroyer/devkit",
+  "bugs": {
+    "url": "https://github.com/thecodedestroyer/devkit/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thecodedestroyer/devkit.git",
+    "directory": "packages/eslint-presets/eslint-preset-react"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Nace Logar",
+    "email": "the.code.destroyer@gmail.com",
+    "url": "https://thecodedestroyer.com"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/react-preset.linter.d.ts",
+      "require": "./dist/react-preset.linter.cjs",
+      "import": "./dist/react-preset.linter.js"
+    }
+  },
+  "main": "./dist/react-preset.linter.cjs",
+  "module": "./dist/react-preset.linter.js",
+  "types": "./dist/react-preset.linter.d.ts",
+  "typesVersions": {
+    "*": {
+      ".": [
+        "./dist/react-preset.linter.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "dist",
+    "!dist/**/*.d.ts.map"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "lint:types": "tcd-scripts lint --only=tsc"
+  },
+  "dependencies": {
+    "@tcd-devkit/eslint-config": "workspace:*",
+    "@tcd-devkit/eslint-config-a11y": "workspace:*",
+    "@tcd-devkit/eslint-config-import-ts": "workspace:*",
+    "@tcd-devkit/eslint-config-react": "workspace:*",
+    "@tcd-devkit/eslint-config-react-hooks": "workspace:*",
+    "@tcd-devkit/eslint-config-ts": "workspace:*",
+    "eslint-config-prettier": "10.1.8"
+  },
+  "devDependencies": {
+    "@tcd-devkit/scripts": "workspace:*",
+    "@tcd-devkit/tsconfig": "workspace:*",
+    "@tcd-devkit/tsup-config": "workspace:*",
+    "@types/node": "22.17.2",
+    "tsup": "8.5.0"
+  },
+  "peerDependencies": {
+    "eslint": "^9.0.0"
+  },
+  "engines": {
+    "node": ">=20.11.0 || >=21.2.0"
+  }
+}
