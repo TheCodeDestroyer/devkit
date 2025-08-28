@@ -1,5 +1,11 @@
 # @tcd-devkit/eslint-preset-react
 
+## 0.1.2
+
+### Patch Changes
+
+- [#208](https://github.com/TheCodeDestroyer/devkit/pull/208) [`e8fde55`](https://github.com/TheCodeDestroyer/devkit/commit/e8fde558de322dd47c4939f02b7dae1b4e52421d) Thanks [@TheCodeDestroyer](https://github.com/TheCodeDestroyer)! - Add missing Node globals to React preset
+
 ## 0.1.1
 
 ### Patch Changes

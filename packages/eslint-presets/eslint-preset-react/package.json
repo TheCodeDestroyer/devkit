@@ -1,6 +1,6 @@
 {
   "name": "@tcd-devkit/eslint-preset-react",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Comprehensive ESLint Flat Configuration Preset for React projects. This preset bundles various @tcd-devkit ESLint configurations for a complete React, TypeScript, and a11y linting setup.",
   "keywords": [
     "tcd-devkit",
