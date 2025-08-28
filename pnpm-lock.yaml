@@ -188,6 +188,9 @@ importers:
       eslint-config-prettier:
         specifier: 10.1.8
         version: 10.1.8(eslint@9.34.0(jiti@2.5.1))
+      globals:
+        specifier: 16.3.0
+        version: 16.3.0
     devDependencies:
       '@tcd-devkit/scripts':
         specifier: workspace:*
