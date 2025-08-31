@@ -65,7 +65,7 @@
     "test:watch": "vitest --watch"
   },
   "dependencies": {
-    "@next/eslint-plugin-next": "15.5.0"
+    "@next/eslint-plugin-next": "15.5.2"
   },
   "devDependencies": {
     "@tcd-devkit/internal-utils": "workspace:*",
