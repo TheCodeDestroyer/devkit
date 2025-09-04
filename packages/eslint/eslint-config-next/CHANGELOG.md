@@ -1,5 +1,11 @@
 # @tcd-devkit/eslint-config-next
 
+## 0.1.7
+
+### Patch Changes
+
+- [#210](https://github.com/TheCodeDestroyer/devkit/pull/210) [`bfe1c77`](https://github.com/TheCodeDestroyer/devkit/commit/bfe1c779801979d05c12b498da488f23b698aeec) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency @next/eslint-plugin-next to v15.5.2
+
 ## 0.1.6
 
 ### Patch Changes

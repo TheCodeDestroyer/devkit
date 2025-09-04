@@ -1,5 +1,11 @@
 # @tcd-devkit/eslint-config-ts
 
+## 0.2.3
+
+### Patch Changes
+
+- [#213](https://github.com/TheCodeDestroyer/devkit/pull/213) [`2fa65f6`](https://github.com/TheCodeDestroyer/devkit/commit/2fa65f6b87ac60bec3cb4c556881e6cee0fd3395) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update typescript-eslint monorepo to v8.41.0
+
 ## 0.2.2
 
 ### Patch Changes
