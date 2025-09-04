@@ -1,5 +1,13 @@
 # @tcd-devkit/eslint-preset-node
 
+## 0.1.10
+
+### Patch Changes
+
+- Updated dependencies [[`2fa65f6`](https://github.com/TheCodeDestroyer/devkit/commit/2fa65f6b87ac60bec3cb4c556881e6cee0fd3395)]:
+  - @tcd-devkit/eslint-config-import-ts@0.1.8
+  - @tcd-devkit/eslint-config-ts@0.2.3
+
 ## 0.1.9
 
 ### Patch Changes
