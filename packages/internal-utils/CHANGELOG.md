@@ -1,5 +1,11 @@
 # @tcd-devkit/internal-utils
 
+## 0.0.7
+
+### Patch Changes
+
+- [#216](https://github.com/TheCodeDestroyer/devkit/pull/216) [`6bb2c4c`](https://github.com/TheCodeDestroyer/devkit/commit/6bb2c4ccae9f1f40ad20b4775ca803122e2c3667) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.18.1
+
 ## 0.0.6
 
 ### Patch Changes
