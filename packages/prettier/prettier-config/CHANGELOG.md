@@ -1,5 +1,17 @@
 # @tcd-devkit/prettier-config
 
+## 0.2.5
+
+### Patch Changes
+
+- [#216](https://github.com/TheCodeDestroyer/devkit/pull/216) [`6bb2c4c`](https://github.com/TheCodeDestroyer/devkit/commit/6bb2c4ccae9f1f40ad20b4775ca803122e2c3667) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.18.1
+
+- [#225](https://github.com/TheCodeDestroyer/devkit/pull/225) [`407a595`](https://github.com/TheCodeDestroyer/devkit/commit/407a595d641772b30638902e583743fb4711db12) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.18.3
+
+- [#228](https://github.com/TheCodeDestroyer/devkit/pull/228) [`b2cfab4`](https://github.com/TheCodeDestroyer/devkit/commit/b2cfab498efc4818128709d082210758414c2bf5) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.18.4
+
+- [#229](https://github.com/TheCodeDestroyer/devkit/pull/229) [`5b81ca5`](https://github.com/TheCodeDestroyer/devkit/commit/5b81ca56786b83e72e8d26174858b91ba4596fad) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.18.5
+
 ## 0.2.4
 
 ### Patch Changes
