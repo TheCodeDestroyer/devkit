@@ -1,5 +1,29 @@
 # @tcd-devkit/eslint-config-next
 
+## 0.1.7
+
+### Patch Changes
+
+- [#210](https://github.com/TheCodeDestroyer/devkit/pull/210) [`bfe1c77`](https://github.com/TheCodeDestroyer/devkit/commit/bfe1c779801979d05c12b498da488f23b698aeec) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency @next/eslint-plugin-next to v15.5.2
+
+- [#216](https://github.com/TheCodeDestroyer/devkit/pull/216) [`6bb2c4c`](https://github.com/TheCodeDestroyer/devkit/commit/6bb2c4ccae9f1f40ad20b4775ca803122e2c3667) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.18.1
+
+- [#218](https://github.com/TheCodeDestroyer/devkit/pull/218) [`b93460f`](https://github.com/TheCodeDestroyer/devkit/commit/b93460f131cbb4feb3ed6c58386de3e6786d15a0) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update eslint monorepo to v9.35.0
+
+- [#221](https://github.com/TheCodeDestroyer/devkit/pull/221) [`d888e38`](https://github.com/TheCodeDestroyer/devkit/commit/d888e38e94bbf8c69d48bfedc2efb887d3b9fde9) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency @next/eslint-plugin-next to v15.5.3
+
+- [#225](https://github.com/TheCodeDestroyer/devkit/pull/225) [`407a595`](https://github.com/TheCodeDestroyer/devkit/commit/407a595d641772b30638902e583743fb4711db12) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.18.3
+
+- [#228](https://github.com/TheCodeDestroyer/devkit/pull/228) [`b2cfab4`](https://github.com/TheCodeDestroyer/devkit/commit/b2cfab498efc4818128709d082210758414c2bf5) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.18.4
+
+- [#229](https://github.com/TheCodeDestroyer/devkit/pull/229) [`5b81ca5`](https://github.com/TheCodeDestroyer/devkit/commit/5b81ca56786b83e72e8d26174858b91ba4596fad) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.18.5
+
+- [#231](https://github.com/TheCodeDestroyer/devkit/pull/231) [`d05a152`](https://github.com/TheCodeDestroyer/devkit/commit/d05a152fef927d30a88e689f9274718e6f5a1eac) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.18.6
+
+- [#233](https://github.com/TheCodeDestroyer/devkit/pull/233) [`2fa0a68`](https://github.com/TheCodeDestroyer/devkit/commit/2fa0a689087e2899f9376eefb81b46bf15ebe6e5) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update eslint monorepo to v9.36.0
+
+- [#238](https://github.com/TheCodeDestroyer/devkit/pull/238) [`0768d2e`](https://github.com/TheCodeDestroyer/devkit/commit/0768d2ed613d7742931e7a9a410ecb0309de1d16) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency @next/eslint-plugin-next to v15.5.4
+
 ## 0.1.6
 
 ### Patch Changes
