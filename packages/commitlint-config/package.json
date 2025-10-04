@@ -53,7 +53,7 @@
     "@tcd-devkit/tsup-config": "workspace:*",
     "@types/node": "22.18.7",
     "tsup": "8.5.0",
-    "typescript": "5.9.2"
+    "typescript": "5.9.3"
   },
   "engines": {
     "node": ">=v18"
