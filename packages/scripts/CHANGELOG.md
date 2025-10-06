@@ -1,5 +1,29 @@
 # @tcd-devkit/scripts
 
+## 0.1.8
+
+### Patch Changes
+
+- [#216](https://github.com/TheCodeDestroyer/devkit/pull/216) [`6bb2c4c`](https://github.com/TheCodeDestroyer/devkit/commit/6bb2c4ccae9f1f40ad20b4775ca803122e2c3667) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.18.1
+
+- [#219](https://github.com/TheCodeDestroyer/devkit/pull/219) [`e9a8c38`](https://github.com/TheCodeDestroyer/devkit/commit/e9a8c38a679b2a0e323ddb56cdc3002a671bca43) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency chalk to v5.6.2
+
+- [#224](https://github.com/TheCodeDestroyer/devkit/pull/224) [`3ec55de`](https://github.com/TheCodeDestroyer/devkit/commit/3ec55deeffb9120a6ed50bbd387ba490d240e3e4) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency commander to v14.0.1
+
+- [#225](https://github.com/TheCodeDestroyer/devkit/pull/225) [`407a595`](https://github.com/TheCodeDestroyer/devkit/commit/407a595d641772b30638902e583743fb4711db12) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.18.3
+
+- [#228](https://github.com/TheCodeDestroyer/devkit/pull/228) [`b2cfab4`](https://github.com/TheCodeDestroyer/devkit/commit/b2cfab498efc4818128709d082210758414c2bf5) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.18.4
+
+- [#229](https://github.com/TheCodeDestroyer/devkit/pull/229) [`5b81ca5`](https://github.com/TheCodeDestroyer/devkit/commit/5b81ca56786b83e72e8d26174858b91ba4596fad) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.18.5
+
+- [#231](https://github.com/TheCodeDestroyer/devkit/pull/231) [`d05a152`](https://github.com/TheCodeDestroyer/devkit/commit/d05a152fef927d30a88e689f9274718e6f5a1eac) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.18.6
+
+- [#242](https://github.com/TheCodeDestroyer/devkit/pull/242) [`3d3016f`](https://github.com/TheCodeDestroyer/devkit/commit/3d3016f7f8ccac8fff198c78ed51404d623ede2a) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.18.7
+
+- [#243](https://github.com/TheCodeDestroyer/devkit/pull/243) [`d9f5d6e`](https://github.com/TheCodeDestroyer/devkit/commit/d9f5d6e4dc45abad42f3106d39ef7cd997687f6f) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency typescript to v5.9.3
+
+- [#244](https://github.com/TheCodeDestroyer/devkit/pull/244) [`159d261`](https://github.com/TheCodeDestroyer/devkit/commit/159d2619f5c8d6bcc958187ac85c8e01ce2445be) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.18.8
+
 ## 0.1.7
 
 ### Patch Changes
