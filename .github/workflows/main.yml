@@ -26,34 +26,34 @@ jobs:
       - name: Setup Environment
         uses: jdx/mise-action@v3
 
-      - name: Get PNPM store
-        id: pnpm-cache
-        shell: bash
-        run: |
-          echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
-
-      - name: Setup pnpm cache
-        uses: actions/cache@v4
+      - uses: actions/cache@v4
         with:
-          path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
-          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          path: ~/.bun/install/cache
+          key: ${{ runner.os }}-bun-${{ hashFiles('**/bun.lockb') }}
           restore-keys: |
-            ${{ runner.os }}-pnpm-store-
+            ${{ runner.os }}-bun-
 
       - name: Install dependencies
-        run: pnpm install
+        run: bun install
+
+      - name: Link scripts package binary
+        run: |
+          cd packages/scripts
+          bun link
+          cd ../..
+          bun link @tcd-devkit/scripts
 
       - name: Run types
-        run: pnpm turbo lint:types --affected
+        run: bun turbo lint:types --affected
 
       - name: Run prettier
-        run: pnpm turbo root-lint:prettier
+        run: bun turbo root-lint:prettier
 
       - name: Run eslint
-        run: pnpm turbo root-lint:eslint
+        run: bun turbo root-lint:eslint
 
       - name: Run tests
-        run: pnpm turbo test --affected
+        run: bun turbo test --affected
 
       - name: Run build
-        run: pnpm turbo build --affected
+        run: bun turbo build --affected

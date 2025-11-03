@@ -1,9 +1,0 @@
-packages:
-  - apps/*
-  - packages/*
-  - packages/eslint/*
-  - packages/eslint-presets/*
-  - packages/prettier/*
-onlyBuiltDependencies:
-  - esbuild
-  - unrs-resolver
