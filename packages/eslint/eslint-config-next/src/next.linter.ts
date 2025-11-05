@@ -1,10 +1,7 @@
-import nextPlugin from '@next/eslint-plugin-next';
-import type { Linter } from 'eslint';
+import { configs as nextPluginConfigs } from '@next/eslint-plugin-next';
 import { defineConfig } from 'eslint/config';
 
-const { flatConfig: nextPluginConfigs } = nextPlugin;
-
-const nextCoreWebVitals = nextPluginConfigs.coreWebVitals as Linter.Config;
+const nextCoreWebVitals = nextPluginConfigs['core-web-vitals'];
 
 export const nextConfig = defineConfig({
   name: '@tcd-devkit/eslint-config-next',
