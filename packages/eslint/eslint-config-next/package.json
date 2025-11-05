@@ -61,8 +61,7 @@
   ],
   "scripts": {
     "build": "tsup",
-    "lint:types": "tcd-scripts lint --only=tsc",
-    "test:watch": "vitest --watch"
+    "lint:types": "tcd-scripts lint --only=tsc"
   },
   "dependencies": {
     "@next/eslint-plugin-next": "16.0.1"

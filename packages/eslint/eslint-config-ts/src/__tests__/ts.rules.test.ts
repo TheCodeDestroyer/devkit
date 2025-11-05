@@ -1,8 +1,8 @@
 import { readdirSync } from 'fs';
 import { join } from 'path';
 
+import { describe, expect, it } from 'bun:test';
 import { configs as tsConfigs } from 'typescript-eslint';
-import { describe, expect, it } from 'vitest';
 
 import { tsRules } from '#ts.rules';
 

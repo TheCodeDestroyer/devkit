@@ -1,8 +1,8 @@
 import { readdirSync } from 'fs';
 import { join } from 'path';
 
+import { describe, expect, it } from 'bun:test';
 import eslintPlugin from 'eslint-plugin-react';
-import { describe, expect, it } from 'vitest';
 
 import { reactRules } from '#react.rules';
 

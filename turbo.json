@@ -28,10 +28,10 @@
     "lint:types": {
       "dependsOn": ["^build"]
     },
-    "test": {
+    "unit": {
       "dependsOn": ["^build"]
     },
-    "test:watch": {
+    "unit:watch": {
       "dependsOn": ["^build"],
       "cache": false,
       "persistent": true
