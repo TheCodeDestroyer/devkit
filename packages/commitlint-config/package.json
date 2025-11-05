@@ -44,10 +44,10 @@
     "lint:types": "tcd-scripts lint --only=tsc"
   },
   "dependencies": {
-    "@commitlint/config-conventional": "19.8.1"
+    "@commitlint/config-conventional": "20.0.0"
   },
   "devDependencies": {
-    "@commitlint/types": "19.8.1",
+    "@commitlint/types": "20.0.0",
     "@tcd-devkit/scripts": "workspace:*",
     "@tcd-devkit/tsconfig": "workspace:*",
     "@tcd-devkit/tsup-config": "workspace:*",
