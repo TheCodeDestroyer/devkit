@@ -1,6 +1,6 @@
+import { describe, expect, it } from 'bun:test';
 import type { Linter } from 'eslint';
 import { defineConfig } from 'eslint/config';
-import { describe, expect, it } from 'vitest';
 
 import { tsConfig } from '@tcd-devkit/eslint-config-ts';
 import { getLintMessagesForRule } from '@tcd-devkit/internal-utils/test';

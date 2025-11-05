@@ -1,8 +1,8 @@
 import { readdirSync } from 'fs';
 import { join } from 'path';
 
+import { describe, expect, it } from 'bun:test';
 import { rules as allRules } from 'eslint-plugin-import-x';
-import { describe, expect, it } from 'vitest';
 
 import { importRules } from '#import.rules';
 
