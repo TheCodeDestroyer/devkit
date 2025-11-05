@@ -1,8 +1,6 @@
 import type { Linter } from 'eslint';
-import {
-  config as defineConfig,
-  configs as tsConfigs,
-} from 'typescript-eslint';
+import { defineConfig } from 'eslint/config';
+import { configs as tsConfigs } from 'typescript-eslint';
 
 import { tsRules } from '#ts.rules';
 
