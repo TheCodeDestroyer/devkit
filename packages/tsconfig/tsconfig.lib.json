@@ -10,5 +10,10 @@
     "declaration": true,
     "declarationMap": true
   },
-  "include": ["${configDir}"]
+  "include": ["${configDir}"],
+  "exclude": [
+    "${configDir}/node_modules",
+    "${configDir}/dist",
+    "${configDir}/tsup.config.bundled_*.mjs"
+  ]
 }
