@@ -51,7 +51,7 @@
     "@tcd-devkit/scripts": "workspace:*",
     "@tcd-devkit/tsconfig": "workspace:*",
     "@tcd-devkit/tsup-config": "workspace:*",
-    "@types/node": "22.18.13",
+    "@types/node": "24.9.2",
     "tsup": "8.5.0",
     "typescript": "5.9.3"
   },
