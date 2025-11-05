@@ -4,7 +4,7 @@ import { defineConfig } from 'eslint/config';
 
 import { hooksRules } from '#hooks.rules';
 
-const hooksRecommended = hooksPluginConfigs['recommended-latest'];
+const hooksRecommended = hooksPluginConfigs.flat['recommended-latest'];
 
 export const reactHooksConfig: Linter.Config[] = defineConfig({
   name: '@tcd-devkit/eslint-config-react-hooks',
