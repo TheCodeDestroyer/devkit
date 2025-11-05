@@ -1,5 +1,45 @@
 # @tcd-devkit/eslint-config-a11y
 
+## 0.1.6
+
+### Patch Changes
+
+- [#216](https://github.com/TheCodeDestroyer/devkit/pull/216) [`6bb2c4c`](https://github.com/TheCodeDestroyer/devkit/commit/6bb2c4ccae9f1f40ad20b4775ca803122e2c3667) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.18.1
+
+- [#218](https://github.com/TheCodeDestroyer/devkit/pull/218) [`b93460f`](https://github.com/TheCodeDestroyer/devkit/commit/b93460f131cbb4feb3ed6c58386de3e6786d15a0) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update eslint monorepo to v9.35.0
+
+- [#222](https://github.com/TheCodeDestroyer/devkit/pull/222) [`9604957`](https://github.com/TheCodeDestroyer/devkit/commit/9604957a03bad1d87eb356df7f248eaf7f30ab81) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency globals to v16.4.0
+
+- [#225](https://github.com/TheCodeDestroyer/devkit/pull/225) [`407a595`](https://github.com/TheCodeDestroyer/devkit/commit/407a595d641772b30638902e583743fb4711db12) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.18.3
+
+- [#228](https://github.com/TheCodeDestroyer/devkit/pull/228) [`b2cfab4`](https://github.com/TheCodeDestroyer/devkit/commit/b2cfab498efc4818128709d082210758414c2bf5) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.18.4
+
+- [#229](https://github.com/TheCodeDestroyer/devkit/pull/229) [`5b81ca5`](https://github.com/TheCodeDestroyer/devkit/commit/5b81ca56786b83e72e8d26174858b91ba4596fad) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.18.5
+
+- [#231](https://github.com/TheCodeDestroyer/devkit/pull/231) [`d05a152`](https://github.com/TheCodeDestroyer/devkit/commit/d05a152fef927d30a88e689f9274718e6f5a1eac) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.18.6
+
+- [#233](https://github.com/TheCodeDestroyer/devkit/pull/233) [`2fa0a68`](https://github.com/TheCodeDestroyer/devkit/commit/2fa0a689087e2899f9376eefb81b46bf15ebe6e5) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update eslint monorepo to v9.36.0
+
+- [#242](https://github.com/TheCodeDestroyer/devkit/pull/242) [`3d3016f`](https://github.com/TheCodeDestroyer/devkit/commit/3d3016f7f8ccac8fff198c78ed51404d623ede2a) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.18.7
+
+- [#243](https://github.com/TheCodeDestroyer/devkit/pull/243) [`d9f5d6e`](https://github.com/TheCodeDestroyer/devkit/commit/d9f5d6e4dc45abad42f3106d39ef7cd997687f6f) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency typescript to v5.9.3
+
+- [#244](https://github.com/TheCodeDestroyer/devkit/pull/244) [`159d261`](https://github.com/TheCodeDestroyer/devkit/commit/159d2619f5c8d6bcc958187ac85c8e01ce2445be) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.18.8
+
+- [#248](https://github.com/TheCodeDestroyer/devkit/pull/248) [`6c689e0`](https://github.com/TheCodeDestroyer/devkit/commit/6c689e08fa3df7332c247bdd9eebc9f5771f8681) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update eslint monorepo to v9.38.0
+
+- [#252](https://github.com/TheCodeDestroyer/devkit/pull/252) [`340567b`](https://github.com/TheCodeDestroyer/devkit/commit/340567b9f9cea7d6c8d3c7e356936ebfc174d906) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency node to v22.21.0
+
+- [#254](https://github.com/TheCodeDestroyer/devkit/pull/254) [`074c360`](https://github.com/TheCodeDestroyer/devkit/commit/074c36042a46ed8c42ba69bf1ccff235bfaad4e6) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.18.12
+
+- [#258](https://github.com/TheCodeDestroyer/devkit/pull/258) [`10cb12f`](https://github.com/TheCodeDestroyer/devkit/commit/10cb12f47079c5bdaa8709a9efdda174d14127f0) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v22.18.13
+
+- [#261](https://github.com/TheCodeDestroyer/devkit/pull/261) [`30964f2`](https://github.com/TheCodeDestroyer/devkit/commit/30964f266b5b0cc43425bafa743c60793bf5c31b) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency globals to v16.5.0
+
+- [#264](https://github.com/TheCodeDestroyer/devkit/pull/264) [`c02f241`](https://github.com/TheCodeDestroyer/devkit/commit/c02f241386ec57d1892ef5f621522055733f6ce8) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update eslint monorepo to v9.39.0
+
+- [#265](https://github.com/TheCodeDestroyer/devkit/pull/265) [`6696c6e`](https://github.com/TheCodeDestroyer/devkit/commit/6696c6ed370b43067f0d32d08bc0d2eb4909b9f7) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v24
+
 ## 0.1.5
 
 ### Patch Changes
