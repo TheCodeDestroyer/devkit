@@ -68,7 +68,7 @@
         "@tcd-devkit/eslint-config-import-ts": "workspace:*",
         "@tcd-devkit/eslint-config-ts": "workspace:*",
         "eslint-config-prettier": "10.1.8",
-        "globals": "16.4.0",
+        "globals": "16.5.0",
       },
       "devDependencies": {
         "@tcd-devkit/scripts": "workspace:*",
@@ -92,7 +92,7 @@
         "@tcd-devkit/eslint-config-react-hooks": "workspace:*",
         "@tcd-devkit/eslint-config-ts": "workspace:*",
         "eslint-config-prettier": "10.1.8",
-        "globals": "16.4.0",
+        "globals": "16.5.0",
       },
       "devDependencies": {
         "@tcd-devkit/scripts": "workspace:*",
@@ -132,7 +132,7 @@
       "version": "0.1.5",
       "dependencies": {
         "eslint-plugin-jsx-a11y": "6.10.2",
-        "globals": "16.4.0",
+        "globals": "16.5.0",
       },
       "devDependencies": {
         "@tcd-devkit/internal-utils": "workspace:*",
@@ -219,7 +219,7 @@
       "version": "0.1.5",
       "dependencies": {
         "eslint-plugin-react": "7.37.5",
-        "globals": "16.4.0",
+        "globals": "16.5.0",
       },
       "devDependencies": {
         "@tcd-devkit/internal-utils": "workspace:*",
@@ -1091,7 +1091,7 @@
 
     "global-directory": ["global-directory@4.0.1", "", { "dependencies": { "ini": "4.1.1" } }, "sha512-wHTUcDUoZ1H5/0iVqEudYW4/kAlN5cZ3j/bXn0Dpbizl9iaUVeWSHqiOjsgk6OW2bkLclbBjzewBz6weQ1zA2Q=="],
 
-    "globals": ["globals@16.4.0", "", {}, "sha512-ob/2LcVVaVGCYN+r14cnwnoDPUufjiYgSqRhiFD0Q1iI4Odora5RE8Iv1D24hAz5oMophRGkGz+yuvQmmUMnMw=="],
+    "globals": ["globals@16.5.0", "", {}, "sha512-c/c15i26VrJ4IRt5Z89DnIzCGDn9EcebibhAOjw5ibqEHsE1wLUgkPn9RDmNcUKyU87GeaL633nyJ+pplFR2ZQ=="],
 
     "globalthis": ["globalthis@1.0.4", "", { "dependencies": { "define-properties": "1.2.1", "gopd": "1.2.0" } }, "sha512-DpLKbNU4WylpxJykQujfCcwYWiV/Jhm50Goo0wrVILAv5jOr9d+H+UR3PhSCD2rCCEIg0uc+G+muBTwD54JhDQ=="],
 
