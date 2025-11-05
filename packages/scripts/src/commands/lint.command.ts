@@ -37,11 +37,11 @@ export const registerLintCommand = (program: Command) => {
       const toolsToRun = getToolsToRun(LINT_TOOLS, options);
       let overallSuccess = true;
 
-      if (toolsToRun.includes('prettier')) {
-        overallSuccess &&= await runPrettier(files, options, true);
-      }
       if (toolsToRun.includes('eslint')) {
         overallSuccess &&= await runEslint(files, options, false);
+      }
+      if (toolsToRun.includes('prettier')) {
+        overallSuccess &&= await runPrettier(files, options, true);
       }
       if (toolsToRun.includes('tsc')) {
         overallSuccess &&= await runTsc(options);
