@@ -1,7 +1,7 @@
-import { configs as nextPluginConfigs } from '@next/eslint-plugin-next';
+import eslintPluginNext from '@next/eslint-plugin-next';
 import { defineConfig } from 'eslint/config';
 
-const nextCoreWebVitals = nextPluginConfigs['core-web-vitals'];
+const nextCoreWebVitals = eslintPluginNext.configs['core-web-vitals'];
 
 export const nextConfig = defineConfig({
   name: '@tcd-devkit/eslint-config-next',
