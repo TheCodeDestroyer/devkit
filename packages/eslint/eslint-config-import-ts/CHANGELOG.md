@@ -1,5 +1,16 @@
 # @tcd-devkit/eslint-config-import-ts
 
+## 0.1.10
+
+### Patch Changes
+
+- [#275](https://github.com/TheCodeDestroyer/devkit/pull/275) [`6283ab9`](https://github.com/TheCodeDestroyer/devkit/commit/6283ab9ee6dc8336375a3e0f1cc5175944f6f121) Thanks [@TheCodeDestroyer](https://github.com/TheCodeDestroyer)! - Fix publishing
+
+- [#275](https://github.com/TheCodeDestroyer/devkit/pull/275) [`6283ab9`](https://github.com/TheCodeDestroyer/devkit/commit/6283ab9ee6dc8336375a3e0f1cc5175944f6f121) Thanks [@TheCodeDestroyer](https://github.com/TheCodeDestroyer)! - Switch back to PNPM
+
+- Updated dependencies [[`6283ab9`](https://github.com/TheCodeDestroyer/devkit/commit/6283ab9ee6dc8336375a3e0f1cc5175944f6f121), [`6283ab9`](https://github.com/TheCodeDestroyer/devkit/commit/6283ab9ee6dc8336375a3e0f1cc5175944f6f121)]:
+  - @tcd-devkit/eslint-config-import@0.1.10
+
 ## 0.1.9
 
 ### Patch Changes

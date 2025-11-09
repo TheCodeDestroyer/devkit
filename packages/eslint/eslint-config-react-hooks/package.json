@@ -1,6 +1,6 @@
 {
   "name": "@tcd-devkit/eslint-config-react-hooks",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "ESLint Flat Configuration for React Hooks. This package provides rules for `eslint-plugin-react-hooks`, ensuring adherence to the Rules of Hooks in React applications.",
   "keywords": [
     "tcd-devkit",

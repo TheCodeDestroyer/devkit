@@ -1,6 +1,6 @@
 {
   "name": "@tcd-devkit/internal-utils",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "private": true,
   "description": "Internal testing utilities for ESLint rule verification within the @tcd-devkit monorepo.",
   "keywords": [
