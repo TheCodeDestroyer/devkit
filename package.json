@@ -21,11 +21,12 @@
     "format": "echo 'Starting formatting...'",
     "lint": "echo 'Starting linting...'",
     "prepare": "husky",
-    "release": "bun turbo build && bun changeset publish",
+    "release": "turbo build && bun publish && changeset tag",
     "root-format:eslint": "tcd-scripts format --only=eslint",
     "root-format:prettier": "tcd-scripts format --only=prettier",
     "root-lint:eslint": "tcd-scripts lint --only=eslint",
-    "root-lint:prettier": "tcd-scripts lint --only=prettier"
+    "root-lint:prettier": "tcd-scripts lint --only=prettier",
+    "version": "changeset version && bun update"
   },
   "devDependencies": {
     "@changesets/changelog-github": "0.5.1",
