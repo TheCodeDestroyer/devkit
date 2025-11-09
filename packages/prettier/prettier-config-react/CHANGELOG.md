@@ -1,5 +1,16 @@
 # @tcd-devkit/prettier-config-react
 
+## 0.1.6
+
+### Patch Changes
+
+- [#274](https://github.com/TheCodeDestroyer/devkit/pull/274) [`2237677`](https://github.com/TheCodeDestroyer/devkit/commit/223767728d3ff3705147c6a747a463952c12b3f1) Thanks [@TheCodeDestroyer](https://github.com/TheCodeDestroyer)! - Fix publishing
+
+- [#267](https://github.com/TheCodeDestroyer/devkit/pull/267) [`e74a5b0`](https://github.com/TheCodeDestroyer/devkit/commit/e74a5b04352095f658f9151a472d1df4c10ed9e5) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v24.10.0
+
+- Updated dependencies [[`2237677`](https://github.com/TheCodeDestroyer/devkit/commit/223767728d3ff3705147c6a747a463952c12b3f1), [`e74a5b0`](https://github.com/TheCodeDestroyer/devkit/commit/e74a5b04352095f658f9151a472d1df4c10ed9e5)]:
+  - @tcd-devkit/prettier-config@0.2.6
+
 ## 0.1.5
 
 ### Patch Changes

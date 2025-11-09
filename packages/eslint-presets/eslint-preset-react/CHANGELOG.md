@@ -1,5 +1,21 @@
 # @tcd-devkit/eslint-preset-react
 
+## 0.1.4
+
+### Patch Changes
+
+- [#274](https://github.com/TheCodeDestroyer/devkit/pull/274) [`2237677`](https://github.com/TheCodeDestroyer/devkit/commit/223767728d3ff3705147c6a747a463952c12b3f1) Thanks [@TheCodeDestroyer](https://github.com/TheCodeDestroyer)! - Fix publishing
+
+- [#267](https://github.com/TheCodeDestroyer/devkit/pull/267) [`e74a5b0`](https://github.com/TheCodeDestroyer/devkit/commit/e74a5b04352095f658f9151a472d1df4c10ed9e5) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @types/node to v24.10.0
+
+- Updated dependencies [[`2237677`](https://github.com/TheCodeDestroyer/devkit/commit/223767728d3ff3705147c6a747a463952c12b3f1), [`e74a5b0`](https://github.com/TheCodeDestroyer/devkit/commit/e74a5b04352095f658f9151a472d1df4c10ed9e5), [`afde86b`](https://github.com/TheCodeDestroyer/devkit/commit/afde86b3599abfbf3e60df40efa9c554c4754d22), [`81e6fee`](https://github.com/TheCodeDestroyer/devkit/commit/81e6fee4f7162cf151e06e806d1fcd30c377ac25)]:
+  - @tcd-devkit/eslint-config@0.2.4
+  - @tcd-devkit/eslint-config-a11y@0.1.7
+  - @tcd-devkit/eslint-config-import-ts@0.1.9
+  - @tcd-devkit/eslint-config-react@0.1.7
+  - @tcd-devkit/eslint-config-react-hooks@0.0.8
+  - @tcd-devkit/eslint-config-ts@0.2.4
+
 ## 0.1.3
 
 ### Patch Changes
