@@ -2,7 +2,7 @@ import { readdirSync } from 'fs';
 import { join } from 'path';
 
 import eslintPlugin from '@eslint/js';
-import { describe, expect, it } from 'bun:test';
+import { describe, expect, it } from 'vitest';
 
 import { baseRules } from '#base.rules';
 

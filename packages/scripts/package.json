@@ -49,7 +49,7 @@
   "scripts": {
     "build": "tsup",
     "lint:types": "./dist/cli.cjs lint --only=tsc",
-    "prepare": "bun run build"
+    "prepare": "pnpm build"
   },
   "dependencies": {
     "@commander-js/extra-typings": "14.0.0",
