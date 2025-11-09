@@ -1,6 +1,6 @@
 {
   "name": "@tcd-devkit/eslint-config-next",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "ESLint Flat Configuration for Next.js projects. This package provides ESLint rules specific to Next.js, integrating `@next/eslint-plugin-next` for optimal Next.js development.",
   "keywords": [
     "tcd-devkit",

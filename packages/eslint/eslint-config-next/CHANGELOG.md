@@ -1,5 +1,13 @@
 # @tcd-devkit/eslint-config-next
 
+## 0.1.10
+
+### Patch Changes
+
+- [#282](https://github.com/TheCodeDestroyer/devkit/pull/282) [`58073a3`](https://github.com/TheCodeDestroyer/devkit/commit/58073a30797b96d46fa51b55be850c2578098922) Thanks [@TheCodeDestroyer](https://github.com/TheCodeDestroyer)! - Add missing Node globals
+
+- [#279](https://github.com/TheCodeDestroyer/devkit/pull/279) [`56a9728`](https://github.com/TheCodeDestroyer/devkit/commit/56a97287345d4931612bec3f4a0920f87054057c) Thanks [@TheCodeDestroyer](https://github.com/TheCodeDestroyer)! - Fix an issue with NextJS ESLint config
+
 ## 0.1.9
 
 ### Patch Changes
