@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'bun:test';
+import { describe, expect, it } from 'vitest';
 
 import { getLintMessagesForRuleFromFiles } from '@tcd-devkit/internal-utils/test';
 import type { GetLintMessagesOptions } from '@tcd-devkit/internal-utils/test';

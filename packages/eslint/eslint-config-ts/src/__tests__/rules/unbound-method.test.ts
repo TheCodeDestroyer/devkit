@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'bun:test';
+import { describe, expect, it } from 'vitest';
 
 import { tsRules } from '#ts.rules';
 import type { CustomRule } from '#ts.rules';
