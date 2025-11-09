@@ -23,7 +23,7 @@
     },
     "packages/commitlint-config": {
       "name": "@tcd-devkit/commitlint-config",
-      "version": "0.2.6",
+      "version": "0.2.7",
       "dependencies": {
         "@commitlint/config-conventional": "20.0.0",
       },
@@ -39,7 +39,7 @@
     },
     "packages/eslint-presets/eslint-preset-next": {
       "name": "@tcd-devkit/eslint-preset-next",
-      "version": "0.1.10",
+      "version": "0.1.11",
       "dependencies": {
         "@tcd-devkit/eslint-config": "workspace:*",
         "@tcd-devkit/eslint-config-a11y": "workspace:*",
@@ -63,7 +63,7 @@
     },
     "packages/eslint-presets/eslint-preset-node": {
       "name": "@tcd-devkit/eslint-preset-node",
-      "version": "0.1.10",
+      "version": "0.1.11",
       "dependencies": {
         "@tcd-devkit/eslint-config": "workspace:*",
         "@tcd-devkit/eslint-config-import-ts": "workspace:*",
@@ -84,7 +84,7 @@
     },
     "packages/eslint-presets/eslint-preset-react": {
       "name": "@tcd-devkit/eslint-preset-react",
-      "version": "0.1.3",
+      "version": "0.1.4",
       "dependencies": {
         "@tcd-devkit/eslint-config": "workspace:*",
         "@tcd-devkit/eslint-config-a11y": "workspace:*",
@@ -108,7 +108,7 @@
     },
     "packages/eslint/eslint-config": {
       "name": "@tcd-devkit/eslint-config",
-      "version": "0.2.3",
+      "version": "0.2.4",
       "dependencies": {
         "@eslint/compat": "1.4.1",
         "@eslint/js": "9.39.1",
@@ -130,7 +130,7 @@
     },
     "packages/eslint/eslint-config-a11y": {
       "name": "@tcd-devkit/eslint-config-a11y",
-      "version": "0.1.6",
+      "version": "0.1.7",
       "dependencies": {
         "eslint-plugin-jsx-a11y": "6.10.2",
         "globals": "16.5.0",
@@ -151,7 +151,7 @@
     },
     "packages/eslint/eslint-config-import": {
       "name": "@tcd-devkit/eslint-config-import",
-      "version": "0.1.8",
+      "version": "0.1.9",
       "dependencies": {
         "eslint-plugin-import-x": "4.16.1",
       },
@@ -172,7 +172,7 @@
     },
     "packages/eslint/eslint-config-import-ts": {
       "name": "@tcd-devkit/eslint-config-import-ts",
-      "version": "0.1.8",
+      "version": "0.1.9",
       "dependencies": {
         "@tcd-devkit/eslint-config-import": "workspace:*",
         "@typescript-eslint/parser": "8.46.3",
@@ -197,7 +197,7 @@
     },
     "packages/eslint/eslint-config-next": {
       "name": "@tcd-devkit/eslint-config-next",
-      "version": "0.1.7",
+      "version": "0.1.8",
       "dependencies": {
         "@next/eslint-plugin-next": "16.0.1",
       },
@@ -217,7 +217,7 @@
     },
     "packages/eslint/eslint-config-react": {
       "name": "@tcd-devkit/eslint-config-react",
-      "version": "0.1.6",
+      "version": "0.1.7",
       "dependencies": {
         "eslint-plugin-react": "7.37.5",
         "globals": "16.5.0",
@@ -239,7 +239,7 @@
     },
     "packages/eslint/eslint-config-react-hooks": {
       "name": "@tcd-devkit/eslint-config-react-hooks",
-      "version": "0.0.7",
+      "version": "0.0.8",
       "dependencies": {
         "eslint-plugin-react-hooks": "7.0.1",
       },
@@ -260,7 +260,7 @@
     },
     "packages/eslint/eslint-config-ts": {
       "name": "@tcd-devkit/eslint-config-ts",
-      "version": "0.2.3",
+      "version": "0.2.4",
       "dependencies": {
         "typescript-eslint": "8.46.3",
       },
@@ -281,7 +281,7 @@
     },
     "packages/internal-utils": {
       "name": "@tcd-devkit/internal-utils",
-      "version": "0.0.7",
+      "version": "0.0.8",
       "devDependencies": {
         "@tcd-devkit/scripts": "workspace:*",
         "@tcd-devkit/tsconfig": "workspace:*",
@@ -296,7 +296,7 @@
     },
     "packages/prettier/prettier-config": {
       "name": "@tcd-devkit/prettier-config",
-      "version": "0.2.5",
+      "version": "0.2.6",
       "dependencies": {
         "@ianvs/prettier-plugin-sort-imports": "4.6.2",
         "prettier-plugin-packagejson": "2.5.19",
@@ -317,7 +317,7 @@
     },
     "packages/prettier/prettier-config-react": {
       "name": "@tcd-devkit/prettier-config-react",
-      "version": "0.1.5",
+      "version": "0.1.6",
       "dependencies": {
         "@tcd-devkit/prettier-config": "workspace:*",
         "prettier-plugin-tailwindcss": "0.7.1",
@@ -337,7 +337,7 @@
     },
     "packages/scripts": {
       "name": "@tcd-devkit/scripts",
-      "version": "0.2.0",
+      "version": "0.2.1",
       "bin": {
         "tcd-scripts": "./dist/cli.cjs",
       },
@@ -362,14 +362,14 @@
     },
     "packages/tsconfig": {
       "name": "@tcd-devkit/tsconfig",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "devDependencies": {
         "prettier": "3.6.2",
       },
     },
     "packages/tsup-config": {
       "name": "@tcd-devkit/tsup-config",
-      "version": "0.0.7",
+      "version": "0.0.8",
       "devDependencies": {
         "@tcd-devkit/scripts": "workspace:*",
         "@tcd-devkit/tsconfig": "workspace:*",

@@ -1,5 +1,11 @@
 # @tcd-devkit/tsconfig
 
+## 0.1.2
+
+### Patch Changes
+
+- [#274](https://github.com/TheCodeDestroyer/devkit/pull/274) [`2237677`](https://github.com/TheCodeDestroyer/devkit/commit/223767728d3ff3705147c6a747a463952c12b3f1) Thanks [@TheCodeDestroyer](https://github.com/TheCodeDestroyer)! - Fix publishing
+
 ## 0.1.1
 
 ### Patch Changes
