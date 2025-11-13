@@ -65,7 +65,7 @@
     "unit:watch": "pnpm unit --watch"
   },
   "dependencies": {
-    "typescript-eslint": "8.46.3"
+    "typescript-eslint": "8.46.4"
   },
   "devDependencies": {
     "@tcd-devkit/internal-utils": "workspace:*",
