@@ -1,5 +1,13 @@
 # @tcd-devkit/eslint-preset-react
 
+## 0.1.6
+
+### Patch Changes
+
+- Updated dependencies [[`a6e4c97`](https://github.com/TheCodeDestroyer/devkit/commit/a6e4c9783026b3ea0aebcb00b4e67440636f1ba0)]:
+  - @tcd-devkit/eslint-config-import-ts@0.1.11
+  - @tcd-devkit/eslint-config-ts@0.2.6
+
 ## 0.1.5
 
 ### Patch Changes
