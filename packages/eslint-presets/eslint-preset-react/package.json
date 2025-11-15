@@ -70,7 +70,7 @@
     "@tcd-devkit/tsconfig": "workspace:*",
     "@tcd-devkit/tsup-config": "workspace:*",
     "@types/node": "24.10.0",
-    "tsup": "8.5.0"
+    "tsup": "8.5.1"
   },
   "peerDependencies": {
     "eslint": "^9.0.0"
