@@ -1,5 +1,15 @@
 # @tcd-devkit/eslint-config-import
 
+## 0.1.11
+
+### Patch Changes
+
+- [#289](https://github.com/TheCodeDestroyer/devkit/pull/289) [`85e7fb9`](https://github.com/TheCodeDestroyer/devkit/commit/85e7fb9023aab3065c9865af9f01fcf5652e1325) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency tsup to v8.5.1
+
+- [#292](https://github.com/TheCodeDestroyer/devkit/pull/292) [`92dc5ed`](https://github.com/TheCodeDestroyer/devkit/commit/92dc5ed8eca6355499186041c0338cfaf91fde78) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency vitest to v4.0.9
+
+- [#294](https://github.com/TheCodeDestroyer/devkit/pull/294) [`948ac6b`](https://github.com/TheCodeDestroyer/devkit/commit/948ac6b4f560ff7b12caf58a77b5851e3f5de1f5) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency vitest to v4.0.10
+
 ## 0.1.10
 
 ### Patch Changes

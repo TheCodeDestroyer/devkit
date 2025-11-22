@@ -1,6 +1,6 @@
 {
   "name": "@tcd-devkit/eslint-config",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "ESLint Flat Configuration for core JavaScript rules from @eslint/js, part of the @tcd-devkit.",
   "keywords": [
     "tcd-devkit",
