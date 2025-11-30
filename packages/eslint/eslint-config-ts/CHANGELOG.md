@@ -1,5 +1,25 @@
 # @tcd-devkit/eslint-config-ts
 
+## 0.2.6
+
+### Patch Changes
+
+- [#284](https://github.com/TheCodeDestroyer/devkit/pull/284) [`a6e4c97`](https://github.com/TheCodeDestroyer/devkit/commit/a6e4c9783026b3ea0aebcb00b4e67440636f1ba0) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update typescript-eslint monorepo to v8.46.4
+
+- [#289](https://github.com/TheCodeDestroyer/devkit/pull/289) [`85e7fb9`](https://github.com/TheCodeDestroyer/devkit/commit/85e7fb9023aab3065c9865af9f01fcf5652e1325) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency tsup to v8.5.1
+
+- [#292](https://github.com/TheCodeDestroyer/devkit/pull/292) [`92dc5ed`](https://github.com/TheCodeDestroyer/devkit/commit/92dc5ed8eca6355499186041c0338cfaf91fde78) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency vitest to v4.0.9
+
+- [#294](https://github.com/TheCodeDestroyer/devkit/pull/294) [`948ac6b`](https://github.com/TheCodeDestroyer/devkit/commit/948ac6b4f560ff7b12caf58a77b5851e3f5de1f5) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency vitest to v4.0.10
+
+- [#295](https://github.com/TheCodeDestroyer/devkit/pull/295) [`10a58c5`](https://github.com/TheCodeDestroyer/devkit/commit/10a58c5f3a094e173d96991046ea31b3cf499d63) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update typescript-eslint monorepo to v8.47.0
+
+- [#298](https://github.com/TheCodeDestroyer/devkit/pull/298) [`bce1db3`](https://github.com/TheCodeDestroyer/devkit/commit/bce1db34f136f4e861d93f9742484c41933405c5) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency vitest to v4.0.12
+
+- [#301](https://github.com/TheCodeDestroyer/devkit/pull/301) [`567127f`](https://github.com/TheCodeDestroyer/devkit/commit/567127f3f0faef0632b73ad5bdc2b04eb5bb7525) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency vitest to v4.0.13
+
+- [#304](https://github.com/TheCodeDestroyer/devkit/pull/304) [`d6a31b5`](https://github.com/TheCodeDestroyer/devkit/commit/d6a31b59c37abfb2fbb07950134c58952a41b4d6) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency vitest to v4.0.14
+
 ## 0.2.5
 
 ### Patch Changes
