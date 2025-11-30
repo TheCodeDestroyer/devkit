@@ -1,5 +1,13 @@
 # @tcd-devkit/scripts
 
+## 0.2.3
+
+### Patch Changes
+
+- [#289](https://github.com/TheCodeDestroyer/devkit/pull/289) [`85e7fb9`](https://github.com/TheCodeDestroyer/devkit/commit/85e7fb9023aab3065c9865af9f01fcf5652e1325) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency tsup to v8.5.1
+
+- [#297](https://github.com/TheCodeDestroyer/devkit/pull/297) [`0b5b3e0`](https://github.com/TheCodeDestroyer/devkit/commit/0b5b3e070ee8400fea533fdbc15d1fcedcb95eed) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency rimraf to v6.1.2
+
 ## 0.2.2
 
 ### Patch Changes
