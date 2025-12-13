@@ -12,4 +12,4 @@ _.file = ['{{ config_root }}/.env', '{{cwd}}/.env']
 MONO_ROOT_DIR = "{{config_root}}"
 
 [tools]
-node = "22.21.1"
+node = "24.12.0"

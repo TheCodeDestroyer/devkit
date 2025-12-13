@@ -13,10 +13,10 @@ importers:
         version: 0.5.1
       '@changesets/cli':
         specifier: 2.29.7
-        version: 2.29.7(@types/node@24.10.0)
+        version: 2.29.7(@types/node@24.10.3)
       '@commitlint/cli':
         specifier: 20.1.0
-        version: 20.1.0(@types/node@24.10.0)(typescript@5.9.3)
+        version: 20.1.0(@types/node@24.10.3)(typescript@5.9.3)
       '@commitlint/types':
         specifier: 20.0.0
         version: 20.0.0
@@ -70,8 +70,8 @@ importers:
         specifier: workspace:*
         version: link:../tsup-config
       '@types/node':
-        specifier: 24.10.0
-        version: 24.10.0
+        specifier: 24.10.3
+        version: 24.10.3
       tsup:
         specifier: 8.5.1
         version: 8.5.1(jiti@2.6.1)(postcss@8.5.6)(typescript@5.9.3)
@@ -119,8 +119,8 @@ importers:
         specifier: workspace:*
         version: link:../../tsup-config
       '@types/node':
-        specifier: 24.10.0
-        version: 24.10.0
+        specifier: 24.10.3
+        version: 24.10.3
       tsup:
         specifier: 8.5.1
         version: 8.5.1(jiti@2.6.1)(postcss@8.5.6)(typescript@5.9.3)
@@ -156,8 +156,8 @@ importers:
         specifier: workspace:*
         version: link:../../tsup-config
       '@types/node':
-        specifier: 24.10.0
-        version: 24.10.0
+        specifier: 24.10.3
+        version: 24.10.3
       tsup:
         specifier: 8.5.1
         version: 8.5.1(jiti@2.6.1)(postcss@8.5.6)(typescript@5.9.3)
@@ -202,8 +202,8 @@ importers:
         specifier: workspace:*
         version: link:../../tsup-config
       '@types/node':
-        specifier: 24.10.0
-        version: 24.10.0
+        specifier: 24.10.3
+        version: 24.10.3
       tsup:
         specifier: 8.5.1
         version: 8.5.1(jiti@2.6.1)(postcss@8.5.6)(typescript@5.9.3)
@@ -230,8 +230,8 @@ importers:
         specifier: workspace:*
         version: link:../../tsup-config
       '@types/node':
-        specifier: 24.10.0
-        version: 24.10.0
+        specifier: 24.10.3
+        version: 24.10.3
       eslint:
         specifier: 9.39.1
         version: 9.39.1(jiti@2.6.1)
@@ -243,7 +243,7 @@ importers:
         version: 5.9.3
       vitest:
         specifier: 4.0.14
-        version: 4.0.14(@types/node@24.10.0)(jiti@2.6.1)
+        version: 4.0.14(@types/node@24.10.3)(jiti@2.6.1)
 
   packages/eslint/eslint-config-a11y:
     dependencies:
@@ -267,8 +267,8 @@ importers:
         specifier: workspace:*
         version: link:../../tsup-config
       '@types/node':
-        specifier: 24.10.0
-        version: 24.10.0
+        specifier: 24.10.3
+        version: 24.10.3
       eslint:
         specifier: 9.39.1
         version: 9.39.1(jiti@2.6.1)
@@ -298,8 +298,8 @@ importers:
         specifier: workspace:*
         version: link:../../tsup-config
       '@types/node':
-        specifier: 24.10.0
-        version: 24.10.0
+        specifier: 24.10.3
+        version: 24.10.3
       eslint:
         specifier: 9.39.1
         version: 9.39.1(jiti@2.6.1)
@@ -311,7 +311,7 @@ importers:
         version: 5.9.3
       vitest:
         specifier: 4.0.14
-        version: 4.0.14(@types/node@24.10.0)(jiti@2.6.1)
+        version: 4.0.14(@types/node@24.10.3)(jiti@2.6.1)
 
   packages/eslint/eslint-config-import-ts:
     dependencies:
@@ -344,8 +344,8 @@ importers:
         specifier: workspace:*
         version: link:../../tsup-config
       '@types/node':
-        specifier: 24.10.0
-        version: 24.10.0
+        specifier: 24.10.3
+        version: 24.10.3
       eslint:
         specifier: 9.39.1
         version: 9.39.1(jiti@2.6.1)
@@ -357,7 +357,7 @@ importers:
         version: 5.9.3
       vitest:
         specifier: 4.0.14
-        version: 4.0.14(@types/node@24.10.0)(jiti@2.6.1)
+        version: 4.0.14(@types/node@24.10.3)(jiti@2.6.1)
 
   packages/eslint/eslint-config-next:
     dependencies:
@@ -381,8 +381,8 @@ importers:
         specifier: workspace:*
         version: link:../../tsup-config
       '@types/node':
-        specifier: 24.10.0
-        version: 24.10.0
+        specifier: 24.10.3
+        version: 24.10.3
       eslint:
         specifier: 9.39.1
         version: 9.39.1(jiti@2.6.1)
@@ -415,8 +415,8 @@ importers:
         specifier: workspace:*
         version: link:../../tsup-config
       '@types/node':
-        specifier: 24.10.0
-        version: 24.10.0
+        specifier: 24.10.3
+        version: 24.10.3
       eslint:
         specifier: 9.39.1
         version: 9.39.1(jiti@2.6.1)
@@ -428,7 +428,7 @@ importers:
         version: 5.9.3
       vitest:
         specifier: 4.0.14
-        version: 4.0.14(@types/node@24.10.0)(jiti@2.6.1)
+        version: 4.0.14(@types/node@24.10.3)(jiti@2.6.1)
 
   packages/eslint/eslint-config-react-hooks:
     dependencies:
@@ -449,8 +449,8 @@ importers:
         specifier: workspace:*
         version: link:../../tsup-config
       '@types/node':
-        specifier: 24.10.0
-        version: 24.10.0
+        specifier: 24.10.3
+        version: 24.10.3
       eslint:
         specifier: 9.39.1
         version: 9.39.1(jiti@2.6.1)
@@ -462,7 +462,7 @@ importers:
         version: 5.9.3
       vitest:
         specifier: 4.0.14
-        version: 4.0.14(@types/node@24.10.0)(jiti@2.6.1)
+        version: 4.0.14(@types/node@24.10.3)(jiti@2.6.1)
 
   packages/eslint/eslint-config-ts:
     dependencies:
@@ -483,8 +483,8 @@ importers:
         specifier: workspace:*
         version: link:../../tsup-config
       '@types/node':
-        specifier: 24.10.0
-        version: 24.10.0
+        specifier: 24.10.3
+        version: 24.10.3
       eslint:
         specifier: 9.39.1
         version: 9.39.1(jiti@2.6.1)
@@ -496,7 +496,7 @@ importers:
         version: 5.9.3
       vitest:
         specifier: 4.0.14
-        version: 4.0.14(@types/node@24.10.0)(jiti@2.6.1)
+        version: 4.0.14(@types/node@24.10.3)(jiti@2.6.1)
 
   packages/internal-utils:
     dependencies:
@@ -514,8 +514,8 @@ importers:
         specifier: workspace:*
         version: link:../tsup-config
       '@types/node':
-        specifier: 24.10.0
-        version: 24.10.0
+        specifier: 24.10.3
+        version: 24.10.3
       tsup:
         specifier: 8.5.1
         version: 8.5.1(jiti@2.6.1)(postcss@8.5.6)(typescript@5.9.3)
@@ -551,8 +551,8 @@ importers:
         specifier: 0.6.1
         version: 0.6.1
       '@types/node':
-        specifier: 24.10.0
-        version: 24.10.0
+        specifier: 24.10.3
+        version: 24.10.3
       tsup:
         specifier: 8.5.1
         version: 8.5.1(jiti@2.6.1)(postcss@8.5.6)(typescript@5.9.3)
@@ -585,8 +585,8 @@ importers:
         specifier: 0.6.1
         version: 0.6.1
       '@types/node':
-        specifier: 24.10.0
-        version: 24.10.0
+        specifier: 24.10.3
+        version: 24.10.3
       tsup:
         specifier: 8.5.1
         version: 8.5.1(jiti@2.6.1)(postcss@8.5.6)(typescript@5.9.3)
@@ -622,8 +622,8 @@ importers:
         specifier: workspace:*
         version: link:../tsconfig
       '@types/node':
-        specifier: 24.10.0
-        version: 24.10.0
+        specifier: 24.10.3
+        version: 24.10.3
       tsup:
         specifier: 8.5.1
         version: 8.5.1(jiti@2.6.1)(postcss@8.5.6)(typescript@5.9.3)
@@ -646,8 +646,8 @@ importers:
         specifier: workspace:*
         version: link:../tsconfig
       '@types/node':
-        specifier: 24.10.0
-        version: 24.10.0
+        specifier: 24.10.3
+        version: 24.10.3
       tsup:
         specifier: 8.5.1
         version: 8.5.1(jiti@2.6.1)(postcss@8.5.6)(typescript@5.9.3)
@@ -1480,8 +1480,8 @@ packages:
   '@types/node@12.20.55':
     resolution: {integrity: sha512-J8xLz7q2OFulZ2cyGTLE1TbbZcjpno7FaN6zdJNrgAdrJ+DZzh/uFR6YrTb4C+nXakvud8Q4+rbhoIWlYQbUFQ==}
 
-  '@types/node@24.10.0':
-    resolution: {integrity: sha512-qzQZRBqkFsYyaSWXuEHc2WR9c0a0CXwiE5FWUvn7ZM+vdy1uZLfCunD38UzhuB7YN/J11ndbDBcTmOdxJo9Q7A==}
+  '@types/node@24.10.3':
+    resolution: {integrity: sha512-gqkrWUsS8hcm0r44yn7/xZeV1ERva/nLgrLxFRUGb7aoNMIJfZJ3AC261zDQuOAKC7MiXai1WCpYc48jAHoShQ==}
 
   '@typescript-eslint/eslint-plugin@8.47.0':
     resolution: {integrity: sha512-fe0rz9WJQ5t2iaLfdbDc9T80GJy0AeO453q8C3YCilnGozvOyCG5t+EZtg7j7D88+c3FipfP/x+wzGnh1xp8ZA==}
@@ -3768,7 +3768,7 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  '@changesets/cli@2.29.7(@types/node@24.10.0)':
+  '@changesets/cli@2.29.7(@types/node@24.10.3)':
     dependencies:
       '@changesets/apply-release-plan': 7.0.13
       '@changesets/assemble-release-plan': 6.0.9
@@ -3784,7 +3784,7 @@ snapshots:
       '@changesets/should-skip-package': 0.1.2
       '@changesets/types': 6.1.0
       '@changesets/write': 0.4.0
-      '@inquirer/external-editor': 1.0.3(@types/node@24.10.0)
+      '@inquirer/external-editor': 1.0.3(@types/node@24.10.3)
       '@manypkg/get-packages': 1.1.3
       ansi-colors: 4.1.3
       ci-info: 3.9.0
@@ -3894,11 +3894,11 @@ snapshots:
     dependencies:
       commander: 14.0.2
 
-  '@commitlint/cli@20.1.0(@types/node@24.10.0)(typescript@5.9.3)':
+  '@commitlint/cli@20.1.0(@types/node@24.10.3)(typescript@5.9.3)':
     dependencies:
       '@commitlint/format': 20.0.0
       '@commitlint/lint': 20.0.0
-      '@commitlint/load': 20.1.0(@types/node@24.10.0)(typescript@5.9.3)
+      '@commitlint/load': 20.1.0(@types/node@24.10.3)(typescript@5.9.3)
       '@commitlint/read': 20.0.0
       '@commitlint/types': 20.0.0
       tinyexec: 1.0.2
@@ -3945,7 +3945,7 @@ snapshots:
       '@commitlint/rules': 20.0.0
       '@commitlint/types': 20.0.0
 
-  '@commitlint/load@20.1.0(@types/node@24.10.0)(typescript@5.9.3)':
+  '@commitlint/load@20.1.0(@types/node@24.10.3)(typescript@5.9.3)':
     dependencies:
       '@commitlint/config-validator': 20.0.0
       '@commitlint/execute-rule': 20.0.0
@@ -3953,7 +3953,7 @@ snapshots:
       '@commitlint/types': 20.0.0
       chalk: 5.6.2
       cosmiconfig: 9.0.0(typescript@5.9.3)
-      cosmiconfig-typescript-loader: 6.2.0(@types/node@24.10.0)(cosmiconfig@9.0.0(typescript@5.9.3))(typescript@5.9.3)
+      cosmiconfig-typescript-loader: 6.2.0(@types/node@24.10.3)(cosmiconfig@9.0.0(typescript@5.9.3))(typescript@5.9.3)
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
@@ -4254,12 +4254,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@inquirer/external-editor@1.0.3(@types/node@24.10.0)':
+  '@inquirer/external-editor@1.0.3(@types/node@24.10.3)':
     dependencies:
       chardet: 2.1.1
       iconv-lite: 0.7.0
     optionalDependencies:
-      '@types/node': 24.10.0
+      '@types/node': 24.10.3
 
   '@isaacs/balanced-match@4.0.1': {}
 
@@ -4419,7 +4419,7 @@ snapshots:
 
   '@types/conventional-commits-parser@5.0.2':
     dependencies:
-      '@types/node': 24.10.0
+      '@types/node': 24.10.3
 
   '@types/deep-eql@4.0.2': {}
 
@@ -4429,7 +4429,7 @@ snapshots:
 
   '@types/node@12.20.55': {}
 
-  '@types/node@24.10.0':
+  '@types/node@24.10.3':
     dependencies:
       undici-types: 7.16.0
 
@@ -4594,13 +4594,13 @@ snapshots:
       chai: 6.2.1
       tinyrainbow: 3.0.3
 
-  '@vitest/mocker@4.0.14(vite@7.2.4(@types/node@24.10.0)(jiti@2.6.1))':
+  '@vitest/mocker@4.0.14(vite@7.2.4(@types/node@24.10.3)(jiti@2.6.1))':
     dependencies:
       '@vitest/spy': 4.0.14
       estree-walker: 3.0.3
       magic-string: 0.30.21
     optionalDependencies:
-      vite: 7.2.4(@types/node@24.10.0)(jiti@2.6.1)
+      vite: 7.2.4(@types/node@24.10.3)(jiti@2.6.1)
 
   '@vitest/pretty-format@4.0.14':
     dependencies:
@@ -4862,9 +4862,9 @@ snapshots:
 
   convert-source-map@2.0.0: {}
 
-  cosmiconfig-typescript-loader@6.2.0(@types/node@24.10.0)(cosmiconfig@9.0.0(typescript@5.9.3))(typescript@5.9.3):
+  cosmiconfig-typescript-loader@6.2.0(@types/node@24.10.3)(cosmiconfig@9.0.0(typescript@5.9.3))(typescript@5.9.3):
     dependencies:
-      '@types/node': 24.10.0
+      '@types/node': 24.10.3
       cosmiconfig: 9.0.0(typescript@5.9.3)
       jiti: 2.6.1
       typescript: 5.9.3
@@ -6581,7 +6581,7 @@ snapshots:
     dependencies:
       punycode: 2.3.1
 
-  vite@7.2.4(@types/node@24.10.0)(jiti@2.6.1):
+  vite@7.2.4(@types/node@24.10.3)(jiti@2.6.1):
     dependencies:
       esbuild: 0.25.12
       fdir: 6.5.0(picomatch@4.0.3)
@@ -6590,14 +6590,14 @@ snapshots:
       rollup: 4.53.3
       tinyglobby: 0.2.15
     optionalDependencies:
-      '@types/node': 24.10.0
+      '@types/node': 24.10.3
       fsevents: 2.3.3
       jiti: 2.6.1
 
-  vitest@4.0.14(@types/node@24.10.0)(jiti@2.6.1):
+  vitest@4.0.14(@types/node@24.10.3)(jiti@2.6.1):
     dependencies:
       '@vitest/expect': 4.0.14
-      '@vitest/mocker': 4.0.14(vite@7.2.4(@types/node@24.10.0)(jiti@2.6.1))
+      '@vitest/mocker': 4.0.14(vite@7.2.4(@types/node@24.10.3)(jiti@2.6.1))
       '@vitest/pretty-format': 4.0.14
       '@vitest/runner': 4.0.14
       '@vitest/snapshot': 4.0.14
@@ -6614,10 +6614,10 @@ snapshots:
       tinyexec: 0.3.2
       tinyglobby: 0.2.15
       tinyrainbow: 3.0.3
-      vite: 7.2.4(@types/node@24.10.0)(jiti@2.6.1)
+      vite: 7.2.4(@types/node@24.10.3)(jiti@2.6.1)
       why-is-node-running: 2.3.0
     optionalDependencies:
-      '@types/node': 24.10.0
+      '@types/node': 24.10.3
     transitivePeerDependencies:
       - jiti
       - less
