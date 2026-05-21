@@ -38,3 +38,7 @@ yarn-error.log*
 
 # Build
 *.tgz
+
+# Beads: track only config.yaml (DoltHub remote travels to clones); ignore db/runtime
+.beads/*
+!.beads/config.yaml
