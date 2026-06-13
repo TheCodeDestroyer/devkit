@@ -1,5 +1,11 @@
 # @tcd-devkit/commitlint-config
 
+## 0.2.9
+
+### Patch Changes
+
+- [#289](https://github.com/TheCodeDestroyer/devkit/pull/289) [`85e7fb9`](https://github.com/TheCodeDestroyer/devkit/commit/85e7fb9023aab3065c9865af9f01fcf5652e1325) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency tsup to v8.5.1
+
 ## 0.2.8
 
 ### Patch Changes

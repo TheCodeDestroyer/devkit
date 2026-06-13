@@ -1,5 +1,19 @@
 # @tcd-devkit/eslint-config-next
 
+## 0.1.11
+
+### Patch Changes
+
+- [#288](https://github.com/TheCodeDestroyer/devkit/pull/288) [`7dbd7ef`](https://github.com/TheCodeDestroyer/devkit/commit/7dbd7efe5f0dc7c71e5d1c973163c788357088c1) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency @next/eslint-plugin-next to v16.0.2
+
+- [#289](https://github.com/TheCodeDestroyer/devkit/pull/289) [`85e7fb9`](https://github.com/TheCodeDestroyer/devkit/commit/85e7fb9023aab3065c9865af9f01fcf5652e1325) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency tsup to v8.5.1
+
+- [#290](https://github.com/TheCodeDestroyer/devkit/pull/290) [`c059e8c`](https://github.com/TheCodeDestroyer/devkit/commit/c059e8cf617d01132b069f740adf318151a00dc7) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency @next/eslint-plugin-next to v16.0.3
+
+- [#302](https://github.com/TheCodeDestroyer/devkit/pull/302) [`832e26a`](https://github.com/TheCodeDestroyer/devkit/commit/832e26ad1862da0f46013068a63b6ae3c918cf84) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency @next/eslint-plugin-next to v16.0.4
+
+- [#305](https://github.com/TheCodeDestroyer/devkit/pull/305) [`fe7b47c`](https://github.com/TheCodeDestroyer/devkit/commit/fe7b47cd44ad07fd63e5aa8d1cb4d18051f9113e) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency @next/eslint-plugin-next to v16.0.5
+
 ## 0.1.10
 
 ### Patch Changes
