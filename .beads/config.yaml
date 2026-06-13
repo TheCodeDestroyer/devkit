@@ -53,8 +53,5 @@
 # - github.org
 # - github.repo
 
-federation.remote: "dolthub://thecodedestroyer/devkit"
-
-sync.remote: "https://doltremoteapi.dolthub.com/thecodedestroyer/devkit"
-
 export.git-add: false
+dolt.auto-push: false
