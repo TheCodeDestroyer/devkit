@@ -42,3 +42,6 @@ yarn-error.log*
 # Beads: track only config.yaml (DoltHub remote travels to clones); ignore db/runtime
 .beads/*
 !.beads/config.yaml
+
+# Beads 1.3.0+ gate lock, written next to .beads/
+*.gate.lock*
