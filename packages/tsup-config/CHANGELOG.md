@@ -1,5 +1,16 @@
 # @tcd-devkit/tsup-config
 
+## 0.0.10
+
+### Patch Changes
+
+- [#289](https://github.com/TheCodeDestroyer/devkit/pull/289) [`85e7fb9`](https://github.com/TheCodeDestroyer/devkit/commit/85e7fb9023aab3065c9865af9f01fcf5652e1325) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency tsup to v8.5.1
+
+- [#308](https://github.com/TheCodeDestroyer/devkit/pull/308) [`a01b656`](https://github.com/TheCodeDestroyer/devkit/commit/a01b656d9f6f27aef60b4b34b92f16869099d8f4) Thanks [@TheCodeDestroyer](https://github.com/TheCodeDestroyer)! - fix: Remove package entry points that point to files the build does not create
+  - `eslint-config-next` and `eslint-config-a11y`: remove the `./rule-overrides` export. These packages have no rules file, so the import always failed.
+  - Presets: remove the `require` export and point `main` to the ESM file. The build makes ESM only, so the `.cjs` file never existed.
+  - `tsup-config`: point `main` to the ESM file for the same reason.
+
 ## 0.0.9
 
 ### Patch Changes

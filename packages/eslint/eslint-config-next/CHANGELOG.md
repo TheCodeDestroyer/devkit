@@ -1,5 +1,35 @@
 # @tcd-devkit/eslint-config-next
 
+## 0.2.0
+
+### Minor Changes
+
+- [#308](https://github.com/TheCodeDestroyer/devkit/pull/308) [`0c1a5f2`](https://github.com/TheCodeDestroyer/devkit/commit/0c1a5f2cd41bfebf91072df76bb40dcd1f18c93f) Thanks [@TheCodeDestroyer](https://github.com/TheCodeDestroyer)! - feat!: Move all ESLint configs and presets to ESLint 10
+  - The `eslint` peer range is now `^10.0.0`. ESLint 9 is no longer supported.
+  - Dependency updates: `@eslint/js` 10.0.1, `@eslint/compat` 2.1.1, `typescript-eslint` 8.70.0, `eslint-plugin-import-x` 4.17.1, `eslint-import-resolver-typescript` 4.4.5, `eslint-plugin-react-hooks` 7.1.1, `globals` 17.12.0.
+  - `eslint-plugin-react` and `eslint-plugin-jsx-a11y` have no ESLint 10 release yet. The react config now wraps `eslint-plugin-react` with `fixupConfigRules` from `@eslint/compat`. `eslint-plugin-jsx-a11y` runs on ESLint 10 as is. Your package manager can warn about their `eslint` peer range. The react/a11y config and preset READMEs show how to hide this warning in pnpm.
+  - `radix`: ESLint 10 ignores the `as-needed` option, so the rule now always requires a radix. `parseInt('10')` is now an error. Use `parseInt('10', 10)`.
+  - `@typescript-eslint/no-loop-func` is deprecated. The ts config now uses the core `no-loop-func` rule from the base config.
+  - `eslint-plugin-react-hooks` 7.1.1 can change results for the React Compiler rules (`set-state-in-effect`, `refs`, `immutability`, `preserve-manual-memoization`, `use-memo`).
+  - ESLint 10 can report new `max-nested-callbacks` errors, and `typescript-eslint` 8.70 can report new `no-unnecessary-type-assertion` errors.
+
+### Patch Changes
+
+- [#288](https://github.com/TheCodeDestroyer/devkit/pull/288) [`7dbd7ef`](https://github.com/TheCodeDestroyer/devkit/commit/7dbd7efe5f0dc7c71e5d1c973163c788357088c1) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency @next/eslint-plugin-next to v16.0.2
+
+- [#289](https://github.com/TheCodeDestroyer/devkit/pull/289) [`85e7fb9`](https://github.com/TheCodeDestroyer/devkit/commit/85e7fb9023aab3065c9865af9f01fcf5652e1325) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency tsup to v8.5.1
+
+- [#290](https://github.com/TheCodeDestroyer/devkit/pull/290) [`c059e8c`](https://github.com/TheCodeDestroyer/devkit/commit/c059e8cf617d01132b069f740adf318151a00dc7) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency @next/eslint-plugin-next to v16.0.3
+
+- [#302](https://github.com/TheCodeDestroyer/devkit/pull/302) [`832e26a`](https://github.com/TheCodeDestroyer/devkit/commit/832e26ad1862da0f46013068a63b6ae3c918cf84) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency @next/eslint-plugin-next to v16.0.4
+
+- [#305](https://github.com/TheCodeDestroyer/devkit/pull/305) [`fe7b47c`](https://github.com/TheCodeDestroyer/devkit/commit/fe7b47cd44ad07fd63e5aa8d1cb4d18051f9113e) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency @next/eslint-plugin-next to v16.0.5
+
+- [#308](https://github.com/TheCodeDestroyer/devkit/pull/308) [`a01b656`](https://github.com/TheCodeDestroyer/devkit/commit/a01b656d9f6f27aef60b4b34b92f16869099d8f4) Thanks [@TheCodeDestroyer](https://github.com/TheCodeDestroyer)! - fix: Remove package entry points that point to files the build does not create
+  - `eslint-config-next` and `eslint-config-a11y`: remove the `./rule-overrides` export. These packages have no rules file, so the import always failed.
+  - Presets: remove the `require` export and point `main` to the ESM file. The build makes ESM only, so the `.cjs` file never existed.
+  - `tsup-config`: point `main` to the ESM file for the same reason.
+
 ## 0.1.10
 
 ### Patch Changes
