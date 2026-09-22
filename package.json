@@ -28,7 +28,7 @@
     "root-lint:prettier": "tcd-scripts lint --only=prettier"
   },
   "devDependencies": {
-    "@changesets/changelog-github": "0.5.1",
+    "@changesets/changelog-github": "0.7.0",
     "@changesets/cli": "2.29.7",
     "@commitlint/cli": "20.1.0",
     "@commitlint/types": "20.0.0",
