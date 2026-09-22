@@ -1,13 +1,13 @@
 # @tcd-devkit/eslint-preset-next
 
-Comprehensive ESLint Flat Configuration Preset for Next.js projects. This preset bundles a curated set of `@tcd-devkit` ESLint configurations to provide a complete linting solution for modern Next.js applications, including React, TypeScript, accessibility (a11y), and import rules. It is designed for ESLint v9+ and its Flat Config system.
+Comprehensive ESLint Flat Configuration Preset for Next.js projects. This preset bundles a curated set of `@tcd-devkit` ESLint configurations to provide a complete linting solution for modern Next.js applications, including React, TypeScript, accessibility (a11y), and import rules. It is designed for ESLint v10 and its Flat Config system.
 
 ## Features
 
 - **All-in-One Next.js Setup**: Combines configurations for Next.js, React, React Hooks, TypeScript, Imports (JS & TS), and JSX A11y.
 - **Opinionated Defaults**: Provides a strong, opinionated baseline for Next.js projects.
 - **Easy Integration**: Simplifies ESLint setup by providing a single package to install and configure.
-- **Flat Config**: Utilizes ESLint's modern flat configuration format (ESLint v9+).
+- **Flat Config**: Utilizes ESLint's modern flat configuration format (ESLint v10).
 
 This preset includes the following `@tcd-devkit` configurations:
 
@@ -24,16 +24,27 @@ This preset includes the following `@tcd-devkit` configurations:
 
 ```bash
 # Using npm
-npm install -D @tcd-devkit/eslint-preset-next eslint@^9.0.0
+npm install -D @tcd-devkit/eslint-preset-next eslint@^10.0.0
 
 # Using yarn
-yarn add -D @tcd-devkit/eslint-preset-next eslint@^9.0.0
+yarn add -D @tcd-devkit/eslint-preset-next eslint@^10.0.0
 
 # Using pnpm
-pnpm add -D @tcd-devkit/eslint-preset-next eslint@^9.0.0
+pnpm add -D @tcd-devkit/eslint-preset-next eslint@^10.0.0
 ```
 
 All necessary `@tcd-devkit/eslint-config-*` packages are direct dependencies of this preset and will be installed automatically.
+
+### Peer dependency warnings on ESLint 10
+
+`eslint-plugin-react` and `eslint-plugin-jsx-a11y` do not support ESLint 10 yet. `eslint-plugin-react` runs wrapped with `fixupConfigRules` from `@eslint/compat`, and `eslint-plugin-jsx-a11y` runs as is. Your package manager can still warn about their `eslint` peer range. To hide the warning in pnpm, add this to `pnpm-workspace.yaml`:
+
+```yaml
+peerDependencyRules:
+  allowedVersions:
+    eslint-plugin-react>eslint: '10'
+    eslint-plugin-jsx-a11y>eslint: '10'
+```
 
 ## Usage
 

@@ -1,25 +1,25 @@
 # @tcd-devkit/eslint-config-ts
 
-ESLint Flat Configuration for core TypeScript rules. This package provides a foundational set of ESLint rules for TypeScript projects, powered by `typescript-eslint`. It aims to enforce consistent code style, best practices, and catch potential errors in TypeScript code within the @tcd-devkit ecosystem. It is designed for ESLint v9+ and its Flat Config system.
+ESLint Flat Configuration for core TypeScript rules. This package provides a foundational set of ESLint rules for TypeScript projects, powered by `typescript-eslint`. It aims to enforce consistent code style, best practices, and catch potential errors in TypeScript code within the @tcd-devkit ecosystem. It is designed for ESLint v10 and its Flat Config system.
 
 ## Features
 
 - **Core TypeScript Rules**: Leverages `typescript-eslint` recommended and stylistic rules.
 - **Type-Checked Linting**: Designed to work with type information for more powerful linting (requires TypeScript setup in the consuming project).
 - **Modern TypeScript**: Optimized for modern TypeScript features.
-- **Flat Config**: Utilizes ESLint's modern flat configuration format (ESLint v9+).
+- **Flat Config**: Utilizes ESLint's modern flat configuration format (ESLint v10).
 
 ## Installation
 
 ```bash
 # Using npm
-npm install -D @tcd-devkit/eslint-config-ts eslint@^9.0.0
+npm install -D @tcd-devkit/eslint-config-ts eslint@^10.0.0
 
 # Using yarn
-yarn add -D @tcd-devkit/eslint-config-ts eslint@^9.0.0
+yarn add -D @tcd-devkit/eslint-config-ts eslint@^10.0.0
 
 # Using pnpm
-pnpm add -D @tcd-devkit/eslint-config-ts eslint@^9.0.0
+pnpm add -D @tcd-devkit/eslint-config-ts eslint@^10.0.0
 ```
 
 ## Usage

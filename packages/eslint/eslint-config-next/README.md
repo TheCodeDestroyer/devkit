@@ -1,24 +1,24 @@
 # @tcd-devkit/eslint-config-next
 
-ESLint Flat Configuration for Next.js projects. This package provides ESLint rules tailored for Next.js applications, leveraging `@next/eslint-plugin-next` to enforce best practices and optimize development within the @tcd-devkit ecosystem. It is designed for ESLint v9+ and its Flat Config system.
+ESLint Flat Configuration for Next.js projects. This package provides ESLint rules tailored for Next.js applications, leveraging `@next/eslint-plugin-next` to enforce best practices and optimize development within the @tcd-devkit ecosystem. It is designed for ESLint v10 and its Flat Config system.
 
 ## Features
 
 - **Next.js Specific Rules**: Integrates `@next/eslint-plugin-next` for rules specific to Next.js features and conventions.
 - **Performance and Best Practices**: Helps identify patterns that can lead to performance issues or deviate from Next.js best practices.
-- **Flat Config**: Utilizes ESLint's modern flat configuration format (ESLint v9+).
+- **Flat Config**: Utilizes ESLint's modern flat configuration format (ESLint v10).
 
 ## Installation
 
 ```bash
 # Using npm
-npm install -D @tcd-devkit/eslint-config-next eslint@^9.0.0
+npm install -D @tcd-devkit/eslint-config-next eslint@^10.0.0
 
 # Using yarn
-yarn add -D @tcd-devkit/eslint-config-next eslint@^9.0.0
+yarn add -D @tcd-devkit/eslint-config-next eslint@^10.0.0
 
 # Using pnpm
-pnpm add -D @tcd-devkit/eslint-config-next eslint@^9.0.0
+pnpm add -D @tcd-devkit/eslint-config-next eslint@^10.0.0
 ```
 
 ## Usage

@@ -3,8 +3,11 @@ import type { rules as AllImportRules } from 'eslint-plugin-import-x';
 
 type ImportRule = typeof AllImportRules;
 
-type ConsistentTypeSpecifierStyleOptions =
-  ImportRule['consistent-type-specifier-style']['defaultOptions'][0] & {};
+type ConsistentTypeSpecifierStyleOptions = NonNullable<
+  NonNullable<
+    ImportRule['consistent-type-specifier-style']['defaultOptions']
+  >[0]
+>;
 
 export const importTsRules = {
   'import-x/consistent-type-specifier-style': [

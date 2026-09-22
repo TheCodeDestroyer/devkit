@@ -1,24 +1,24 @@
 # @tcd-devkit/eslint-config-import
 
-ESLint Flat Configuration for JavaScript import rules using `eslint-plugin-import-x`. This package provides a comprehensive set of ESLint rules that enforce consistent import statements and best practices for module imports in JavaScript codebases within the @tcd-devkit ecosystem. It is designed for ESLint v9+ and its Flat Config system.
+ESLint Flat Configuration for JavaScript import rules using `eslint-plugin-import-x`. This package provides a comprehensive set of ESLint rules that enforce consistent import statements and best practices for module imports in JavaScript codebases within the @tcd-devkit ecosystem. It is designed for ESLint v10 and its Flat Config system.
 
 ## Features
 
 - **JavaScript Import Rules**: Leverages `eslint-plugin-import-x` for JavaScript projects.
 - **Modern JavaScript**: Optimized for modern JavaScript features.
-- **Flat Config**: Utilizes ESLint's modern flat configuration format (ESLint v9+).
+- **Flat Config**: Utilizes ESLint's modern flat configuration format (ESLint v10).
 
 ## Installation
 
 ```bash
 # Using npm
-npm install -D @tcd-devkit/eslint-config-import eslint@^9.0.0
+npm install -D @tcd-devkit/eslint-config-import eslint@^10.0.0
 
 # Using yarn
-yarn add -D @tcd-devkit/eslint-config-import eslint@^9.0.0
+yarn add -D @tcd-devkit/eslint-config-import eslint@^10.0.0
 
 # Using pnpm
-pnpm add -D @tcd-devkit/eslint-config-import eslint@^9.0.0
+pnpm add -D @tcd-devkit/eslint-config-import eslint@^10.0.0
 ```
 
 ## Usage

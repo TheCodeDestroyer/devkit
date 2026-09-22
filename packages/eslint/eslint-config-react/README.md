@@ -1,25 +1,35 @@
 # @tcd-devkit/eslint-config-react
 
-ESLint Flat Configuration for React projects. This package provides a comprehensive set of ESLint rules for React applications, leveraging `eslint-plugin-react` to enforce best practices, improve code quality, and maintain consistency in React/JSX code. It is part of the @tcd-devkit ecosystem and designed for ESLint v9+ with its Flat Config system.
+ESLint Flat Configuration for React projects. This package provides a comprehensive set of ESLint rules for React applications, leveraging `eslint-plugin-react` to enforce best practices, improve code quality, and maintain consistency in React/JSX code. It is part of the @tcd-devkit ecosystem and designed for ESLint v10 with its Flat Config system.
 
 ## Features
 
 - **Core React Rules**: Integrates `eslint-plugin-react` recommended rules.
 - **JSX Best Practices**: Enforces best practices for writing JSX.
 - **Modern React**: Optimized for modern React features (e.g., Hooks, new JSX transform).
-- **Flat Config**: Utilizes ESLint's modern flat configuration format (ESLint v9+).
+- **Flat Config**: Utilizes ESLint's modern flat configuration format (ESLint v10).
 
 ## Installation
 
 ```bash
 # Using npm
-npm install -D @tcd-devkit/eslint-config-react eslint@^9.0.0
+npm install -D @tcd-devkit/eslint-config-react eslint@^10.0.0
 
 # Using yarn
-yarn add -D @tcd-devkit/eslint-config-react eslint@^9.0.0
+yarn add -D @tcd-devkit/eslint-config-react eslint@^10.0.0
 
 # Using pnpm
-pnpm add -D @tcd-devkit/eslint-config-react eslint@^9.0.0
+pnpm add -D @tcd-devkit/eslint-config-react eslint@^10.0.0
+```
+
+### Peer dependency warnings on ESLint 10
+
+`eslint-plugin-react` does not support ESLint 10 yet. This config wraps it with `fixupConfigRules` from `@eslint/compat`, so it runs correctly. Your package manager can still warn about its `eslint` peer range. To hide the warning in pnpm, add this to `pnpm-workspace.yaml`:
+
+```yaml
+peerDependencyRules:
+  allowedVersions:
+    eslint-plugin-react>eslint: '10'
 ```
 
 ## Usage

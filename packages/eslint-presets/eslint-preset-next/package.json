@@ -75,7 +75,7 @@
     "tsup": "8.5.1"
   },
   "peerDependencies": {
-    "eslint": "^9.0.0"
+    "eslint": "^10.0.0"
   },
   "engines": {
     "node": ">=20.11.0 || >=21.2.0"

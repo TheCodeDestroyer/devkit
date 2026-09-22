@@ -4,7 +4,7 @@ A collection of opinionated, shareable configurations and development tools for 
 
 ## Features
 
-- **ESLint Base Configurations:** Granular ESLint setups for JavaScript and TypeScript, with support for various frameworks and plugins (e.g., React, Next.js, TypeScript, Import sorting, A11y). Built using ESLint's v9+ Flat Config system.
+- **ESLint Base Configurations:** Granular ESLint setups for JavaScript and TypeScript, with support for various frameworks and plugins (e.g., React, Next.js, TypeScript, Import sorting, A11y). Built using ESLint's v10 Flat Config system.
 - **ESLint Presets:** Combined configurations that bundle multiple base configs together, providing ready-to-use setups for specific project types (e.g., Next.js, Node.js).
 - **Prettier Configurations:** Opinionated Prettier setups to ensure consistent code formatting, including plugins for sorting imports and formatting specific file types.
 - **TypeScript Configurations:** Base `tsconfig.json` files for different project types, promoting type safety and modern TypeScript practices.

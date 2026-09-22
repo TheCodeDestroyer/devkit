@@ -65,8 +65,9 @@
     "unit:watch": "pnpm unit --watch"
   },
   "dependencies": {
+    "@eslint/compat": "2.1.1",
     "eslint-plugin-react": "7.37.5",
-    "globals": "16.5.0"
+    "globals": "17.12.0"
   },
   "devDependencies": {
     "@tcd-devkit/internal-utils": "workspace:*",
@@ -74,13 +75,13 @@
     "@tcd-devkit/tsconfig": "workspace:*",
     "@tcd-devkit/tsup-config": "workspace:*",
     "@types/node": "24.10.0",
-    "eslint": "9.39.1",
+    "eslint": "10.10.0",
     "tsup": "8.5.1",
     "typescript": "5.9.3",
     "vitest": "4.0.14"
   },
   "peerDependencies": {
-    "eslint": "^9.0.0"
+    "eslint": "^10.0.0"
   },
   "engines": {
     "node": ">=20.11.0 || >=21.2.0"
