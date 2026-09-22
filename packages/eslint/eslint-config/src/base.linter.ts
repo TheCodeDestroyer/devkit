@@ -1,10 +1,9 @@
 import fs from 'node:fs';
 import { fileURLToPath } from 'node:url';
 
-import { includeIgnoreFile } from '@eslint/compat';
 import eslintPlugin from '@eslint/js';
 import type { Linter } from 'eslint';
-import { defineConfig } from 'eslint/config';
+import { defineConfig, includeIgnoreFile } from 'eslint/config';
 
 import { baseRules } from '#base.rules';
 

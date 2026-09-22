@@ -1,13 +1,13 @@
 # @tcd-devkit/eslint-preset-node
 
-Comprehensive ESLint Flat Configuration Preset for Node.js projects. This preset bundles a curated set of `@tcd-devkit` ESLint configurations to provide a robust linting solution for modern Node.js applications, particularly those using TypeScript. It is designed for ESLint v9+ and its Flat Config system.
+Comprehensive ESLint Flat Configuration Preset for Node.js projects. This preset bundles a curated set of `@tcd-devkit` ESLint configurations to provide a robust linting solution for modern Node.js applications, particularly those using TypeScript. It is designed for ESLint v10 and its Flat Config system.
 
 ## Features
 
 - **All-in-One Node.js Setup**: Combines configurations for core JavaScript, TypeScript, and import rules (JS & TS).
 - **Opinionated Defaults**: Provides a strong, opinionated baseline for Node.js projects.
 - **Easy Integration**: Simplifies ESLint setup by providing a single package to install and configure.
-- **Flat Config**: Utilizes ESLint's modern flat configuration format (ESLint v9+).
+- **Flat Config**: Utilizes ESLint's modern flat configuration format (ESLint v10).
 
 This preset includes the following `@tcd-devkit` configurations:
 
@@ -20,20 +20,20 @@ This preset includes the following `@tcd-devkit` configurations:
 
 ```bash
 # Using npm
-npm install -D @tcd-devkit/eslint-preset-node eslint@^9.0.0
+npm install -D @tcd-devkit/eslint-preset-node eslint@^10.0.0
 
 # Using yarn
-yarn add -D @tcd-devkit/eslint-preset-node eslint@^9.0.0
+yarn add -D @tcd-devkit/eslint-preset-node eslint@^10.0.0
 
 # Using pnpm
-pnpm add -D @tcd-devkit/eslint-preset-node eslint@^9.0.0
+pnpm add -D @tcd-devkit/eslint-preset-node eslint@^10.0.0
 ```
 
 All necessary `@tcd-devkit/eslint-config-*` packages are direct dependencies of this preset and will be installed automatically.
 
 ## Usage
 
-Import and use the preset in your `eslint.config.js` (or `.mjs`/`.cjs`) file:
+Import and use the preset in your `eslint.config.js` (or `.mjs`) file:
 
 ```javascript
 import nodePreset from '@tcd-devkit/eslint-preset-node'; // This is an array of config objects

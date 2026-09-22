@@ -3,7 +3,6 @@ import type { Linter } from 'eslint';
 export const tsRules = {
   'default-param-last': ['off'],
   'no-invalid-this': ['off'],
-  'no-loop-func': ['off'],
   'no-use-before-define': ['off'],
   'no-duplicate-imports': ['off'],
   '@typescript-eslint/no-unused-vars': ['error', { varsIgnorePattern: '^_' }],
@@ -11,7 +10,6 @@ export const tsRules = {
   '@typescript-eslint/default-param-last': ['error'],
   '@typescript-eslint/naming-convention': ['off'],
   '@typescript-eslint/unbound-method': ['off'],
-  '@typescript-eslint/no-loop-func': ['error'],
   '@typescript-eslint/no-misused-promises': [
     'error',
     {

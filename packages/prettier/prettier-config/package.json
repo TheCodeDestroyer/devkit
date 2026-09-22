@@ -13,13 +13,13 @@
     "code-style",
     "base"
   ],
-  "homepage": "https://github.com/thecodedestroyer/devkit",
+  "homepage": "https://github.com/TheCodeDestroyer/devkit",
   "bugs": {
-    "url": "https://github.com/thecodedestroyer/devkit/issues"
+    "url": "https://github.com/TheCodeDestroyer/devkit/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/thecodedestroyer/devkit.git",
+    "url": "https://github.com/TheCodeDestroyer/devkit.git",
     "directory": "packages/prettier/prettier-config"
   },
   "license": "MIT",
@@ -52,6 +52,7 @@
   ],
   "scripts": {
     "build": "tsup",
+    "lint:package": "publint",
     "lint:types": "tcd-scripts lint --only=tsc"
   },
   "dependencies": {

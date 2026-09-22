@@ -12,6 +12,10 @@ jobs:
     name: Release
     runs-on: ubuntu-latest
     timeout-minutes: 5
+    permissions:
+      contents: write
+      pull-requests: write
+      id-token: write # npm trusted publishing (OIDC)
     env:
       TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
       TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
@@ -36,6 +40,10 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
 
+      # Trusted publishing needs npm 11.5.1+. pnpm publish runs the npm CLI.
+      - name: Update npm
+        run: npm install -g npm@11 && npm --version
+
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
@@ -50,4 +58,3 @@ jobs:
           commit: 'chore: Version Packages'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

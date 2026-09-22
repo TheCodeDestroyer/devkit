@@ -13,13 +13,13 @@
     "base",
     "javascript"
   ],
-  "homepage": "https://github.com/thecodedestroyer/devkit",
+  "homepage": "https://github.com/TheCodeDestroyer/devkit",
   "bugs": {
-    "url": "https://github.com/thecodedestroyer/devkit/issues"
+    "url": "https://github.com/TheCodeDestroyer/devkit/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/thecodedestroyer/devkit.git",
+    "url": "https://github.com/TheCodeDestroyer/devkit.git",
     "directory": "packages/eslint/eslint-config"
   },
   "license": "MIT",
@@ -60,13 +60,13 @@
   ],
   "scripts": {
     "build": "tsup",
+    "lint:package": "publint",
     "lint:types": "tcd-scripts lint --only=tsc",
     "unit": "vitest run",
     "unit:watch": "pnpm unit --watch"
   },
   "dependencies": {
-    "@eslint/compat": "2.0.0",
-    "@eslint/js": "9.39.1"
+    "@eslint/js": "10.0.1"
   },
   "devDependencies": {
     "@tcd-devkit/internal-utils": "workspace:*",
@@ -74,13 +74,13 @@
     "@tcd-devkit/tsconfig": "workspace:*",
     "@tcd-devkit/tsup-config": "workspace:*",
     "@types/node": "24.10.0",
-    "eslint": "9.39.1",
+    "eslint": "10.10.0",
     "tsup": "8.5.1",
     "typescript": "5.9.3",
     "vitest": "4.0.14"
   },
   "peerDependencies": {
-    "eslint": "^9.0.0"
+    "eslint": "^10.0.0"
   },
   "engines": {
     "node": "^18.18.0 || >=20.6.0"

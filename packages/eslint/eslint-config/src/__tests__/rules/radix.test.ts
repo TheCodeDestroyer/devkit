@@ -8,22 +8,22 @@ import type { CustomRule } from '#base.rules';
 const ruleId: CustomRule = 'radix';
 
 describe(`${ruleId} rule`, () => {
-  it('should FAIL when using parseInt without radix', async () => {
+  it('should FAIL when using parseInt with an invalid radix', async () => {
     const code = 'const num = parseInt("071", "abc");';
     const messages = await getLintMessagesForRule(baseConfig, code, ruleId);
 
     expect(messages).toHaveLength(1);
   });
 
-  it('should FAIL when using radix when not needed', async () => {
-    const code = 'const num = parseInt("071", 10);';
+  it('should FAIL when using parseInt without radix', async () => {
+    const code = 'const num = parseInt("10");';
     const messages = await getLintMessagesForRule(baseConfig, code, ruleId);
 
     expect(messages).toHaveLength(1);
   });
 
-  it('should PASS when using parseInt without', async () => {
-    const code = 'const num = parseInt("10");';
+  it('should PASS when using parseInt with radix 10', async () => {
+    const code = 'const num = parseInt("071", 10);';
     const messages = await getLintMessagesForRule(baseConfig, code, ruleId);
 
     expect(messages).toHaveLength(0);

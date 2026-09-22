@@ -28,11 +28,14 @@
     "lint:types": {
       "dependsOn": ["^build"]
     },
+    "lint:package": {
+      "dependsOn": ["build"]
+    },
     "unit": {
-      "dependsOn": ["^build"]
+      "dependsOn": ["build"]
     },
     "unit:watch": {
-      "dependsOn": ["^build"],
+      "dependsOn": ["build"],
       "cache": false,
       "persistent": true
     }

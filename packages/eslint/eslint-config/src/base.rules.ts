@@ -124,7 +124,7 @@ export const baseRules = {
   'prefer-rest-params': ['error'],
   'prefer-spread': ['error'],
   'prefer-template': ['error'],
-  radix: ['error', 'as-needed'] satisfies ESLintRules['radix'],
+  radix: ['error'],
   'require-unicode-regexp': ['error'],
   'symbol-description': ['error'],
   yoda: ['error', 'never'] satisfies ESLintRules['yoda'],

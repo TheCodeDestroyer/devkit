@@ -1,29 +1,29 @@
 # @tcd-devkit/eslint-config-react-hooks
 
-ESLint Flat Configuration for React Hooks. This package provides the ESLint rules from `eslint-plugin-react-hooks` to enforce the Rules of Hooks in React applications, promoting correct and efficient hook usage within the @tcd-devkit ecosystem. It is designed for ESLint v9+ and its Flat Config system.
+ESLint Flat Configuration for React Hooks. This package provides the ESLint rules from `eslint-plugin-react-hooks` to enforce the Rules of Hooks in React applications, promoting correct and efficient hook usage within the @tcd-devkit ecosystem. It is designed for ESLint v10 and its Flat Config system.
 
 ## Features
 
 - **Rules of Hooks**: Enforces `eslint-plugin-react-hooks` rules (`rules-of-hooks` and `exhaustive-deps`).
 - **React Best Practices**: Helps maintain best practices for React Hooks.
-- **Flat Config**: Utilizes ESLint's modern flat configuration format (ESLint v9+).
+- **Flat Config**: Utilizes ESLint's modern flat configuration format (ESLint v10).
 
 ## Installation
 
 ```bash
 # Using npm
-npm install -D @tcd-devkit/eslint-config-react-hooks eslint@^9.0.0
+npm install -D @tcd-devkit/eslint-config-react-hooks eslint@^10.0.0
 
 # Using yarn
-yarn add -D @tcd-devkit/eslint-config-react-hooks eslint@^9.0.0
+yarn add -D @tcd-devkit/eslint-config-react-hooks eslint@^10.0.0
 
 # Using pnpm
-pnpm add -D @tcd-devkit/eslint-config-react-hooks eslint@^9.0.0
+pnpm add -D @tcd-devkit/eslint-config-react-hooks eslint@^10.0.0
 ```
 
 ## Usage
 
-Import and use the configuration in your `eslint.config.js` (or `.mjs`/`.cjs`) file:
+Import and use the configuration in your `eslint.config.js` (or `.mjs`) file:
 
 ```javascript
 import reactHooksConfig from '@tcd-devkit/eslint-config-react-hooks'; // This is an array of config objects

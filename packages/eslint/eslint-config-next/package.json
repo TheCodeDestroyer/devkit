@@ -14,13 +14,13 @@
     "react",
     "flat-config"
   ],
-  "homepage": "https://github.com/thecodedestroyer/devkit",
+  "homepage": "https://github.com/TheCodeDestroyer/devkit",
   "bugs": {
-    "url": "https://github.com/thecodedestroyer/devkit/issues"
+    "url": "https://github.com/TheCodeDestroyer/devkit/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/thecodedestroyer/devkit.git",
+    "url": "https://github.com/TheCodeDestroyer/devkit.git",
     "directory": "packages/eslint/eslint-config-next"
   },
   "license": "MIT",
@@ -40,10 +40,6 @@
     ".": {
       "types": "./dist/next.linter.d.ts",
       "import": "./dist/next.linter.js"
-    },
-    "./rule-overrides": {
-      "types": "./dist/next.rules.d.ts",
-      "import": "./dist/next.rules.js"
     }
   },
   "main": "./dist/next.linter.js",
@@ -61,11 +57,12 @@
   ],
   "scripts": {
     "build": "tsup",
+    "lint:package": "publint",
     "lint:types": "tcd-scripts lint --only=tsc"
   },
   "dependencies": {
     "@next/eslint-plugin-next": "16.0.5",
-    "globals": "16.5.0"
+    "globals": "17.12.0"
   },
   "devDependencies": {
     "@tcd-devkit/internal-utils": "workspace:*",
@@ -73,12 +70,12 @@
     "@tcd-devkit/tsconfig": "workspace:*",
     "@tcd-devkit/tsup-config": "workspace:*",
     "@types/node": "24.10.0",
-    "eslint": "9.39.1",
+    "eslint": "10.10.0",
     "tsup": "8.5.1",
     "typescript": "5.9.3"
   },
   "peerDependencies": {
-    "eslint": "^9.0.0"
+    "eslint": "^10.0.0"
   },
   "engines": {
     "node": ">=20.11.0 || >=21.2.0"

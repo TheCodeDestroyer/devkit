@@ -16,13 +16,13 @@
     "typescript",
     "javascript"
   ],
-  "homepage": "https://github.com/thecodedestroyer/devkit",
+  "homepage": "https://github.com/TheCodeDestroyer/devkit",
   "bugs": {
-    "url": "https://github.com/thecodedestroyer/devkit/issues"
+    "url": "https://github.com/TheCodeDestroyer/devkit/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/thecodedestroyer/devkit.git",
+    "url": "https://github.com/TheCodeDestroyer/devkit.git",
     "directory": "packages/scripts"
   },
   "license": "MIT",
@@ -48,6 +48,7 @@
   ],
   "scripts": {
     "build": "tsup",
+    "lint:package": "publint",
     "lint:types": "./dist/cli.cjs lint --only=tsc",
     "prepare": "pnpm build"
   },
@@ -65,7 +66,7 @@
     "typescript": "5.9.3"
   },
   "peerDependencies": {
-    "eslint": "^9.0.0",
+    "eslint": "^9.0.0 || ^10.0.0",
     "prettier": "^3.0.0",
     "typescript": "^5.0.0"
   },
