@@ -1,5 +1,32 @@
 # @tcd-devkit/eslint-config-react-hooks
 
+## 0.1.0
+
+### Minor Changes
+
+- [#308](https://github.com/TheCodeDestroyer/devkit/pull/308) [`0c1a5f2`](https://github.com/TheCodeDestroyer/devkit/commit/0c1a5f2cd41bfebf91072df76bb40dcd1f18c93f) Thanks [@TheCodeDestroyer](https://github.com/TheCodeDestroyer)! - feat!: Move all ESLint configs and presets to ESLint 10
+  - The `eslint` peer range is now `^10.0.0`. ESLint 9 is no longer supported.
+  - Dependency updates: `@eslint/js` 10.0.1, `@eslint/compat` 2.1.1, `typescript-eslint` 8.70.0, `eslint-plugin-import-x` 4.17.1, `eslint-import-resolver-typescript` 4.4.5, `eslint-plugin-react-hooks` 7.1.1, `globals` 17.12.0.
+  - `eslint-plugin-react` and `eslint-plugin-jsx-a11y` have no ESLint 10 release yet. The react config now wraps `eslint-plugin-react` with `fixupConfigRules` from `@eslint/compat`. `eslint-plugin-jsx-a11y` runs on ESLint 10 as is. Your package manager can warn about their `eslint` peer range. The react/a11y config and preset READMEs show how to hide this warning in pnpm.
+  - `radix`: ESLint 10 ignores the `as-needed` option, so the rule now always requires a radix. `parseInt('10')` is now an error. Use `parseInt('10', 10)`.
+  - `@typescript-eslint/no-loop-func` is deprecated. The ts config now uses the core `no-loop-func` rule from the base config.
+  - `eslint-plugin-react-hooks` 7.1.1 can change results for the React Compiler rules (`set-state-in-effect`, `refs`, `immutability`, `preserve-manual-memoization`, `use-memo`).
+  - ESLint 10 can report new `max-nested-callbacks` errors, and `typescript-eslint` 8.70 can report new `no-unnecessary-type-assertion` errors.
+
+### Patch Changes
+
+- [#289](https://github.com/TheCodeDestroyer/devkit/pull/289) [`85e7fb9`](https://github.com/TheCodeDestroyer/devkit/commit/85e7fb9023aab3065c9865af9f01fcf5652e1325) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency tsup to v8.5.1
+
+- [#292](https://github.com/TheCodeDestroyer/devkit/pull/292) [`92dc5ed`](https://github.com/TheCodeDestroyer/devkit/commit/92dc5ed8eca6355499186041c0338cfaf91fde78) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency vitest to v4.0.9
+
+- [#294](https://github.com/TheCodeDestroyer/devkit/pull/294) [`948ac6b`](https://github.com/TheCodeDestroyer/devkit/commit/948ac6b4f560ff7b12caf58a77b5851e3f5de1f5) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency vitest to v4.0.10
+
+- [#298](https://github.com/TheCodeDestroyer/devkit/pull/298) [`bce1db3`](https://github.com/TheCodeDestroyer/devkit/commit/bce1db34f136f4e861d93f9742484c41933405c5) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency vitest to v4.0.12
+
+- [#301](https://github.com/TheCodeDestroyer/devkit/pull/301) [`567127f`](https://github.com/TheCodeDestroyer/devkit/commit/567127f3f0faef0632b73ad5bdc2b04eb5bb7525) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency vitest to v4.0.13
+
+- [#304](https://github.com/TheCodeDestroyer/devkit/pull/304) [`d6a31b5`](https://github.com/TheCodeDestroyer/devkit/commit/d6a31b59c37abfb2fbb07950134c58952a41b4d6) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency vitest to v4.0.14
+
 ## 0.0.9
 
 ### Patch Changes
