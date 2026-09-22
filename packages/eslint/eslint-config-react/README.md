@@ -34,7 +34,7 @@ peerDependencyRules:
 
 ## Usage
 
-Import and use the configuration in your `eslint.config.js` (or `.mjs`/`.cjs`) file:
+Import and use the configuration in your `eslint.config.js` (or `.mjs`) file:
 
 ```javascript
 import reactConfig from '@tcd-devkit/eslint-config-react'; // This is an array of config objects

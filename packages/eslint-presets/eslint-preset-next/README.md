@@ -48,7 +48,7 @@ peerDependencyRules:
 
 ## Usage
 
-Import and use the preset in your `eslint.config.js` (or `.mjs`/`.cjs`) file:
+Import and use the preset in your `eslint.config.js` (or `.mjs`) file:
 
 ```javascript
 import nextPreset from '@tcd-devkit/eslint-preset-next'; // This is an array of config objects

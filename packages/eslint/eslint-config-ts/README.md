@@ -24,7 +24,7 @@ pnpm add -D @tcd-devkit/eslint-config-ts eslint@^10.0.0
 
 ## Usage
 
-Import and use the configuration in your `eslint.config.js` (or `.mjs`/`.cjs`) file:
+Import and use the configuration in your `eslint.config.js` (or `.mjs`) file:
 
 ```javascript
 import tsConfig from '@tcd-devkit/eslint-config-ts'; // This is an array of config objects

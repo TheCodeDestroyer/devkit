@@ -47,7 +47,7 @@ peerDependencyRules:
 
 ## Usage
 
-Import and use the preset in your `eslint.config.js` (or `.mjs`/`.cjs`) file:
+Import and use the preset in your `eslint.config.js` (or `.mjs`) file:
 
 ```javascript
 import reactPreset from '@tcd-devkit/eslint-preset-react'; // This is an array of config objects

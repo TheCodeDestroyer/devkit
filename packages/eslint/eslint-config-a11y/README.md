@@ -33,7 +33,7 @@ peerDependencyRules:
 
 ## Usage
 
-Import and use the configuration in your `eslint.config.js` (or `.mjs`/`.cjs`) file:
+Import and use the configuration in your `eslint.config.js` (or `.mjs`) file:
 
 ```javascript
 import a11yConfig from '@tcd-devkit/eslint-config-a11y'; // This is an array of config objects

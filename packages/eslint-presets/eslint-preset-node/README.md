@@ -33,7 +33,7 @@ All necessary `@tcd-devkit/eslint-config-*` packages are direct dependencies of 
 
 ## Usage
 
-Import and use the preset in your `eslint.config.js` (or `.mjs`/`.cjs`) file:
+Import and use the preset in your `eslint.config.js` (or `.mjs`) file:
 
 ```javascript
 import nodePreset from '@tcd-devkit/eslint-preset-node'; // This is an array of config objects
