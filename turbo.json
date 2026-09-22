@@ -29,10 +29,10 @@
       "dependsOn": ["^build"]
     },
     "unit": {
-      "dependsOn": ["^build"]
+      "dependsOn": ["build"]
     },
     "unit:watch": {
-      "dependsOn": ["^build"],
+      "dependsOn": ["build"],
       "cache": false,
       "persistent": true
     }
