@@ -50,11 +50,20 @@ jobs:
       - name: Run build
         run: pnpm turbo build
 
+      # Pushes made with GITHUB_TOKEN do not start workflow runs, so CI would
+      # not run on the Version Packages PR. An App token does start them.
+      - name: Get GitHub App token
+        id: app-token
+        uses: actions/create-github-app-token@v3
+        with:
+          client-id: ${{ secrets.RELEASE_APP_CLIENT_ID }}
+          private-key: ${{ secrets.RELEASE_APP_PRIVATE_KEY }}
+
       - name: Create Release Pull Request or Publish to npm
         id: changesets
         uses: changesets/action@v1
         with:
           publish: pnpm release
           commit: 'chore: Version Packages'
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ steps.app-token.outputs.token }}
+          commitMode: github-api

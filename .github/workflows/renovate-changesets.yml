@@ -4,6 +4,12 @@ on:
   pull_request_target:
     types: [opened, synchronize, labeled]
 
+# The changeset push fires another synchronize event. Run one at a time per PR
+# so the second run does not race the first.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number }}
+  cancel-in-progress: false
+
 jobs:
   renovate:
     name: Update Renovate PR
