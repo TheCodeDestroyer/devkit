@@ -61,6 +61,7 @@
   ],
   "scripts": {
     "build": "tsup",
+    "lint:package": "publint",
     "lint:types": "tcd-scripts lint --only=tsc",
     "unit": "vitest run",
     "unit:watch": "pnpm unit --watch"

@@ -35,12 +35,10 @@
   "exports": {
     ".": {
       "types": "./dist/next-preset.linter.d.ts",
-      "require": "./dist/next-preset.linter.cjs",
       "import": "./dist/next-preset.linter.js"
     }
   },
-  "main": "./dist/next-preset.linter.cjs",
-  "module": "./dist/next-preset.linter.js",
+  "main": "./dist/next-preset.linter.js",
   "types": "./dist/next-preset.linter.d.ts",
   "typesVersions": {
     "*": {
@@ -55,6 +53,7 @@
   ],
   "scripts": {
     "build": "tsup",
+    "lint:package": "publint",
     "lint:types": "tcd-scripts lint --only=tsc"
   },
   "dependencies": {

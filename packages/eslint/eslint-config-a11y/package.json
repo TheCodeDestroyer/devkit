@@ -41,10 +41,6 @@
     ".": {
       "types": "./dist/a11y.linter.d.ts",
       "import": "./dist/a11y.linter.js"
-    },
-    "./rule-overrides": {
-      "types": "./dist/a11y.rules.d.ts",
-      "import": "./dist/a11y.rules.js"
     }
   },
   "main": "./dist/a11y.linter.js",
@@ -62,6 +58,7 @@
   ],
   "scripts": {
     "build": "tsup",
+    "lint:package": "publint",
     "lint:types": "tcd-scripts lint --only=tsc"
   },
   "dependencies": {

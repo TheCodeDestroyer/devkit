@@ -33,12 +33,10 @@
   "exports": {
     ".": {
       "types": "./dist/node-preset.linter.d.ts",
-      "require": "./dist/node-preset.linter.cjs",
       "import": "./dist/node-preset.linter.js"
     }
   },
-  "main": "./dist/node-preset.linter.cjs",
-  "module": "./dist/node-preset.linter.js",
+  "main": "./dist/node-preset.linter.js",
   "types": "./dist/node-preset.linter.d.ts",
   "typesVersions": {
     "*": {
@@ -53,6 +51,7 @@
   ],
   "scripts": {
     "build": "tsup",
+    "lint:package": "publint",
     "lint:types": "tcd-scripts lint --only=tsc"
   },
   "dependencies": {

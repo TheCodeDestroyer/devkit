@@ -28,6 +28,9 @@
     "lint:types": {
       "dependsOn": ["^build"]
     },
+    "lint:package": {
+      "dependsOn": ["build"]
+    },
     "unit": {
       "dependsOn": ["build"]
     },

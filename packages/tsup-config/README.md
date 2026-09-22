@@ -1,13 +1,13 @@
 # @tcd-devkit/tsup-config
 
-Shareable `tsup` configuration for building TypeScript libraries. This configuration provides sensible defaults, focusing on reliable declaration map (`.d.ts.map`) generation and ESM/CJS compatibility.
+Shareable `tsup` configuration for building TypeScript libraries. This configuration provides sensible defaults, focusing on reliable declaration map (`.d.ts.map`) generation for ESM packages.
 
 ## Features
 
 - Sensible defaults for `tsup` builds.
 - Reliable generation of TypeScript declaration maps.
 - Configurable and extensible for various project needs.
-- Outputs both ESM and CJS modules by default.
+- Outputs ESM only (`format: 'esm'`).
 
 ## Installation
 
@@ -19,40 +19,17 @@ pnpm add -D @tcd-devkit/tsup-config tsup typescript
 
 ## Usage
 
-Create a `tsup.config.ts` file in the root of your package and import the base configuration. You can then extend it as needed.
+Create a `tsup.config.ts` file in the root of your package and use the `lib` configuration. You can extend it as needed.
 
 ```typescript
 import { defineConfig } from 'tsup';
 
-import baseConfig from '@tcd-devkit/tsup-config';
+import { tsupLibConfig } from '@tcd-devkit/tsup-config/lib';
 
-export default defineConfig((options) => ({
-  ...baseConfig,
-  entry: ['src/index.ts'], // Your library's entry point(s)
-  // Add any specific overrides or additional options here
-  // For example:
-  // outDir: 'dist',
-  // splitting: false,
-  // sourcemap: true,
-  // clean: true,
-  ...options, // Pass through CLI options
-}));
-```
-
-### Multiple Configurations
-
-The package also exports named configurations if you need more specific setups or want to combine them. For example, `libConfig` is the default.
-
-```typescript
-import { defineConfig } from 'tsup';
-
-import { libConfig } from '@tcd-devkit/tsup-config'; // Or other named configs
-
-export default defineConfig((options) => ({
-  ...libConfig, // Use a specific named config
-  entry: ['src/index.ts'],
-  ...options,
-}));
+export default defineConfig({
+  ...tsupLibConfig,
+  // Add any specific overrides here
+});
 ```
 
 Refer to the `tsup` [documentation](https://tsup.egoist.dev/) for all available options.

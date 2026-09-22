@@ -36,8 +36,7 @@
       "import": "./dist/*.tsup.config.js"
     }
   },
-  "main": "./dist/lib.tsup.config.cjs",
-  "module": "./dist/lib.tsup.config.js",
+  "main": "./dist/lib.tsup.config.js",
   "types": "./dist/lib.tsup.config.d.ts",
   "files": [
     "dist",
@@ -45,6 +44,7 @@
   ],
   "scripts": {
     "build": "tsup",
+    "lint:package": "publint",
     "lint:types": "tcd-scripts lint --only=tsc"
   },
   "devDependencies": {

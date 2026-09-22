@@ -41,6 +41,7 @@
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
+    "lint:package": "publint",
     "lint:types": "tcd-scripts lint --only=tsc"
   },
   "dependencies": {

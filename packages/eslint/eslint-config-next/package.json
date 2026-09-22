@@ -40,10 +40,6 @@
     ".": {
       "types": "./dist/next.linter.d.ts",
       "import": "./dist/next.linter.js"
-    },
-    "./rule-overrides": {
-      "types": "./dist/next.rules.d.ts",
-      "import": "./dist/next.rules.js"
     }
   },
   "main": "./dist/next.linter.js",
@@ -61,6 +57,7 @@
   ],
   "scripts": {
     "build": "tsup",
+    "lint:package": "publint",
     "lint:types": "tcd-scripts lint --only=tsc"
   },
   "dependencies": {

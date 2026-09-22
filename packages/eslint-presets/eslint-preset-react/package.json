@@ -33,12 +33,10 @@
   "exports": {
     ".": {
       "types": "./dist/react-preset.linter.d.ts",
-      "require": "./dist/react-preset.linter.cjs",
       "import": "./dist/react-preset.linter.js"
     }
   },
-  "main": "./dist/react-preset.linter.cjs",
-  "module": "./dist/react-preset.linter.js",
+  "main": "./dist/react-preset.linter.js",
   "types": "./dist/react-preset.linter.d.ts",
   "typesVersions": {
     "*": {
@@ -53,6 +51,7 @@
   ],
   "scripts": {
     "build": "tsup",
+    "lint:package": "publint",
     "lint:types": "tcd-scripts lint --only=tsc"
   },
   "dependencies": {
