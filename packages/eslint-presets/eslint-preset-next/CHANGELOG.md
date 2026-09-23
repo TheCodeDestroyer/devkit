@@ -1,5 +1,18 @@
 # @tcd-devkit/eslint-preset-next
 
+## 0.2.1
+
+### Patch Changes
+
+- Updated dependencies [[`12b73fc`](https://github.com/TheCodeDestroyer/devkit/commit/12b73fcb320388da8394b9817514693296adb40a)]:
+  - @tcd-devkit/eslint-config-import-ts@0.2.1
+  - @tcd-devkit/eslint-config-react-hooks@0.1.1
+  - @tcd-devkit/eslint-config-react@0.2.1
+  - @tcd-devkit/eslint-config-ts@0.3.1
+  - @tcd-devkit/eslint-config@0.3.1
+  - @tcd-devkit/eslint-config-a11y@0.2.0
+  - @tcd-devkit/eslint-config-next@0.2.0
+
 ## 0.2.0
 
 ### Minor Changes
