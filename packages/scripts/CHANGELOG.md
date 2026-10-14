@@ -1,5 +1,15 @@
 # @tcd-devkit/scripts
 
+## 0.2.4
+
+### Patch Changes
+
+- [#310](https://github.com/TheCodeDestroyer/devkit/pull/310) [`f14f317`](https://github.com/TheCodeDestroyer/devkit/commit/f14f31789e68c8f2ee06af0717d3355777257d33) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency commander to v14.0.3
+
+- [#314](https://github.com/TheCodeDestroyer/devkit/pull/314) [`7d7dca6`](https://github.com/TheCodeDestroyer/devkit/commit/7d7dca64d80e10c20f5bbee5595342d9ee3400de) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency execa to v9.6.1
+
+- [#316](https://github.com/TheCodeDestroyer/devkit/pull/316) [`b80842c`](https://github.com/TheCodeDestroyer/devkit/commit/b80842ca299846316e124430fbc0ea2829bd5ef4) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency rimraf to v6.1.3
+
 ## 0.2.3
 
 ### Patch Changes
