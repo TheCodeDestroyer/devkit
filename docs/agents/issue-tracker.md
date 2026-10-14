@@ -1,3 +1,9 @@
+---
+tracker: clickup
+clickup-account: zelogic
+clickup-lists: 901223321731
+---
+
 # Issue tracker: ClickUp
 
 Issues and specs for this repo live as ClickUp tasks. Use the `clickup` CLI wrapper (the `ops:clickup` skill) for all operations.
