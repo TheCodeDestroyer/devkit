@@ -1,5 +1,11 @@
 # @tcd-devkit/eslint-config-import
 
+## 0.2.1
+
+### Patch Changes
+
+- [#320](https://github.com/TheCodeDestroyer/devkit/pull/320) [`12b73fc`](https://github.com/TheCodeDestroyer/devkit/commit/12b73fcb320388da8394b9817514693296adb40a) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency vitest to v4.1.11
+
 ## 0.2.0
 
 ### Minor Changes
