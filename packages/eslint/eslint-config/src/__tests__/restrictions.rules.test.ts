@@ -27,6 +27,23 @@ describe('restrictedSyntax', () => {
     ]);
   });
 
+  it('should drop a duplicate entry, so ESLint accepts the config', async () => {
+    const config = withRules({
+      'no-restricted-syntax': restrictedSyntax(ARROW_FUNCTION_SYNTAX),
+    });
+    const messages = await getLintMessagesForRule(
+      config,
+      'const run = function () { return 1; };',
+      'no-restricted-syntax',
+    );
+
+    expect(restrictedSyntax(ARROW_FUNCTION_SYNTAX)).toEqual([
+      'error',
+      ...ARROW_FUNCTION_SYNTAX,
+    ]);
+    expect(messages).toHaveLength(1);
+  });
+
   it('should FAIL on both a base entry and a repo entry', async () => {
     const config = withRules({
       'no-restricted-syntax': restrictedSyntax([
@@ -64,6 +81,21 @@ describe('restrictedImports', () => {
           { group: ['c/*'] },
         ],
       },
+    ]);
+  });
+
+  it('should drop a duplicate entry and keep entries that differ', () => {
+    const query = { name: 'convex/react', importNames: ['useQuery'] };
+    const mutation = { name: 'convex/react', importNames: ['useMutation'] };
+
+    expect(
+      restrictedImports(
+        { paths: [query, mutation], patterns: [{ group: ['a/*'] }] },
+        { paths: [query], patterns: [{ group: ['a/*'] }] },
+      ),
+    ).toEqual([
+      'error',
+      { paths: [query, mutation], patterns: [{ group: ['a/*'] }] },
     ]);
   });
 

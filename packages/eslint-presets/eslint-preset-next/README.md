@@ -81,7 +81,7 @@ The preset turns some rules off for common path conventions. Each block is expor
 | ---------------------- | ----------------------------------------------------------------- | ----------------------------------------------------------------------- |
 | `loggerExemption`      | `**/logger.{ts,js}`, `**/logger.*.{ts,js}`, `**/*.logger.{ts,js}` | `no-console`                                                            |
 | `scriptsExemption`     | `scripts/**`, `src/scripts/**`                                    | `no-console`                                                            |
-| `configFilesExemption` | `**/*.config.{js,cjs,mjs,ts,cts,mts}`                             | `@typescript-eslint/no-unsafe-assignment`, `import-x/no-rename-default` |
+| `configFilesExemption` | `**/*.config.{js,cjs,mjs,ts}`                                     | `@typescript-eslint/no-unsafe-assignment`, `import-x/no-rename-default` |
 | `commonJsExemption`    | `**/*.cjs`                                                        | `@typescript-eslint/no-require-imports`                                 |
 | `manifestExemption`    | `**/app/manifest.{ts,js}`                                         | `camelcase`                                                             |
 | `testsExemption`       | `**/*.{test,spec}.{ts,tsx,js,jsx}`                                | `max-statements`                                                        |

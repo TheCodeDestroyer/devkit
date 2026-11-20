@@ -29,7 +29,7 @@ export const scriptsExemption: Linter.Config = {
  */
 export const configFilesExemption: Linter.Config = {
   name: `${NAME_PREFIX}/config-files`,
-  files: ['**/*.config.{js,cjs,mjs,ts,cts,mts}'],
+  files: ['**/*.config.{js,cjs,mjs,ts}'],
   rules: {
     '@typescript-eslint/no-unsafe-assignment': 'off',
     'import-x/no-rename-default': 'off',

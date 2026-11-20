@@ -49,12 +49,35 @@ export const ARROW_FUNCTION_SYNTAX: RestrictedSyntaxEntry[] = [
 ];
 
 /**
+ * ESLint rejects the whole config when a restriction list holds two identical
+ * entries. Two groups can share an entry, so keep the first one only.
+ */
+const uniqueEntries = <T>(entries: T[]): T[] => {
+  const seen = new Set<string>();
+
+  return entries.filter((entry) => {
+    const key = JSON.stringify(entry);
+
+    if (seen.has(key)) {
+      return false;
+    }
+
+    seen.add(key);
+
+    return true;
+  });
+};
+
+/**
  * Builds one `no-restricted-syntax` entry. The base config's arrow-function
  * entries always come first, so a repo cannot drop them by accident.
  */
 export const restrictedSyntax = (
   ...groups: RestrictedSyntaxEntry[][]
-): Linter.RuleEntry => ['error', ...ARROW_FUNCTION_SYNTAX, ...groups.flat()];
+): Linter.RuleEntry => [
+  'error',
+  ...uniqueEntries([...ARROW_FUNCTION_SYNTAX, ...groups.flat()]),
+];
 
 /**
  * Builds one `no-restricted-imports` entry from several groups. It concatenates
@@ -63,8 +86,10 @@ export const restrictedSyntax = (
 export const restrictedImports = (
   ...groups: RestrictedImportsGroup[]
 ): Linter.RuleEntry => {
-  const paths = groups.flatMap((group) => group.paths ?? []);
-  const patterns = groups.flatMap((group) => group.patterns ?? []);
+  const paths = uniqueEntries(groups.flatMap((group) => group.paths ?? []));
+  const patterns = uniqueEntries(
+    groups.flatMap((group) => group.patterns ?? []),
+  );
 
   return [
     'error',
