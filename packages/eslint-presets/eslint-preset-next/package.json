@@ -32,10 +32,24 @@
     "url": "https://thecodedestroyer.com"
   },
   "type": "module",
+  "imports": {
+    "#*": {
+      "types": "./src/*.ts",
+      "default": "./dist/*.js"
+    }
+  },
   "exports": {
     ".": {
       "types": "./dist/next-preset.linter.d.ts",
       "import": "./dist/next-preset.linter.js"
+    },
+    "./exemptions": {
+      "types": "./dist/exemptions.linter.d.ts",
+      "import": "./dist/exemptions.linter.js"
+    },
+    "./restrictions": {
+      "types": "./dist/restrictions.rules.d.ts",
+      "import": "./dist/restrictions.rules.js"
     }
   },
   "main": "./dist/next-preset.linter.js",
@@ -54,7 +68,9 @@
   "scripts": {
     "build": "tsup",
     "lint:package": "publint",
-    "lint:types": "tcd-scripts lint --only=tsc"
+    "lint:types": "tcd-scripts lint --only=tsc",
+    "unit": "vitest run",
+    "unit:watch": "pnpm unit --watch"
   },
   "dependencies": {
     "@tcd-devkit/eslint-config": "workspace:*",
@@ -67,11 +83,14 @@
     "eslint-config-prettier": "10.1.8"
   },
   "devDependencies": {
+    "@tcd-devkit/internal-utils": "workspace:*",
     "@tcd-devkit/scripts": "workspace:*",
     "@tcd-devkit/tsconfig": "workspace:*",
     "@tcd-devkit/tsup-config": "workspace:*",
     "@types/node": "24.10.0",
-    "tsup": "8.5.1"
+    "eslint": "10.10.0",
+    "tsup": "8.5.1",
+    "vitest": "4.1.11"
   },
   "peerDependencies": {
     "eslint": "^10.0.0"

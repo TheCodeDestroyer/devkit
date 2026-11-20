@@ -1,6 +1,8 @@
 import type { Linter } from 'eslint';
 import type { ESLintRules } from 'eslint/rules';
 
+import { ARROW_FUNCTION_SYNTAX } from '#restrictions.rules';
+
 export const baseRules = {
   'array-callback-return': [
     'error',
@@ -34,14 +36,7 @@ export const baseRules = {
   ] satisfies ESLintRules['eqeqeq'],
   'no-restricted-syntax': [
     'error',
-    {
-      selector: 'FunctionExpression',
-      message: 'Use arrow function instead.',
-    },
-    {
-      selector: 'FunctionDeclaration',
-      message: 'Use arrow function instead.',
-    },
+    ...ARROW_FUNCTION_SYNTAX,
   ] satisfies ESLintRules['no-restricted-syntax'],
   'grouped-accessor-pairs': ['error', 'getBeforeSet'],
   'id-length': [

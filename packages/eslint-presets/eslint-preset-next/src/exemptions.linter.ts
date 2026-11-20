@@ -1,0 +1,73 @@
+import type { Linter } from 'eslint';
+
+/**
+ * Exemptions keyed on path conventions. Every app repo used to paste these
+ * blocks by hand. The preset spreads them after its rules, so a repo block
+ * that comes after the preset can still override them.
+ */
+
+const NAME_PREFIX = '@tcd-devkit/eslint-preset-next/exemptions';
+
+/** The logger module is the one place that is allowed to call `console`. */
+export const loggerExemption: Linter.Config = {
+  name: `${NAME_PREFIX}/logger`,
+  files: ['**/logger.{ts,js}', '**/logger.*.{ts,js}', '**/*.logger.{ts,js}'],
+  rules: { 'no-console': 'off' },
+};
+
+/** CLI scripts are run by an operator: stdout is their output surface. */
+export const scriptsExemption: Linter.Config = {
+  name: `${NAME_PREFIX}/scripts`,
+  files: ['scripts/**', 'src/scripts/**'],
+  rules: { 'no-console': 'off' },
+};
+
+/**
+ * Tool config files spread third-party flat configs that ship without types
+ * (`@convex-dev/eslint-plugin`, for example), so the value lands as `any`.
+ * They also import a plugin's default export under the plugin's own name.
+ */
+export const configFilesExemption: Linter.Config = {
+  name: `${NAME_PREFIX}/config-files`,
+  files: ['**/*.config.{js,cjs,mjs,ts,cts,mts}'],
+  rules: {
+    '@typescript-eslint/no-unsafe-assignment': 'off',
+    'import-x/no-rename-default': 'off',
+  },
+};
+
+/**
+ * CommonJS has no `import`. Some tools (Prettier, for example) resolve their
+ * config through CommonJS, so a `.cjs` file must use `require`.
+ */
+export const commonJsExemption: Linter.Config = {
+  name: `${NAME_PREFIX}/commonjs`,
+  files: ['**/*.cjs'],
+  rules: { '@typescript-eslint/no-require-imports': 'off' },
+};
+
+/**
+ * `MetadataRoute.Manifest` follows the Web App Manifest spec, which is
+ * snake_case (`short_name`, `start_url`, `background_color`).
+ */
+export const manifestExemption: Linter.Config = {
+  name: `${NAME_PREFIX}/manifest`,
+  files: ['**/app/manifest.{ts,js}'],
+  rules: { camelcase: 'off' },
+};
+
+/** A test reads top to bottom as arrange, act, assert, so it runs long. */
+export const testsExemption: Linter.Config = {
+  name: `${NAME_PREFIX}/tests`,
+  files: ['**/*.{test,spec}.{ts,tsx,js,jsx}'],
+  rules: { 'max-statements': 'off' },
+};
+
+export const nextExemptions: Linter.Config[] = [
+  loggerExemption,
+  scriptsExemption,
+  configFilesExemption,
+  commonJsExemption,
+  manifestExemption,
+  testsExemption,
+];

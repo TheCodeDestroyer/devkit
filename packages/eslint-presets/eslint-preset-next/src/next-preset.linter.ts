@@ -10,6 +10,8 @@ import { reactConfig } from '@tcd-devkit/eslint-config-react';
 import { reactHooksConfig } from '@tcd-devkit/eslint-config-react-hooks';
 import { tsConfig } from '@tcd-devkit/eslint-config-ts';
 
+import { nextExemptions } from '#exemptions.linter';
+
 const ignoresConfig = globalIgnores(
   ['**/dist/**', '**/node_modules/**', '**/build/**', '**/.next/**'],
   '@tcd-devkit/eslint-config/ignores',
@@ -28,6 +30,7 @@ export const nextPreset: Linter.Config[] = defineConfig(
       importTsConfig,
     ],
   },
+  nextExemptions,
   prettierConfig,
   ignoresConfig,
 );
