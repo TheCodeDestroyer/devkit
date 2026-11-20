@@ -73,6 +73,62 @@ export default [
 
 This preset exports an array of ESLint configuration objects. You should spread it (`...nextPreset`) into your top-level configuration array. The underlying configurations are designed to work together. Ensure your `tsconfig.json` is correctly set up for TypeScript linting to function optimally.
 
+## Built-in exemptions
+
+The preset turns some rules off for common path conventions. Each block is exported from `@tcd-devkit/eslint-preset-next/exemptions`, and the preset applies all of them (`nextExemptions`). A block that you put after `...nextPreset` can override them.
+
+| Export                 | Files                                                             | Rules off                                                               |
+| ---------------------- | ----------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| `loggerExemption`      | `**/logger.{ts,js}`, `**/logger.*.{ts,js}`, `**/*.logger.{ts,js}` | `no-console`                                                            |
+| `scriptsExemption`     | `scripts/**`, `src/scripts/**`                                    | `no-console`                                                            |
+| `configFilesExemption` | `**/*.config.{js,cjs,mjs,ts}`                                     | `@typescript-eslint/no-unsafe-assignment`, `import-x/no-rename-default` |
+| `commonJsExemption`    | `**/*.cjs`                                                        | `@typescript-eslint/no-require-imports`                                 |
+| `manifestExemption`    | `**/app/manifest.{ts,js}`                                         | `camelcase`                                                             |
+| `testsExemption`       | `**/*.{test,spec}.{ts,tsx,js,jsx}`                                | `max-statements`                                                        |
+
+## Adding restrictions without restating the preset
+
+Flat config replaces a rule's options rather than merging them. If you set `no-restricted-syntax` or `no-restricted-imports`, you lose every entry that you do not restate. Use the helpers from `@tcd-devkit/eslint-preset-next/restrictions` to build one entry from several groups:
+
+```javascript
+import nextPreset from '@tcd-devkit/eslint-preset-next';
+import {
+  aliasOnlyImports,
+  CONVEX_ERROR_ONLY_SYNTAX,
+  rawConvexHooks,
+  restrictedImports,
+  restrictedSyntax,
+} from '@tcd-devkit/eslint-preset-next/restrictions';
+
+const hooks = rawConvexHooks({ from: '@client/hooks/convex.hooks' });
+
+export default [
+  ...nextPreset,
+  {
+    rules: {
+      'no-restricted-imports': restrictedImports(aliasOnlyImports(), hooks),
+    },
+  },
+  {
+    files: ['convex/**/*.ts'],
+    ignores: ['convex/**/*.test.ts'],
+    rules: {
+      // Keeps the preset's arrow-function entries, then adds the Convex ban.
+      'no-restricted-syntax': restrictedSyntax(CONVEX_ERROR_ONLY_SYNTAX),
+    },
+  },
+  {
+    // The file that defines the wrappers imports the raw hooks.
+    files: ['src/lib/client/hooks/convex.hooks.ts'],
+    rules: { 'no-restricted-imports': restrictedImports(aliasOnlyImports()) },
+  },
+];
+```
+
+- `restrictedSyntax(...groups)` always keeps the base arrow-function entries first.
+- `restrictedImports(...groups)` concatenates the `paths` and `patterns` of each group.
+- `rawConvexHooks({ wrappers, from })` bans `useQuery`, `useMutation` and `useAction` from `convex/react`, `convex-helpers/react` and `convex-helpers/react/cache`. Pass `wrappers` to change the map, for example to add `usePaginatedQuery`.
+
 ## Rules
 
 This preset combines rules from all the included `@tcd-devkit/eslint-config-*` packages listed in the Features section.

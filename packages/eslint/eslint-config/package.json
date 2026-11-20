@@ -43,6 +43,10 @@
     "./rule-overrides": {
       "types": "./dist/base.rules.d.ts",
       "import": "./dist/base.rules.js"
+    },
+    "./restrictions": {
+      "types": "./dist/restrictions.rules.d.ts",
+      "import": "./dist/restrictions.rules.js"
     }
   },
   "main": "./dist/base.linter.js",
