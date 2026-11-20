@@ -1,5 +1,25 @@
 # @tcd-devkit/eslint-preset-next
 
+## 0.3.0
+
+### Minor Changes
+
+- [#325](https://github.com/TheCodeDestroyer/devkit/pull/325) [`5a89bad`](https://github.com/TheCodeDestroyer/devkit/commit/5a89bad1fc4f85726a2a9769229d42a51f7dedbc) Thanks [@TheCodeDestroyer](https://github.com/TheCodeDestroyer)! - feat(eslint): Add shared path exemptions and restriction merge helpers
+  - `@tcd-devkit/eslint-preset-next` now turns rules off for the logger module, CLI scripts, tool config files, CommonJS files, the Next.js manifest and tests. The blocks are exported from `@tcd-devkit/eslint-preset-next/exemptions`.
+  - `@tcd-devkit/eslint-config/restrictions` exports `restrictedSyntax`, `restrictedImports` and `aliasOnlyImports`, so a repo can add its own restriction group without restating the shared ones.
+  - `@tcd-devkit/eslint-preset-next/restrictions` re-exports those helpers and adds the Convex groups `rawConvexHooks` and `CONVEX_ERROR_ONLY_SYNTAX`.
+
+### Patch Changes
+
+- Updated dependencies [[`12b73fc`](https://github.com/TheCodeDestroyer/devkit/commit/12b73fcb320388da8394b9817514693296adb40a), [`5a89bad`](https://github.com/TheCodeDestroyer/devkit/commit/5a89bad1fc4f85726a2a9769229d42a51f7dedbc)]:
+  - @tcd-devkit/eslint-config-import-ts@0.2.1
+  - @tcd-devkit/eslint-config-react-hooks@0.1.1
+  - @tcd-devkit/eslint-config-react@0.2.1
+  - @tcd-devkit/eslint-config-ts@0.3.1
+  - @tcd-devkit/eslint-config@0.4.0
+  - @tcd-devkit/eslint-config-a11y@0.2.0
+  - @tcd-devkit/eslint-config-next@0.2.0
+
 ## 0.2.0
 
 ### Minor Changes

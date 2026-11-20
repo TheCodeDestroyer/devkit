@@ -1,5 +1,11 @@
 # @tcd-devkit/prettier-config
 
+## 0.2.9
+
+### Patch Changes
+
+- [#315](https://github.com/TheCodeDestroyer/devkit/pull/315) [`386e28e`](https://github.com/TheCodeDestroyer/devkit/commit/386e28e74ee515398cffa2c7b11ec585319eac45) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency prettier-plugin-packagejson to v2.5.22
+
 ## 0.2.8
 
 ### Patch Changes

@@ -1,5 +1,12 @@
 # @tcd-devkit/prettier-config-react
 
+## 0.1.9
+
+### Patch Changes
+
+- Updated dependencies [[`386e28e`](https://github.com/TheCodeDestroyer/devkit/commit/386e28e74ee515398cffa2c7b11ec585319eac45)]:
+  - @tcd-devkit/prettier-config@0.2.9
+
 ## 0.1.8
 
 ### Patch Changes
