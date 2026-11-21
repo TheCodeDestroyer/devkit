@@ -52,4 +52,19 @@ describe(`${ruleId} rule`, () => {
 
     expect(messages).toHaveLength(0);
   });
+
+  it.each(['src/lib/app.config.ts', 'convex/auth.config.ts'])(
+    'should FAIL in %s, a nested app config module',
+    async (filePath) => {
+      const code = `
+        import { shared } from './shared.utils.js';
+        export default shared;
+      `;
+      const messages = await getLintMessagesForRule(baseConfig, code, ruleId, {
+        lintTextOptions: { filePath },
+      });
+
+      expect(messages).toHaveLength(1);
+    },
+  );
 });

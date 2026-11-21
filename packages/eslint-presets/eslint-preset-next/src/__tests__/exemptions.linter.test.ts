@@ -8,9 +8,8 @@ import { getLintMessagesForRule } from '@tcd-devkit/internal-utils/test';
 import {
   commonJsExemption,
   configFilesExemption,
-  loggerExemption,
   manifestExemption,
-  scriptsExemption,
+  TEST_FILE_GLOBS,
   testsExemption,
 } from '#exemptions.linter';
 import { nextPreset } from '#next-preset.linter';
@@ -48,68 +47,13 @@ const lintAt = async (
     lintTextOptions: { filePath },
   });
 
-describe(`${loggerExemption.name}`, () => {
-  const code = 'console.log("test");';
-
-  it.each([
-    'src/lib/shared/logger.ts',
-    'convex/helpers/utils/logger.utils.ts',
-    'src/lib/server/app.logger.ts',
-  ])('should PASS when %s uses console', async (filePath) => {
-    const messages = await lintAt(
-      loggerExemption,
-      code,
-      'no-console',
-      filePath,
-    );
-
-    expect(messages).toHaveLength(0);
-    expect(await severityInPreset(filePath, 'no-console')).toBe(OFF);
-  });
-
-  it('should FAIL when any other file uses console', async () => {
-    const filePath = 'src/lib/shared/date.utils.ts';
-    const messages = await lintAt(
-      loggerExemption,
-      code,
-      'no-console',
-      filePath,
-    );
-
-    expect(messages).toHaveLength(1);
-    expect(await severityInPreset(filePath, 'no-console')).toBe(ERROR);
-  });
-});
-
-describe(`${scriptsExemption.name}`, () => {
-  const code = 'console.log("test");';
-
-  it.each(['scripts/seed.ts', 'scripts/perf/latency.mjs', 'src/scripts/a.ts'])(
-    'should PASS when %s uses console',
+describe('no-console', () => {
+  it.each(['scripts/seed.ts', 'src/lib/shared/logger.ts'])(
+    'should keep no-console on for %s',
     async (filePath) => {
-      const messages = await lintAt(
-        scriptsExemption,
-        code,
-        'no-console',
-        filePath,
-      );
-
-      expect(messages).toHaveLength(0);
-      expect(await severityInPreset(filePath, 'no-console')).toBe(OFF);
+      expect(await severityInPreset(filePath, 'no-console')).toBe(ERROR);
     },
   );
-
-  it('should FAIL when a file outside scripts uses console', async () => {
-    const filePath = 'src/lib/scripts.utils.ts';
-    const messages = await lintAt(
-      scriptsExemption,
-      code,
-      'no-console',
-      filePath,
-    );
-
-    expect(messages).toHaveLength(1);
-  });
 });
 
 describe(`${manifestExemption.name}`, () => {
@@ -145,6 +89,11 @@ describe(`${manifestExemption.name}`, () => {
 });
 
 describe(`${testsExemption.name}`, () => {
+  it('should use the exported TEST_FILE_GLOBS', () => {
+    expect(testsExemption.files).toEqual(TEST_FILE_GLOBS);
+    expect(testsExemption.files).not.toBe(TEST_FILE_GLOBS);
+  });
+
   const code = `
     const test = () => {
       let count = 0;
@@ -154,20 +103,23 @@ describe(`${testsExemption.name}`, () => {
     test();
   `;
 
-  it.each(['src/a.test.ts', 'src/b.spec.tsx', 'convex/c.test.js'])(
-    'should PASS when %s has many statements',
-    async (filePath) => {
-      const messages = await lintAt(
-        testsExemption,
-        code,
-        'max-statements',
-        filePath,
-      );
+  it.each([
+    'src/a.test.ts',
+    'src/b.spec.tsx',
+    'convex/c.test.js',
+    'scripts/d.test.mjs',
+    'e.spec.cjs',
+  ])('should PASS when %s has many statements', async (filePath) => {
+    const messages = await lintAt(
+      testsExemption,
+      code,
+      'max-statements',
+      filePath,
+    );
 
-      expect(messages).toHaveLength(0);
-      expect(await severityInPreset(filePath, 'max-statements')).toBe(OFF);
-    },
-  );
+    expect(messages).toHaveLength(0);
+    expect(await severityInPreset(filePath, 'max-statements')).toBe(OFF);
+  });
 
   it('should FAIL when a source file has many statements', async () => {
     const filePath = 'src/a.utils.ts';
@@ -192,18 +144,22 @@ describe(`${configFilesExemption.name}`, () => {
     'eslint.config.mjs',
     'next.config.ts',
     'vitest.config.ts',
-    'packages/ui/tailwind.config.js',
+    'tailwind.config.js',
   ])('should turn the config-file rules off for %s', async (filePath) => {
     for (const ruleId of ruleIds) {
       expect(await severityInPreset(filePath, ruleId)).toBe(OFF);
     }
   });
 
-  it('should keep the config-file rules on for source files', async () => {
+  it.each([
+    'src/app/app.config.tsx',
+    'src/lib/shared/config/app.config.ts',
+    'src/lib/server/i18n.config.ts',
+    'convex/convex.config.ts',
+    'convex/auth.config.ts',
+  ])('should keep the config-file rules on for %s', async (filePath) => {
     for (const ruleId of ruleIds) {
-      expect(await severityInPreset('src/app/app.config.tsx', ruleId)).toBe(
-        ERROR,
-      );
+      expect(await severityInPreset(filePath, ruleId)).toBe(ERROR);
     }
   });
 });

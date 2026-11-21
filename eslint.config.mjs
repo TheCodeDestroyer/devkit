@@ -15,6 +15,15 @@ const config = [
     },
   },
   {
+    // Why: tsup-config builds itself, so its tsup config cannot import its
+    // own unbuilt package by name. A relative import is the only one that
+    // works there. Every other package config imports by package name.
+    files: ['packages/tsup-config/tsup.config.ts'],
+    rules: {
+      'no-restricted-imports': ['off'],
+    },
+  },
+  {
     files: ['**/*.test.ts'],
     rules: {
       'no-template-curly-in-string': ['off'],

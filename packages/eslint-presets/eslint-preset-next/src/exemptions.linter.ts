@@ -10,24 +10,17 @@ import { CONFIG_FILE_GLOBS } from '@tcd-devkit/eslint-config/restrictions';
 
 const NAME_PREFIX = '@tcd-devkit/eslint-preset-next/exemptions';
 
-/** The logger module is the one place that is allowed to call `console`. */
-export const loggerExemption: Linter.Config = {
-  name: `${NAME_PREFIX}/logger`,
-  files: ['**/logger.{ts,js}', '**/logger.*.{ts,js}', '**/*.logger.{ts,js}'],
-  rules: { 'no-console': 'off' },
-};
-
-/** CLI scripts are run by an operator: stdout is their output surface. */
-export const scriptsExemption: Linter.Config = {
-  name: `${NAME_PREFIX}/scripts`,
-  files: ['scripts/**', 'src/scripts/**'],
-  rules: { 'no-console': 'off' },
-};
+/**
+ * Test files. No `.mts` or `.cts`: the TypeScript parser setup does not cover
+ * them. Use it as `files` in a repo block that targets tests.
+ */
+export const TEST_FILE_GLOBS = ['**/*.{test,spec}.{ts,tsx,js,jsx,mjs,cjs}'];
 
 /**
- * Tool config files spread third-party flat configs that ship without types
- * (`@convex-dev/eslint-plugin`, for example), so the value lands as `any`.
- * They also import a plugin's default export under the plugin's own name.
+ * Tool config files at the repo root spread third-party flat configs that
+ * ship without types (`@convex-dev/eslint-plugin`, for example), so the value
+ * lands as `any`. They also import a plugin's default export under the
+ * plugin's own name.
  */
 export const configFilesExemption: Linter.Config = {
   name: `${NAME_PREFIX}/config-files`,
@@ -61,13 +54,12 @@ export const manifestExemption: Linter.Config = {
 /** A test reads top to bottom as arrange, act, assert, so it runs long. */
 export const testsExemption: Linter.Config = {
   name: `${NAME_PREFIX}/tests`,
-  files: ['**/*.{test,spec}.{ts,tsx,js,jsx}'],
+  // A copy, so a repo that changes the exported list cannot change the preset.
+  files: [...TEST_FILE_GLOBS],
   rules: { 'max-statements': 'off' },
 };
 
 export const nextExemptions: Linter.Config[] = [
-  loggerExemption,
-  scriptsExemption,
   configFilesExemption,
   commonJsExemption,
   manifestExemption,
