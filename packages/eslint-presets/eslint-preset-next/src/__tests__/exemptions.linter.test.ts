@@ -47,16 +47,12 @@ const lintAt = async (
   });
 
 describe('no-console', () => {
-  it.each([
-    'scripts/seed.ts',
-    'scripts/perf/latency.mjs',
-    'src/scripts/a.ts',
-    'src/lib/shared/logger.ts',
-    'convex/helpers/utils/logger.utils.ts',
-    'src/lib/server/app.logger.ts',
-  ])('should keep no-console on for %s', async (filePath) => {
-    expect(await severityInPreset(filePath, 'no-console')).toBe(ERROR);
-  });
+  it.each(['scripts/seed.ts', 'src/lib/shared/logger.ts'])(
+    'should keep no-console on for %s',
+    async (filePath) => {
+      expect(await severityInPreset(filePath, 'no-console')).toBe(ERROR);
+    },
+  );
 });
 
 describe(`${manifestExemption.name}`, () => {

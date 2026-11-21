@@ -15,16 +15,10 @@ const config = [
     },
   },
   {
-    // Why: a tool (tsup, vitest) loads its config file before any path alias
-    // resolves, so a relative import is the only import that works there.
-    // CONFIG_FILE_GLOBS exempts the repo root only. This monorepo keeps one
-    // tool config at each package root, so those need the same exemption.
-    // The globs name the workspace folders, so `packages/<pkg>/src/*.config.ts`
-    // stays app code and keeps the ban.
-    files: [
-      'packages/*/*.config.{js,cjs,mjs,ts}',
-      'packages/{eslint,eslint-presets,prettier}/*/*.config.{js,cjs,mjs,ts}',
-    ],
+    // Why: tsup-config builds itself, so its tsup config cannot import its
+    // own unbuilt package by name. A relative import is the only one that
+    // works there. Every other package config imports by package name.
+    files: ['packages/tsup-config/tsup.config.ts'],
     rules: {
       'no-restricted-imports': ['off'],
     },
