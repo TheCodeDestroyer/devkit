@@ -15,6 +15,19 @@ const config = [
     },
   },
   {
+    // Why: a tool (tsup, vitest) loads its config file before any path alias
+    // resolves, so a relative import is the only import that works there.
+    // CONFIG_FILE_GLOBS exempts the repo root only. This monorepo keeps one
+    // tool config at each package root, so those need the same exemption.
+    files: [
+      'packages/*/*.config.{js,cjs,mjs,ts}',
+      'packages/*/*/*.config.{js,cjs,mjs,ts}',
+    ],
+    rules: {
+      'no-restricted-imports': ['off'],
+    },
+  },
+  {
     files: ['**/*.test.ts'],
     rules: {
       'no-template-curly-in-string': ['off'],

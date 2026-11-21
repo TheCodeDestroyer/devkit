@@ -77,14 +77,24 @@ This preset exports an array of ESLint configuration objects. You should spread 
 
 The preset turns some rules off for common path conventions. Each block is exported from `@tcd-devkit/eslint-preset-next/exemptions`, and the preset applies all of them (`nextExemptions`). A block that you put after `...nextPreset` can override them.
 
-| Export                 | Files                                                             | Rules off                                                               |
-| ---------------------- | ----------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| `loggerExemption`      | `**/logger.{ts,js}`, `**/logger.*.{ts,js}`, `**/*.logger.{ts,js}` | `no-console`                                                            |
-| `scriptsExemption`     | `scripts/**`, `src/scripts/**`                                    | `no-console`                                                            |
-| `configFilesExemption` | `**/*.config.{js,cjs,mjs,ts}`                                     | `@typescript-eslint/no-unsafe-assignment`, `import-x/no-rename-default` |
-| `commonJsExemption`    | `**/*.cjs`                                                        | `@typescript-eslint/no-require-imports`                                 |
-| `manifestExemption`    | `**/app/manifest.{ts,js}`                                         | `camelcase`                                                             |
-| `testsExemption`       | `**/*.{test,spec}.{ts,tsx,js,jsx}`                                | `max-statements`                                                        |
+| Export                 | Files                                      | Rules off                                                               |
+| ---------------------- | ------------------------------------------ | ----------------------------------------------------------------------- |
+| `configFilesExemption` | `*.config.{js,cjs,mjs,ts}`                 | `@typescript-eslint/no-unsafe-assignment`, `import-x/no-rename-default` |
+| `commonJsExemption`    | `**/*.cjs`                                 | `@typescript-eslint/no-require-imports`                                 |
+| `manifestExemption`    | `**/app/manifest.{ts,js}`                  | `camelcase`                                                             |
+| `testsExemption`       | `**/*.{test,spec}.{ts,tsx,js,jsx,mjs,cjs}` | `max-statements`                                                        |
+
+`TEST_FILE_GLOBS` is exported from the same entry point. Use it as `files` in your own block for test files.
+
+### Logger files
+
+The preset has no `no-console` exemption, not for loggers and not for `scripts/**`. A logger module that calls `console` turns the rule off at the top of the file, for that rule only, with a reason:
+
+```ts
+/* eslint-disable no-console -- The logger is the one module that writes to the console. */
+```
+
+Do not use a bare `eslint-disable`. A path glob such as `**/*.logger.ts` would let any file call `console` after a rename.
 
 ## Adding restrictions without restating the preset
 
@@ -146,6 +156,17 @@ A block that sets `no-restricted-imports` after `...nextPreset` also applies to 
 
 This preset combines rules from all the included `@tcd-devkit/eslint-config-*` packages listed in the Features section.
 For a detailed view of all active rules in your project, you can run ESLint with the `--print-config` flag.
+
+### Libraries that React Compiler cannot optimize
+
+`react-hooks/incompatible-library` warns when a component calls a library API that React Compiler cannot memoize safely, for example `useVirtualizer` from `@tanstack/react-virtual` or `useForm().watch` from `react-hook-form`. The preset keeps the rule at `warn`. A `'use no memo'` directive does not silence it.
+
+With `--max-warnings=0`, the warning blocks a commit. The expected fix is a one-line suppression with a reason:
+
+```tsx
+// eslint-disable-next-line react-hooks/incompatible-library -- useVirtualizer returns unstable functions; the compiler skips this component.
+const virtualizer = useVirtualizer({ count, getScrollElement, estimateSize });
+```
 
 ## License
 
