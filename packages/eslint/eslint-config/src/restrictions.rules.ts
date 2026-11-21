@@ -96,10 +96,10 @@ const RELATIVE_IMPORT_GROUP = [
 const RELATIVE_IMPORT_KEY = RELATIVE_IMPORT_GROUP.join();
 
 /**
- * Tool config files at the repo root. A tool loads its config before any path
- * alias resolves, so the base config exempts these files from the
- * relative-import ban. Pass it as `ignores` in a block that sets
- * `no-restricted-imports` again.
+ * Tool config files at the repo root. The glob is relative to the folder that
+ * holds `eslint.config.*`. A tool loads its config before any path alias
+ * resolves, so the base config exempts these files from the relative-import
+ * ban. Pass it as `ignores` in a block that sets `no-restricted-imports` again.
  *
  * The glob has no `**\/` on purpose: app code uses `{domain}.config.ts` for
  * runtime modules (`src/lib/app.config.ts`, `convex/auth.config.ts`), and

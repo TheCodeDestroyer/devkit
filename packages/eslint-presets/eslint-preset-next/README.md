@@ -150,7 +150,7 @@ export default [
 
 The base config bans an import from `./` or `../`. Use a path alias: `@...` from tsconfig `paths`, or `#...` from package.json `imports`. The "Restrictions" section of the `@tcd-devkit/eslint-config` README lists the exemptions and the limits.
 
-A block that sets `no-restricted-imports` after `...nextPreset` also applies to tool config files, unless its `files` key leaves them out. Add `ignores: CONFIG_FILE_GLOBS` to that block to keep the exemption, as in the example above.
+A block that sets `no-restricted-imports` after `...nextPreset` also applies to tool config files, unless its `files` key leaves them out. Add `ignores: CONFIG_FILE_GLOBS` to that block to keep the exemption, as in the example above. `CONFIG_FILE_GLOBS` matches only the folder that holds `eslint.config.*`. If you exempt a nested tool config in your own block, put that block after this one.
 
 ## Rules
 

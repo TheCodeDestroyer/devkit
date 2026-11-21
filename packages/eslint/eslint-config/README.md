@@ -46,7 +46,7 @@ This package exports an array of ESLint configuration objects, so you should spr
 The base config sets two restriction rules:
 
 - `no-restricted-syntax` bans `function` declarations and expressions. Use an arrow function.
-- `no-restricted-imports` bans an import from `./` or `../`. Use a path alias: `@...` from tsconfig `paths`, or `#...` from package.json `imports`. A CSS side-effect import (`import './globals.css'`) is allowed, and tool config files at the repo root (`*.config.{js,cjs,mjs,ts}`) are exempt. A nested `*.config.ts` file, such as `src/lib/app.config.ts`, is app code and is not exempt.
+- `no-restricted-imports` bans an import from `./` or `../`. Use a path alias: `@...` from tsconfig `paths`, or `#...` from package.json `imports`. A CSS side-effect import (`import './globals.css'`) is allowed, and tool config files at the repo root (`*.config.{js,cjs,mjs,ts}`) are exempt. The glob matches only the folder that holds `eslint.config.*`. A nested `*.config.ts` file, such as `src/lib/app.config.ts`, is app code and is not exempt.
 
 Flat config replaces a rule's options rather than merging them. To add your own entries and keep the base entries, use the helpers from `@tcd-devkit/eslint-config/restrictions`:
 
@@ -79,7 +79,7 @@ export default [
 
 - `restrictedSyntax(...groups)` always keeps the arrow-function entries first.
 - `restrictedImports(...groups)` always keeps the relative-import ban. Pass `aliasOnlyImports({ message })` only to set your own message.
-- A block that sets `no-restricted-imports` after `...baseConfig` also applies to tool config files, unless its `files` key leaves them out. Add `ignores: CONFIG_FILE_GLOBS` to that block to keep the exemption.
+- A block that sets `no-restricted-imports` after `...baseConfig` also applies to tool config files, unless its `files` key leaves them out. Add `ignores: CONFIG_FILE_GLOBS` to that block to keep the exemption. If you exempt a nested tool config in your own block, put that block after this one.
 - The ban checks `import` and `export ... from` statements. It does not check `import()` or `require()`.
 
 ## Rules

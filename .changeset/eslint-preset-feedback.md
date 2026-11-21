@@ -1,14 +1,16 @@
 ---
 "@tcd-devkit/eslint-config": minor
 "@tcd-devkit/eslint-preset-next": minor
+"@tcd-devkit/eslint-preset-node": minor
+"@tcd-devkit/eslint-preset-react": minor
 ---
 
 fix(eslint): Exempt only root tool configs, and keep no-console on everywhere
 
-**Breaking:** `CONFIG_FILE_GLOBS` is now `*.config.{js,cjs,mjs,ts}` (repo root only). It was `**/*.config.{js,cjs,mjs,ts}`, which also matched app modules named `{domain}.config.ts`, such as `src/lib/app.config.ts` or `convex/auth.config.ts`. Those files lost the relative-import ban, `@typescript-eslint/no-unsafe-assignment` and `import-x/no-rename-default`.
+**Breaking:** `CONFIG_FILE_GLOBS` is now `*.config.{js,cjs,mjs,ts}`. It matches only the folder that holds `eslint.config.*`, which is usually the repo root. It was `**/*.config.{js,cjs,mjs,ts}`, which also matched app modules named `{domain}.config.ts`, such as `src/lib/app.config.ts` or `convex/auth.config.ts`. Those files lost the relative-import ban, `@typescript-eslint/no-unsafe-assignment` and `import-x/no-rename-default`.
 
 - Delete any repo block that turned these rules back on for nested `*.config.ts` files. The preset now keeps them on.
-- A nested tool config (for example `packages/ui/tailwind.config.js` in a monorepo) is no longer exempt. Add its path to your own block if it needs the exemption.
+- A nested tool config (for example `packages/ui/tailwind.config.js` in a monorepo) is no longer exempt. Add its path to your own block if it needs the exemption. Put that block after any block that sets `no-restricted-imports` with `ignores: CONFIG_FILE_GLOBS`, because a later block turns the ban back on.
 
 **Breaking (`eslint-preset-next`):** `loggerExemption` and `scriptsExemption` are removed. `no-console` is an error in every file again.
 

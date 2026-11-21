@@ -54,7 +54,8 @@ export const manifestExemption: Linter.Config = {
 /** A test reads top to bottom as arrange, act, assert, so it runs long. */
 export const testsExemption: Linter.Config = {
   name: `${NAME_PREFIX}/tests`,
-  files: TEST_FILE_GLOBS,
+  // A copy, so a repo that changes the exported list cannot change the preset.
+  files: [...TEST_FILE_GLOBS],
   rules: { 'max-statements': 'off' },
 };
 

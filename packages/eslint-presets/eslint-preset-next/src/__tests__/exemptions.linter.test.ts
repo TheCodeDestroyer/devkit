@@ -28,8 +28,7 @@ const severityInPreset = async (
     cwd: import.meta.dirname,
   });
   const config = (await eslint.calculateConfigForFile(filePath)) as
-    | Linter.Config
-    | undefined;
+    Linter.Config | undefined;
   const entry = config?.rules?.[ruleId];
   const severity = Array.isArray(entry) ? entry[0] : entry;
 
@@ -94,7 +93,8 @@ describe(`${manifestExemption.name}`, () => {
 
 describe(`${testsExemption.name}`, () => {
   it('should use the exported TEST_FILE_GLOBS', () => {
-    expect(testsExemption.files).toBe(TEST_FILE_GLOBS);
+    expect(testsExemption.files).toEqual(TEST_FILE_GLOBS);
+    expect(testsExemption.files).not.toBe(TEST_FILE_GLOBS);
   });
 
   const code = `

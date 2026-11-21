@@ -19,9 +19,11 @@ const config = [
     // resolves, so a relative import is the only import that works there.
     // CONFIG_FILE_GLOBS exempts the repo root only. This monorepo keeps one
     // tool config at each package root, so those need the same exemption.
+    // The globs name the workspace folders, so `packages/<pkg>/src/*.config.ts`
+    // stays app code and keeps the ban.
     files: [
       'packages/*/*.config.{js,cjs,mjs,ts}',
-      'packages/*/*/*.config.{js,cjs,mjs,ts}',
+      'packages/{eslint,eslint-presets,prettier}/*/*.config.{js,cjs,mjs,ts}',
     ],
     rules: {
       'no-restricted-imports': ['off'],
