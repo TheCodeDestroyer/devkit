@@ -28,7 +28,8 @@ const severityInPreset = async (
     cwd: import.meta.dirname,
   });
   const config = (await eslint.calculateConfigForFile(filePath)) as
-    Linter.Config | undefined;
+    | Linter.Config
+    | undefined;
   const entry = config?.rules?.[ruleId];
   const severity = Array.isArray(entry) ? entry[0] : entry;
 
