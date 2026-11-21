@@ -60,7 +60,9 @@ This preset exports an array of ESLint configuration objects. You should spread 
 
 ## Relative imports
 
-The base config bans an import from `./` or `../`. Use a path alias: `@...` from tsconfig `paths`, or `#...` from package.json `imports`.
+The base config bans an import from `./` or `../`. Use a path alias: `#...` from package.json `imports`, or `@...` from tsconfig `paths`.
+
+Node resolves a `#...` alias itself. Node does not read tsconfig `paths`, so use an `@...` alias only with a bundler or a runtime resolver that applies it.
 
 The "Restrictions" section of the `@tcd-devkit/eslint-config` README lists the exemptions and the limits. To set your own message or add your own entries, install that package and use the helpers from `@tcd-devkit/eslint-config/restrictions`.
 

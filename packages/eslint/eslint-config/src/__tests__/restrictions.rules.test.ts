@@ -147,8 +147,10 @@ describe('restrictedImports', () => {
     changed.patterns?.[0]?.group?.push('!**/*.svg');
 
     expect(aliasOnlyImports().patterns?.[0]?.group).toEqual([
-      './*',
-      '../*',
+      './**',
+      '../**',
+      '!./**/',
+      '!../**/',
       '!**/*.css',
     ]);
   });

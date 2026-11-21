@@ -80,8 +80,19 @@ export const restrictedSyntax = (
   ...uniqueEntries([...ARROW_FUNCTION_SYNTAX, ...groups.flat()]),
 ];
 
-/** The glob group that matches a relative import, but not a CSS side-effect import. */
-const RELATIVE_IMPORT_GROUP = ['./*', '../*', '!**/*.css'];
+/**
+ * The glob group that matches a relative import, but not a CSS side-effect
+ * import. The globs follow gitignore rules: a negation cannot bring back a
+ * file whose parent directory matches. So the two `/` negations bring back
+ * the directories, and `!**\/*.css` then allows a CSS file at any depth.
+ */
+const RELATIVE_IMPORT_GROUP = [
+  './**',
+  '../**',
+  '!./**/',
+  '!../**/',
+  '!**/*.css',
+];
 const RELATIVE_IMPORT_KEY = RELATIVE_IMPORT_GROUP.join();
 
 /**

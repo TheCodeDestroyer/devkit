@@ -13,12 +13,13 @@ describe(`${ruleId} rule`, () => {
       import { sibling } from './sibling';
       import { parent } from '../parent';
       import { deep } from '../../lib/deep/module';
-      export { sibling, parent, deep };
+      import { nested } from './lib/nested';
+      export { sibling, parent, deep, nested };
       export * from './barrel';
     `;
     const messages = await getLintMessagesForRule(baseConfig, code, ruleId);
 
-    expect(messages).toHaveLength(4);
+    expect(messages).toHaveLength(5);
     expect(messages[0]?.message).toContain(
       'Use a path alias instead of a relative import.',
     );
@@ -31,6 +32,8 @@ describe(`${ruleId} rule`, () => {
       import { useState } from 'react';
       import fs from 'node:fs';
       import './globals.css';
+      import './styles/app.css';
+      import '../../styles/theme.css';
       export { client, helper, useState, fs };
     `;
     const messages = await getLintMessagesForRule(baseConfig, code, ruleId);
