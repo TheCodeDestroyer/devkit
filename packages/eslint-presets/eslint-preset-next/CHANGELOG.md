@@ -1,5 +1,22 @@
 # @tcd-devkit/eslint-preset-next
 
+## 0.4.0
+
+### Minor Changes
+
+- [#326](https://github.com/TheCodeDestroyer/devkit/pull/326) [`d14ef04`](https://github.com/TheCodeDestroyer/devkit/commit/d14ef04f6269bcd63432fe4c5a13390293da7d2e) Thanks [@TheCodeDestroyer](https://github.com/TheCodeDestroyer)! - feat(eslint): Ban relative imports in the base config
+
+  **Breaking:** an import from `./` or `../` is now an error. Use a path alias (`@...` from tsconfig `paths`, or `#...` from package.json `imports`).
+  - `@tcd-devkit/eslint-config` sets `no-restricted-imports` with the relative-import ban, so every preset gets it.
+  - A CSS side-effect import (`import './globals.css'`) and tool config files (`**/*.config.{js,cjs,mjs,ts}`) are exempt.
+  - `@tcd-devkit/eslint-config/restrictions` exports `CONFIG_FILE_GLOBS`. Pass it as `ignores` in a block that sets `no-restricted-imports` again, to keep the config-file exemption.
+  - `restrictedImports(...groups)` now always keeps the ban, like `restrictedSyntax` keeps the arrow-function entries. Pass `aliasOnlyImports({ message })` to set your own message.
+
+### Patch Changes
+
+- Updated dependencies [[`d14ef04`](https://github.com/TheCodeDestroyer/devkit/commit/d14ef04f6269bcd63432fe4c5a13390293da7d2e)]:
+  - @tcd-devkit/eslint-config@0.5.0
+
 ## 0.3.0
 
 ### Minor Changes
