@@ -1,5 +1,7 @@
 import type { Linter } from 'eslint';
 
+import { CONFIG_FILE_GLOBS } from '@tcd-devkit/eslint-config/restrictions';
+
 /**
  * Exemptions keyed on path conventions. Every app repo used to paste these
  * blocks by hand. The preset spreads them after its rules, so a repo block
@@ -29,7 +31,7 @@ export const scriptsExemption: Linter.Config = {
  */
 export const configFilesExemption: Linter.Config = {
   name: `${NAME_PREFIX}/config-files`,
-  files: ['**/*.config.{js,cjs,mjs,ts}'],
+  files: CONFIG_FILE_GLOBS,
   rules: {
     '@typescript-eslint/no-unsafe-assignment': 'off',
     'import-x/no-rename-default': 'off',

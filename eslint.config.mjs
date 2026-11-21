@@ -24,6 +24,9 @@ const config = [
     files: ['**/fixtures/**/*.{js,jsx,ts,tsx}'],
     rules: {
       'no-restricted-syntax': ['off'],
+      // Fixtures import each other by relative path on purpose: the import
+      // rule tests (no-cycle, no-deprecated) need real files that resolve.
+      'no-restricted-imports': ['off'],
       '@typescript-eslint/no-unsafe-return': ['off'],
       '@typescript-eslint/no-unsafe-call': ['off'],
       'import-x/no-deprecated': ['off'],

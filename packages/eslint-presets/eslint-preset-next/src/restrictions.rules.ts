@@ -7,6 +7,7 @@ import type {
 export {
   aliasOnlyImports,
   ARROW_FUNCTION_SYNTAX,
+  CONFIG_FILE_GLOBS,
   restrictedImports,
   restrictedSyntax,
 } from '@tcd-devkit/eslint-config/restrictions';

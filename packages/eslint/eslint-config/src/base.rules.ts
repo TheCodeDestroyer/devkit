@@ -1,7 +1,7 @@
 import type { Linter } from 'eslint';
 import type { ESLintRules } from 'eslint/rules';
 
-import { ARROW_FUNCTION_SYNTAX } from '#restrictions.rules';
+import { ARROW_FUNCTION_SYNTAX, restrictedImports } from '#restrictions.rules';
 
 export const baseRules = {
   'array-callback-return': [
@@ -38,6 +38,7 @@ export const baseRules = {
     'error',
     ...ARROW_FUNCTION_SYNTAX,
   ] satisfies ESLintRules['no-restricted-syntax'],
+  'no-restricted-imports': restrictedImports(),
   'grouped-accessor-pairs': ['error', 'getBeforeSet'],
   'id-length': [
     'error',

@@ -6,6 +6,7 @@ import type { Linter } from 'eslint';
 import { defineConfig, includeIgnoreFile } from 'eslint/config';
 
 import { baseRules } from '#base.rules';
+import { CONFIG_FILE_GLOBS } from '#restrictions.rules';
 
 const cwdURL = `file://${process.cwd()}/`;
 const gitignorePath = fileURLToPath(new URL(`.gitignore`, cwdURL));
@@ -25,6 +26,11 @@ export const baseConfig: Linter.Config[] = defineConfig([
     extends: [eslintPlugin.configs.recommended],
     files: ['**/*.{js,jsx,ts,tsx,mjs,cjs}'],
     rules: baseRules,
+  },
+  {
+    name: '@tcd-devkit/eslint-config/config-files',
+    files: CONFIG_FILE_GLOBS,
+    rules: { 'no-restricted-imports': 'off' },
   },
 ]);
 

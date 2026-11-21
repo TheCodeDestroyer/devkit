@@ -41,6 +41,47 @@ export default [
 
 This package exports an array of ESLint configuration objects, so you should spread it (`...baseConfig`) into your top-level configuration array.
 
+## Restrictions
+
+The base config sets two restriction rules:
+
+- `no-restricted-syntax` bans `function` declarations and expressions. Use an arrow function.
+- `no-restricted-imports` bans an import from `./` or `../`. Use a path alias: `@...` from tsconfig `paths`, or `#...` from package.json `imports`. A CSS side-effect import (`import './globals.css'`) is allowed, and tool config files (`**/*.config.{js,cjs,mjs,ts}`) are exempt.
+
+Flat config replaces a rule's options rather than merging them. To add your own entries and keep the base entries, use the helpers from `@tcd-devkit/eslint-config/restrictions`:
+
+```javascript
+import baseConfig from '@tcd-devkit/eslint-config';
+import {
+  aliasOnlyImports,
+  CONFIG_FILE_GLOBS,
+  restrictedImports,
+  restrictedSyntax,
+} from '@tcd-devkit/eslint-config/restrictions';
+
+export default [
+  ...baseConfig,
+  {
+    // Keeps the exemption of tool config files from the relative-import ban.
+    ignores: CONFIG_FILE_GLOBS,
+    rules: {
+      'no-restricted-imports': restrictedImports(
+        aliasOnlyImports({ message: 'Use a path alias (#lib).' }),
+        { paths: [{ name: 'lodash', message: 'Use lodash-es.' }] },
+      ),
+      'no-restricted-syntax': restrictedSyntax([
+        { selector: 'WithStatement', message: 'Do not use with.' },
+      ]),
+    },
+  },
+];
+```
+
+- `restrictedSyntax(...groups)` always keeps the arrow-function entries first.
+- `restrictedImports(...groups)` always keeps the relative-import ban. Pass `aliasOnlyImports({ message })` only to set your own message.
+- A block that sets `no-restricted-imports` after `...baseConfig` also applies to tool config files, unless its `files` key leaves them out. Add `ignores: CONFIG_FILE_GLOBS` to that block to keep the exemption.
+- The ban checks `import` and `export ... from` statements. It does not check `import()` or `require()`.
+
 ## Rules
 
 This package primarily configures rules from `@eslint/js#recommended`.

@@ -69,17 +69,11 @@ describe('restrictedImports', () => {
     const hooks = { paths: [{ name: 'a', importNames: ['x'] }] };
     const more = { paths: [{ name: 'b' }], patterns: [{ group: ['c/*'] }] };
 
-    expect(restrictedImports(hooks, aliasOnlyImports(), more)).toEqual([
+    expect(restrictedImports(hooks, more)).toEqual([
       'error',
       {
         paths: [{ name: 'a', importNames: ['x'] }, { name: 'b' }],
-        patterns: [
-          {
-            group: ['./*', '../*', '!**/*.css'],
-            message: 'Use a path alias instead of a relative import.',
-          },
-          { group: ['c/*'] },
-        ],
+        patterns: [...(aliasOnlyImports().patterns ?? []), { group: ['c/*'] }],
       },
     ]);
   });
@@ -95,14 +89,69 @@ describe('restrictedImports', () => {
       ),
     ).toEqual([
       'error',
-      { paths: [query, mutation], patterns: [{ group: ['a/*'] }] },
+      {
+        paths: [query, mutation],
+        patterns: [...(aliasOnlyImports().patterns ?? []), { group: ['a/*'] }],
+      },
     ]);
   });
 
-  it('should leave out an empty list', () => {
-    expect(restrictedImports({ paths: [{ name: 'a' }] })).toEqual([
+  it('should drop a duplicate entry whose keys are in another order', async () => {
+    const entry = restrictedImports(
+      { paths: [{ name: 'lodash', message: 'No lodash.' }] },
+      { paths: [{ message: 'No lodash.', name: 'lodash' }] },
+    );
+    const messages = await getLintMessagesForRule(
+      withRules({ 'no-restricted-imports': entry }),
+      "import b from 'lodash'; export { b };",
+      'no-restricted-imports',
+    );
+
+    expect(entry).toEqual([
       'error',
-      { paths: [{ name: 'a' }] },
+      {
+        paths: [{ name: 'lodash', message: 'No lodash.' }],
+        ...aliasOnlyImports(),
+      },
+    ]);
+    expect(messages).toHaveLength(1);
+  });
+
+  it('should keep the relative-import ban first', () => {
+    const custom = aliasOnlyImports({ message: 'Use @app.' });
+    const other = { patterns: [{ group: ['a/*'] }] };
+
+    expect(restrictedImports(other, custom)).toEqual([
+      'error',
+      { patterns: [...(custom.patterns ?? []), { group: ['a/*'] }] },
+    ]);
+  });
+
+  it('should return the ban alone when it gets no group', () => {
+    expect(restrictedImports()).toEqual(['error', aliasOnlyImports()]);
+  });
+
+  it('should keep one ban only, and let the last message win', () => {
+    const first = aliasOnlyImports({ message: 'Use @app.' });
+    const last = aliasOnlyImports({ message: 'Use @client.' });
+
+    expect(restrictedImports(first, aliasOnlyImports(), last)).toEqual([
+      'error',
+      last,
+    ]);
+  });
+
+  it('should not share the ban list between calls', () => {
+    const changed = aliasOnlyImports();
+
+    changed.patterns?.[0]?.group?.push('!**/*.svg');
+
+    expect(aliasOnlyImports().patterns?.[0]?.group).toEqual([
+      './**',
+      '../**',
+      '!./**/',
+      '!../**/',
+      '!**/*.css',
     ]);
   });
 
