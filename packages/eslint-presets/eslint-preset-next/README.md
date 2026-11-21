@@ -94,19 +94,25 @@ Flat config replaces a rule's options rather than merging them. If you set `no-r
 import nextPreset from '@tcd-devkit/eslint-preset-next';
 import {
   aliasOnlyImports,
+  CONFIG_FILE_GLOBS,
   CONVEX_ERROR_ONLY_SYNTAX,
   rawConvexHooks,
   restrictedImports,
   restrictedSyntax,
 } from '@tcd-devkit/eslint-preset-next/restrictions';
 
+const aliases = aliasOnlyImports({
+  message: 'Use a path alias (@client, @server).',
+});
 const hooks = rawConvexHooks({ from: '@client/hooks/convex.hooks' });
 
 export default [
   ...nextPreset,
   {
+    // Keeps the exemption of tool config files from the relative-import ban.
+    ignores: CONFIG_FILE_GLOBS,
     rules: {
-      'no-restricted-imports': restrictedImports(aliasOnlyImports(), hooks),
+      'no-restricted-imports': restrictedImports(aliases, hooks),
     },
   },
   {
@@ -120,14 +126,21 @@ export default [
   {
     // The file that defines the wrappers imports the raw hooks.
     files: ['src/lib/client/hooks/convex.hooks.ts'],
-    rules: { 'no-restricted-imports': restrictedImports(aliasOnlyImports()) },
+    rules: { 'no-restricted-imports': restrictedImports(aliases) },
   },
 ];
 ```
 
 - `restrictedSyntax(...groups)` always keeps the base arrow-function entries first.
-- `restrictedImports(...groups)` concatenates the `paths` and `patterns` of each group.
+- `restrictedImports(...groups)` concatenates the `paths` and `patterns` of each group. It always keeps the relative-import ban, so you do not need to pass `aliasOnlyImports()`.
+- `aliasOnlyImports({ message })` sets your own message for the relative-import ban. Pass it to `restrictedImports` to replace the default message.
 - `rawConvexHooks({ wrappers, from })` bans `useQuery`, `useMutation` and `useAction` from `convex/react`, `convex-helpers/react` and `convex-helpers/react/cache`. Pass `wrappers` to change the map, for example to add `usePaginatedQuery`.
+
+## Relative imports
+
+The base config bans an import from `./` or `../`. Use a path alias: `@...` from tsconfig `paths`, or `#...` from package.json `imports`. The "Restrictions" section of the `@tcd-devkit/eslint-config` README lists the exemptions and the limits.
+
+A block that sets `no-restricted-imports` after `...nextPreset` also applies to tool config files, unless its `files` key leaves them out. Add `ignores: CONFIG_FILE_GLOBS` to that block to keep the exemption, as in the example above.
 
 ## Rules
 

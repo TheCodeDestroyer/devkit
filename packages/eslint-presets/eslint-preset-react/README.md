@@ -72,6 +72,12 @@ export default [
 
 This preset exports an array of ESLint configuration objects. You should spread it (`...reactPreset`) into your top-level configuration array. The underlying configurations are designed to work together. Ensure your `tsconfig.json` is correctly set up for TypeScript linting to function optimally.
 
+## Relative imports
+
+The base config bans an import from `./` or `../`. Use a path alias: `@...` from tsconfig `paths`, or `#...` from package.json `imports`.
+
+The "Restrictions" section of the `@tcd-devkit/eslint-config` README lists the exemptions and the limits. To set your own message or add your own entries, install that package and use the helpers from `@tcd-devkit/eslint-config/restrictions`.
+
 ## Rules
 
 This preset combines rules from all the included `@tcd-devkit/eslint-config-*` packages listed in the Features section.
